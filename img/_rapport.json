@@ -1,0 +1,109 @@
+{
+  "ok": [
+    {
+      "slot": "hero",
+      "file": "hero.webp",
+      "width": 1600,
+      "height": 1100,
+      "kb": 126.3,
+      "sourceSize": "2400x1599"
+    },
+    {
+      "slot": "process-01",
+      "file": "process-01.webp",
+      "width": 520,
+      "height": 520,
+      "kb": 4.6,
+      "sourceSize": "1200x1799"
+    },
+    {
+      "slot": "process-02",
+      "file": "process-02.webp",
+      "width": 520,
+      "height": 520,
+      "kb": 11.6,
+      "sourceSize": "1200x800"
+    },
+    {
+      "slot": "process-03",
+      "file": "process-03.webp",
+      "width": 520,
+      "height": 520,
+      "kb": 17.4,
+      "sourceSize": "1200x675"
+    },
+    {
+      "slot": "process-04",
+      "file": "process-04.webp",
+      "width": 520,
+      "height": 520,
+      "kb": 11.4,
+      "sourceSize": "1200x800"
+    },
+    {
+      "slot": "nav-about",
+      "file": "nav-about.webp",
+      "width": 640,
+      "height": 480,
+      "kb": 17.8,
+      "sourceSize": "1200x800"
+    },
+    {
+      "slot": "nav-projects",
+      "file": "nav-projects.webp",
+      "width": 640,
+      "height": 480,
+      "kb": 19.8,
+      "sourceSize": "1200x1800"
+    },
+    {
+      "slot": "nav-resources",
+      "file": "nav-resources.webp",
+      "width": 640,
+      "height": 480,
+      "kb": 23.1,
+      "sourceSize": "1200x920"
+    },
+    {
+      "slot": "nav-news",
+      "file": "nav-news.webp",
+      "width": 640,
+      "height": 480,
+      "kb": 30.2,
+      "sourceSize": "1200x801"
+    },
+    {
+      "slot": "video-poster",
+      "file": "video-poster.webp",
+      "width": 1280,
+      "height": 720,
+      "kb": 87.7,
+      "sourceSize": "2000x1333"
+    },
+    {
+      "slot": "band-impact",
+      "file": "band-impact.webp",
+      "width": 1920,
+      "height": 900,
+      "kb": 102.7,
+      "sourceSize": "2400x1351"
+    },
+    {
+      "slot": "band-europe",
+      "file": "band-europe.webp",
+      "width": 1920,
+      "height": 900,
+      "kb": 184.6,
+      "sourceSize": "2400x1600"
+    },
+    {
+      "slot": "member-02",
+      "file": "member-02.webp",
+      "width": 900,
+      "height": 675,
+      "kb": 53.8,
+      "sourceSize": "1600x1067"
+    }
+  ],
+  "failed": []
+}

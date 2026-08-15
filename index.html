@@ -9,7 +9,9 @@
 <meta property="og:description" content="Accélérer la validation des méthodes de détection des perturbateurs endocriniens.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<!-- Micro-sous-ensemble grec : la lettre γ de PPARγ est absente d'Instrument Sans. -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&text=%CE%93%CE%94%CE%A9%CE%B1%CE%B2%CE%B3%CE%B4%CE%BA%CE%BB%CE%BC%CF%83%CF%89&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
 <script src="js/site.js" defer></script>
 </head>
@@ -26,6 +28,9 @@
   </symbol>
   <symbol id="i-check" viewBox="0 0 24 24" fill="none">
     <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="none">
+    <path d="M8 5.5v13l11-6.5z" fill="currentColor"/>
   </symbol>
   <symbol id="i-doc" viewBox="0 0 24 24" fill="none">
     <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="1.8"/>
@@ -49,11 +54,11 @@
 
 <div class="ribbon">
   <span class="ribbon-label">Maquette de démonstration</span>
-  <span data-en="Proposed direction · placeholder content · not an official PEPPER site">Proposition de direction · contenus provisoires · site non officiel</span>
+  <span data-en="Proposed direction · placeholder content and images · not an official PEPPER site">Proposition de direction · contenus et images provisoires · site non officiel</span>
 </div>
 
 <header>
-  <div class="wrap bar">
+  <div class="wrap-wide bar">
     <a class="logo" href="#" data-view="home">
       <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
       <b>PEPPER</b>
@@ -63,17 +68,61 @@
     </button>
     <nav id="nav">
       <button class="navlink" data-view="home" aria-current="page" data-en="Home">Accueil</button>
-      <button class="navlink" data-view="projects" data-en="Validation projects">Projets de validation</button>
-      <button class="navlink" data-view="resources" data-en="Resources">Ressources</button>
+      <button class="navlink" type="button" data-mega aria-expanded="false" aria-controls="mega-explore">
+        <span data-en="Explore">Explorer</span><span class="chev" aria-hidden="true"></span>
+      </button>
+      <button class="navlink" data-view="member" data-en="Become a member">Devenir membre</button>
       <a href="#news" data-en="News &amp; events">Actualités</a>
-      <a href="#join" data-en="Become a member">Nous rejoindre</a>
     </nav>
     <div class="tools">
       <div class="lang" role="group" aria-label="Langue">
         <button data-lang="fr" aria-pressed="true">FR</button>
         <button data-lang="en" aria-pressed="false">EN</button>
       </div>
-      <a class="btn btn-p" href="#join" data-en="Join us">Nous rejoindre</a>
+      <a class="btn btn-p" href="#" data-view="member" data-en="Join us">Nous rejoindre</a>
+    </div>
+  </div>
+
+  <!-- Méga-menu à images (réf. nesta.org.uk) -->
+  <div class="mega" id="mega-explore" data-open="false">
+    <div class="mega-inner">
+      <div class="mega-grid">
+        <button class="mega-card" type="button" data-view="about">
+          <span class="thumb"><img src="img/nav-about.webp" width="640" height="480" loading="lazy" decoding="async"
+            alt="Deux chercheurs en blouse blanche échangent devant un équipement de laboratoire."
+            data-en-alt="Two researchers in white coats talk in front of a piece of laboratory equipment."></span>
+          <h3 data-en="About PEPPER">À propos de PEPPER</h3>
+          <p data-en="Our story, our model, our governance.">Notre histoire, notre modèle, notre gouvernance.</p>
+        </button>
+        <button class="mega-card" type="button" data-view="projects">
+          <span class="thumb"><img src="img/nav-projects.webp" width="640" height="480" loading="lazy" decoding="async"
+            alt="Vue de dessus d'une microplaque de titration posée sur une feuille de protocole."
+            data-en-alt="Overhead view of a microtitration plate resting on a protocol sheet."></span>
+          <h3 data-en="Validation projects">Projets de validation</h3>
+          <p data-en="Four methods under way, from protocol to guideline.">Quatre méthodes en cours, du protocole à la norme.</p>
+        </button>
+        <button class="mega-card" type="button" data-view="resources">
+          <span class="thumb"><img src="img/nav-resources.webp" width="640" height="480" loading="lazy" decoding="async"
+            alt="Une main posée sur un ouvrage scientifique ouvert, près d'un microscope."
+            data-en-alt="A hand resting on an open science textbook next to a microscope."></span>
+          <h3 data-en="Resources">Ressources</h3>
+          <p data-en="Protocols, publications and reports, freely available.">Modes opératoires, publications et rapports en accès ouvert.</p>
+        </button>
+        <a class="mega-card" href="#news">
+          <span class="thumb"><img src="img/nav-news.webp" width="640" height="480" loading="lazy" decoding="async"
+            alt="Amphithéâtre moderne rempli de public écoutant un intervenant au pupitre."
+            data-en-alt="A modern auditorium filled with an audience listening to a speaker at a lectern."></span>
+          <h3 data-en="News &amp; events">Actualités et événements</h3>
+          <p data-en="Project progress, publications, webinars.">Avancement des projets, publications, webinaires.</p>
+        </a>
+      </div>
+      <div class="mega-foot">
+        <a href="#mission" data-en="Why PEPPER exists">Pourquoi PEPPER existe</a>
+        <a href="#how" data-en="How we work">Comment nous travaillons</a>
+        <a href="#figures" data-en="PEPPER in numbers">PEPPER en chiffres</a>
+        <a href="#join" data-en="Become a member">Devenir membre</a>
+        <a href="#newsletter" data-en="Newsletter">Lettre d'information</a>
+      </div>
     </div>
   </div>
 </header>
@@ -84,104 +133,167 @@
 <div class="view active" id="v-home">
 
   <div class="hero">
-    <div class="wrap hero-grid">
+    <div class="wrap-wide hero-grid">
       <div>
-        <span class="eyebrow" data-en="Public-private platform">Plateforme public-privé</span>
+        <span class="eyebrow" data-en="A European public-private platform">Plateforme public-privé européenne</span>
         <h1>
-          <span data-en="Endocrine disruptors are everywhere.">Les perturbateurs endocriniens sont partout.</span><br>
-          <em data-en="The methods to prove it are not.">Les méthodes pour le prouver, non.</em>
+          <span data-en="Suspicion protects no one.">Un soupçon ne protège personne.</span><br>
+          <em data-en="A validated method does.">Une méthode validée, si.</em>
         </h1>
-        <p class="lead" data-en="PEPPER accelerates the validation of the test methods that regulators need to better protect human health and the environment. We connect research, industry and regulation around a single objective: turning science into usable standards.">
-          PEPPER accélère la validation des méthodes d'essai dont les régulateurs ont besoin pour mieux protéger la santé humaine et l'environnement. Nous relions la recherche, l'industrie et la réglementation autour d'un même objectif : transformer la science en normes utilisables.
+        <p class="lead" data-en="As long as no test method is validated, a suspected effect stays invisible to regulation. PEPPER funds and steers the validation of these methods with public and private laboratories across Europe, through to recognition by regulators and the OECD.">
+          Tant qu'aucune méthode d'essai n'est validée, un effet suspecté reste invisible pour la réglementation. PEPPER finance et pilote la validation de ces méthodes avec les laboratoires publics et privés d'Europe, jusqu'à leur reconnaissance par les autorités et l'OCDE.
         </p>
         <div class="cta">
-          <a class="btn btn-p" href="#" data-view="projects" data-en="Explore our projects">Découvrir nos projets</a>
+          <a class="btn btn-p" href="#" data-view="projects" data-en="See the validation projects">Découvrir les projets de validation</a>
           <a class="btn btn-g" href="#mission" data-en="Why PEPPER exists">Pourquoi PEPPER existe</a>
         </div>
       </div>
-      <div>
-        <svg class="orbit" viewBox="0 0 420 420" fill="none" aria-hidden="true">
-          <g opacity=".45">
-            <circle cx="210" cy="210" r="176" stroke="#C9CCE8" stroke-width="1"/>
-            <circle cx="210" cy="210" r="130" stroke="#C9CCE8" stroke-width="1"/>
-            <circle cx="210" cy="210" r="84" stroke="#C9CCE8" stroke-width="1"/>
-          </g>
-          <g class="spin">
-            <circle cx="386" cy="210" r="7" fill="#3B45A6"/>
-            <circle cx="210" cy="80" r="6" fill="#0E7C70"/>
-            <circle cx="118" cy="302" r="6" fill="#9A6614"/>
-            <circle cx="300" cy="118" r="5" fill="#3B45A6" opacity=".55"/>
-          </g>
-          <rect x="150" y="150" width="72" height="72" rx="22" stroke="#3B45A6" stroke-width="2.6"/>
-          <rect x="198" y="198" width="72" height="72" rx="22" stroke="#0F1330" stroke-width="2.6"/>
-        </svg>
+      <div class="hero-media">
+        <img src="img/hero.webp" width="1600" height="1100" fetchpriority="high" decoding="async"
+          alt="Vue aérienne d'une rivière sombre qui serpente entre des boisements et des prairies, partiellement recouverte d'une nappe de brume au petit matin."
+          data-en-alt="Aerial view of a dark river winding between woodland and meadows, partly veiled by a low blanket of mist at dawn.">
+        <p class="hero-cap" data-en="Diffuse exposure: water, air, soil, everyday products.">Une exposition diffuse : l'eau, l'air, les sols, les produits du quotidien.</p>
       </div>
     </div>
   </div>
 
-  <div class="stripe">
+  <!-- Bandeau de mots-clés (réf. Arvato) -->
+  <section class="marquee" aria-label="Champs d'action">
+    <div class="marquee-track">
+      <ul>
+        <li>Axe thyroïdien</li><li>Reproductibilité</li><li>Thyroperoxydase (TPO)</li>
+        <li>Lignes directrices de l'OCDE</li><li>Perturbation métabolique</li><li>Essais inter-laboratoires</li>
+        <li>Récepteurs nucléaires</li><li>Méthodes alternatives</li><li>Transthyrétine</li>
+        <li>Transférabilité</li><li>Désiodases</li><li>Essais in vitro</li>
+        <li>Pré-validation</li><li>Santé publique et environnement</li>
+      </ul>
+      <ul data-clone aria-hidden="true">
+        <li>Axe thyroïdien</li><li>Reproductibilité</li><li>Thyroperoxydase (TPO)</li>
+        <li>Lignes directrices de l'OCDE</li><li>Perturbation métabolique</li><li>Essais inter-laboratoires</li>
+        <li>Récepteurs nucléaires</li><li>Méthodes alternatives</li><li>Transthyrétine</li>
+        <li>Transférabilité</li><li>Désiodases</li><li>Essais in vitro</li>
+        <li>Pré-validation</li><li>Santé publique et environnement</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <div class="stripe" id="mission">
     <div class="wrap">
       <h2>
         <span data-en="A substance can be suspected for twenty years before a method exists to prove it.">Une substance peut être suspectée pendant vingt ans avant qu'une méthode existe pour le prouver.</span>
         <em data-en="That gap is what we work on.">C'est sur cet écart que nous travaillons.</em>
       </h2>
-      <div class="three">
+      <div class="mv">
         <div>
-          <span class="num">01</span>
-          <h3 data-en="The problem">Le problème</h3>
-          <p data-en="Regulation can only act on what it can measure. Without validated methods, suspicion never becomes protection.">La réglementation ne peut agir que sur ce qu'elle sait mesurer. Sans méthode validée, le soupçon ne devient jamais protection.</p>
+          <span class="k" data-en="Mission">Mission</span>
+          <blockquote data-en="Accelerating the validation of methods that will improve the protection of human health and the environment against endocrine disruptors.">
+            Accélérer la validation des méthodes qui amélioreront la protection de la santé humaine et de l'environnement face aux perturbateurs endocriniens.
+          </blockquote>
         </div>
         <div>
-          <span class="num">02</span>
-          <h3 data-en="What we do">Ce que nous faisons</h3>
-          <p data-en="We fund, coordinate and steer the validation of promising test methods, up to the point where regulators can adopt them.">Nous finançons, coordonnons et pilotons la validation de méthodes prometteuses, jusqu'au point où les régulateurs peuvent les adopter.</p>
-        </div>
-        <div>
-          <span class="num">03</span>
-          <h3 data-en="Why it matters">Pourquoi cela compte</h3>
-          <p data-en="Every validated method becomes a shared European tool, usable by every laboratory, every industry, every agency.">Chaque méthode validée devient un outil européen partagé, utilisable par chaque laboratoire, chaque industriel, chaque agence.</p>
+          <span class="k" data-en="Vision">Vision</span>
+          <blockquote data-en="To become the European reference platform bridging research, regulation and innovation.">
+            Devenir la plateforme européenne de référence entre recherche, réglementation et innovation.
+          </blockquote>
+          <p class="note" data-en="PEPPER is a non-profit association bringing together public authorities, research institutions and industry around a shared, pre-competitive objective.">
+            PEPPER est une association à but non lucratif réunissant pouvoirs publics, institutions de recherche et industriels autour d'un objectif partagé et pré-concurrentiel.
+          </p>
         </div>
       </div>
     </div>
   </div>
 
-  <section class="band" id="mission">
-    <div class="wrap mv">
-      <div>
-        <span class="k" data-en="Mission">Mission</span>
-        <blockquote data-en="Accelerating the validation of methods that will improve the protection of human health and the environment against endocrine disruptors.">
-          Accélérer la validation des méthodes qui amélioreront la protection de la santé humaine et de l'environnement face aux perturbateurs endocriniens.
-        </blockquote>
-      </div>
-      <div>
-        <span class="k" data-en="Vision">Vision</span>
-        <blockquote data-en="To become the European reference platform bridging research, regulation and innovation.">
-          Devenir la plateforme européenne de référence entre recherche, réglementation et innovation.
-        </blockquote>
-        <p class="note" data-en="PEPPER is a non-profit association bringing together public authorities, research institutions and industry around a shared, pre-competitive objective.">
-          PEPPER est une association à but non lucratif réunissant pouvoirs publics, institutions de recherche et industriels autour d'un objectif partagé et pré-concurrentiel.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section>
+  <!-- Comment nous travaillons (réf. The Climate Pledge) -->
+  <section class="process" id="how">
     <div class="wrap">
-      <div class="stats">
-        <div class="stat"><span class="v">2021</span><span class="l" data-en="Platform created">Création de la plateforme</span></div>
-        <div class="stat"><span class="v">4</span><span class="l" data-en="Validation projects under way">Projets de validation en cours</span></div>
-        <div class="stat"><span class="v">7</span><span class="l" data-en="Audiences served, from regulators to citizens">Publics adressés, des régulateurs aux citoyens</span></div>
-        <div class="stat"><span class="v">4</span><span class="l" data-en="Regulatory bodies engaged: EC, OECD, ECHA, EFSA">Instances mobilisées : CE, OCDE, ECHA, EFSA</span></div>
+      <div class="sec-head">
+        <span class="tag" data-en="How we work">Comment nous travaillons</span>
+        <h2 class="big"><span data-en="From the laboratory">Du laboratoire</span> <em data-en="to regulation.">à la réglementation.</em></h2>
+        <p data-en="Validating a test method takes years of methodical work. Every step has to be documented, checked, then accepted by regulators. This is the path we fund and coordinate.">Valider une méthode d'essai demande des années de travail méthodique. Chaque étape doit être documentée, vérifiée, puis acceptée par les régulateurs. Voici le chemin que nous finançons et coordonnons.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num">01</span>
+          <span class="thumb"><img src="img/process-01.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
+          <h3 data-en="Spot what is missing">Repérer ce qui manque</h3>
+          <p data-en="Working with scientists and regulators, we identify the mechanisms of endocrine disruption that no regulatory test covers yet. We then select the methods mature enough to withstand validation.">Avec les scientifiques et les régulateurs, nous identifions les mécanismes de perturbation endocrinienne qu'aucun test réglementaire ne couvre encore. Puis nous retenons les méthodes assez matures pour franchir la validation.</p>
+        </div>
+        <div class="step">
+          <span class="num">02</span>
+          <span class="thumb"><img src="img/process-02.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
+          <h3 data-en="Firm up the protocol">Consolider le protocole</h3>
+          <p data-en="A promising idea is not yet a method. We have it optimised and described step by step — conditions, reference substances, acceptance criteria — until it returns the same results run after run.">Une bonne idée de laboratoire n'est pas encore une méthode. Nous la faisons optimiser et décrire pas à pas — conditions, substances de référence, critères d'acceptation — jusqu'à ce qu'elle donne les mêmes résultats d'un essai à l'autre.</p>
+        </div>
+        <div class="step">
+          <span class="num">03</span>
+          <span class="thumb"><img src="img/process-03.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
+          <h3 data-en="Validate across laboratories">Valider entre laboratoires</h3>
+          <p data-en="Several independent laboratories then run the same protocol on the same substances, each on its own. If the results agree, the method is reproducible — and that collective proof is what regulators require.">Plusieurs laboratoires indépendants appliquent alors le même protocole aux mêmes substances, chacun de son côté. Si les résultats concordent, la méthode est reproductible&nbsp;: c'est cette preuve collective que les régulateurs attendent.</p>
+        </div>
+        <div class="step">
+          <span class="num">04</span>
+          <span class="thumb"><img src="img/process-04.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
+          <h3 data-en="See the method adopted">Faire adopter la méthode</h3>
+          <p data-en="The protocol and the results are assembled into a dossier submitted to the OECD, with a view to an official test guideline. Once adopted, it becomes a shared reference: data produced in one country is recognised by the others.">Le protocole et les résultats sont réunis en un dossier soumis à l'OCDE, en vue d'une ligne directrice d'essai. Adoptée, elle devient une référence commune&nbsp;: les données produites dans un pays sont reconnues par les autres.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="flush">
+  <!-- Chiffres clés (réf. wellcome.org) -->
+  <section class="figures" id="figures">
+    <div class="wrap">
+      <div class="figures-head">
+        <h2><span>PEPPER</span> <em data-en="in numbers">en chiffres</em></h2>
+        <p class="period" data-en="Our work since 2021">Notre travail depuis 2021</p>
+      </div>
+      <div class="figures-grid">
+        <div class="figure">
+          <span class="v">2021</span>
+          <span class="u" data-en="Platform created">Création de la plateforme</span>
+          <p data-en="Public and private funders have sat at the same table ever since, with none of them setting the scientific agenda alone.">Financeurs publics et privés siègent depuis à la même table, sans qu'aucun ne décide seul des orientations scientifiques.</p>
+        </div>
+        <div class="figure">
+          <span class="v">4</span>
+          <span class="u" data-en="Validation projects under way">Projets de validation en cours</span>
+          <p data-en="TPO, PPARγ, DIO1, TTR — four hormonal mechanisms that today's regulatory test methods still do not cover.">TPO, PPARγ, DIO1, TTR&nbsp;: quatre mécanismes hormonaux que les essais réglementaires en vigueur ne couvrent pas encore.</p>
+        </div>
+        <div class="figure">
+          <span class="v">3<small data-en="of 4">sur 4</small></span>
+          <span class="u" data-en="Projects targeting the thyroid">Projets liés à la thyroïde</span>
+          <p data-en="TPO, DIO1 and TTR all involve thyroid hormone, which the developing brain depends on before birth and through early childhood.">TPO, DIO1 et TTR touchent à l'hormone thyroïdienne, indispensable au développement du cerveau de l'enfant, avant comme après la naissance.</p>
+        </div>
+        <div class="figure">
+          <span class="v">4</span>
+          <span class="u" data-en="Regulatory bodies engaged">Instances de référence mobilisées</span>
+          <p data-en="The European Commission, OECD, ECHA and EFSA decide whether a test method enters the guidelines and rules that industry must follow.">Commission européenne, OCDE, ECHA, EFSA&nbsp;: ce sont elles qui inscrivent, ou non, une méthode d'essai dans les référentiels réglementaires.</p>
+        </div>
+      </div>
+      <p class="figures-note" data-en="Provisional figures: values, scope and period to be confirmed by PEPPER before publication.">Chiffres provisoires&nbsp;: valeurs, périmètre et période restent à confirmer par PEPPER avant mise en ligne.</p>
+    </div>
+  </section>
+
+  <!-- Bande photo 1 (réf. nomoreplastic.co) -->
+  <section class="photoband">
+    <img src="img/band-impact.webp" width="1920" height="900" loading="lazy" decoding="async"
+      alt="Une petite main d'enfant plonge dans l'eau claire d'un ruisseau qui coule entre des pierres et des mousses vertes."
+      data-en-alt="A child's small hand dips into the clear water of a stream running between stones and green moss.">
+    <div class="pb-inner">
+      <h2 data-en="To protect, first measure">Avant de protéger, savoir mesurer</h2>
+      <p data-en="The endocrine system governs reproduction, development and metabolism, in humans as in the species around us. As long as an effect cannot be measured reliably, it stays beyond the reach of public decision-making.">Le système endocrinien gouverne la reproduction, le développement et le métabolisme, chez l'humain comme chez les espèces qui peuplent nos milieux. Tant qu'un effet ne peut être mesuré de façon fiable, il reste hors de portée de la décision publique.</p>
+      <div class="cta"><a class="btn btn-w" href="#mission" data-en="Why PEPPER exists">Pourquoi PEPPER existe</a></div>
+      <p class="credit" data-en="Placeholder photograph — original photography planned">Photographie provisoire — production originale prévue</p>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section>
     <div class="wrap">
       <div class="sec-head">
         <span class="tag" data-en="Validation projects">Projets de validation</span>
         <h2 class="big"><span data-en="Four methods,">Quatre méthodes,</span> <em data-en="one shared standard.">une norme partagée.</em></h2>
-        <p data-en="Each project targets a specific biological mechanism and follows the same path: scientific selection, inter-laboratory validation, then submission to regulators.">Chaque projet cible un mécanisme biologique précis et suit le même chemin : sélection scientifique, validation inter-laboratoires, puis soumission aux régulateurs.</p>
+        <p data-en="Each project targets a specific biological mechanism and follows the same path: scientific selection, inter-laboratory validation, then submission to regulators.">Chaque projet cible un mécanisme biologique précis et suit le même chemin&nbsp;: sélection scientifique, validation inter-laboratoires, puis soumission aux régulateurs.</p>
       </div>
       <div class="grid2">
         <a class="card reveal" href="#" data-view="projects">
@@ -215,6 +327,7 @@
     </div>
   </section>
 
+  <!-- Publics -->
   <section class="band">
     <div class="wrap">
       <div class="sec-head">
@@ -232,6 +345,7 @@
     </div>
   </section>
 
+  <!-- Actualités -->
   <section id="news">
     <div class="wrap">
       <div class="sec-head">
@@ -261,22 +375,250 @@
     </div>
   </section>
 
-  <section id="join" class="flush">
+  <!-- Vidéo + parcours d'adhésion (réf. The Climate Pledge « Join the Pledge ») -->
+  <section class="joinblock" id="join">
     <div class="wrap">
-      <div class="join">
+      <div class="sec-head">
+        <span class="tag" data-en="Watch, then join">Vidéo et adhésion</span>
+        <h2 class="big"><span data-en="Understand first.">Comprendre d'abord.</span> <em data-en="Then join.">Rejoindre ensuite.</em></h2>
+        <p data-en="No one should join a scientific platform without knowing what it is for. Watch it, ask your questions, then decide.">Personne ne devrait rejoindre une plateforme scientifique sans savoir à quoi elle sert. Regardez, posez vos questions, puis décidez.</p>
+      </div>
+      <div class="jv">
         <div>
-          <h2><span data-en="Validated science">La science validée</span> <em data-en="is a collective effort.">est un effort collectif.</em></h2>
-          <p data-en="Joining PEPPER means taking part in the pre-competitive effort that turns research into regulatory tools, and shaping the methods your sector will use tomorrow.">Rejoindre PEPPER, c'est prendre part à l'effort pré-concurrentiel qui transforme la recherche en outils réglementaires, et contribuer aux méthodes que votre secteur utilisera demain.</p>
-          <div class="cta mt-32">
-            <a class="btn btn-w" href="#" data-en="Become a member">Devenir membre</a>
+          <div class="player">
+            <img src="img/video-poster.webp" width="1280" height="720" loading="lazy" decoding="async"
+              alt="Un adulte et un jeune enfant se tiennent par la main sur un chemin de terre traversant une campagne dorée, à contre-jour."
+              data-en-alt="An adult and a young child hold hands on a dirt track crossing golden countryside, backlit by low light.">
+            <span class="badge" data-en="Video to be produced">Vidéo à produire</span>
+            <button class="play" type="button" data-video-open aria-label="Lire la vidéo de présentation de PEPPER">
+              <span><svg width="30" height="30" aria-hidden="true"><use href="#i-play"/></svg></span>
+            </button>
           </div>
+          <p class="jv-cap" data-en="What is at stake with endocrine disruptors — health, fertility, child development, the environment — and why the methods needed to identify them are still missing. That is where PEPPER's work begins.">Ce que les perturbateurs endocriniens mettent en jeu — santé, fertilité, développement de l'enfant, environnement — et pourquoi les méthodes capables de les identifier manquent encore. Le rôle de PEPPER commence là.</p>
+          <p class="jv-meta">
+            <span data-en="Running time: 6 min — provisional, to be confirmed at edit">Durée&nbsp;: 6 min — durée provisoire, à confirmer au montage</span>
+            <a href="#" data-video-open data-en="Read the transcript">Lire la transcription</a>
+          </p>
+          <p class="jv-meta" data-en="Subtitles in French and English. Full transcript available below the video.">Sous-titres en français et en anglais. Transcription intégrale disponible sous la vidéo.</p>
         </div>
-        <ul>
-          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Early access to validation results and protocols">Accès anticipé aux résultats et protocoles de validation</span></li>
-          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span data-en="A seat in the scientific dialogue with regulators">Une place dans le dialogue scientifique avec les régulateurs</span></li>
-          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span data-en="A European network of laboratories and experts">Un réseau européen de laboratoires et d'experts</span></li>
-          <li><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Visibility on a public-interest commitment">De la visibilité sur un engagement d'intérêt général</span></li>
-        </ul>
+        <div class="jsteps">
+          <div class="jstep">
+            <span class="st" data-en="Step one">Étape 01</span>
+            <h3 data-en="Understand what is at stake">Comprendre ce qui se joue</h3>
+            <p data-en="Watch the video, then look through the validation projects under way. You will see where the science stands and what regulators are still missing.">Regardez la vidéo, puis parcourez les projets de validation en cours. Vous verrez où en est la science et ce qui manque encore aux régulateurs.</p>
+            <div class="cta"><a class="btn btn-w" href="#" data-view="projects" data-en="See the validation projects">Voir les projets de validation</a></div>
+          </div>
+          <div class="jstep">
+            <span class="st" data-en="Step two">Étape 02</span>
+            <h3 data-en="Talk with the team">Échanger avec l'équipe</h3>
+            <p data-en="A first conversation, with no commitment, to situate your laboratory, your company or your institution within the work under way.">Un premier échange, sans engagement, pour situer votre laboratoire, votre entreprise ou votre institution dans les travaux en cours.</p>
+            <div class="cta"><a class="btn btn-w" href="#" data-view="member" data-en="Request a conversation">Demander un échange</a></div>
+          </div>
+          <div class="jstep">
+            <span class="st" data-en="Step three">Étape 03</span>
+            <h3 data-en="Join the platform">Rejoindre la plateforme</h3>
+            <p data-en="You choose your level of involvement, you formalise your membership, and your teams take part in the work.">Vous choisissez votre niveau d'implication, vous formalisez votre adhésion, et vos équipes prennent part aux travaux.</p>
+            <div class="cta"><a class="btn btn-solid" href="#" data-view="member" data-en="Become a member">Devenir membre</a></div>
+          </div>
+          <p class="jnote" data-en="Nothing is committed before step three.">Rien n'est engagé avant la troisième étape.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bande photo 2 -->
+  <section class="photoband">
+    <img src="img/band-europe.webp" width="1920" height="900" loading="lazy" decoding="async"
+      alt="Hémicycle vide du Parlement européen : rangées courbes de pupitres en bois clair et, au fond, les drapeaux des États membres."
+      data-en-alt="The empty European Parliament chamber: curved rows of pale wooden desks and, at the far end, the member-state flags.">
+    <div class="pb-inner">
+      <h2 data-en="Validated once, recognised everywhere">Validée une fois, reconnue partout</h2>
+      <p data-en="A method taken up in an OECD test guideline becomes a shared instrument: data produced under it are recognised from one country to the next. That is the scale PEPPER works at, in dialogue with the bodies that write those frameworks.">Une méthode reprise dans une ligne directrice de l'OCDE devient un instrument commun&nbsp;: les données produites selon ce référentiel sont reconnues d'un pays à l'autre. C'est à cette échelle que PEPPER travaille, en dialogue avec les instances qui écrivent ces référentiels.</p>
+      <div class="cta"><a class="btn btn-w" href="#" data-view="projects" data-en="The validation projects">Les projets de validation</a></div>
+      <p class="credit" data-en="Placeholder photograph — original photography planned">Photographie provisoire — production originale prévue</p>
+    </div>
+  </section>
+</div>
+
+<!-- ==================== À PROPOS ==================== -->
+<div class="view" id="v-about">
+  <div class="wrap pagehead">
+    <div class="sec-head">
+      <span class="tag" data-en="About">À propos</span>
+      <h1><span data-en="A deadlock">Un blocage que personne</span> <em data-en="no one could break alone.">ne pouvait lever seul.</em></h1>
+      <p class="lead" data-en="Scientists can identify how certain substances interfere with the hormone system. Regulators can only act once a recognised test method proves it. PEPPER was created to close that gap: to organise, fund and steer the validation of methods until they become regulatory tools.">Les scientifiques savent identifier comment certaines substances interfèrent avec le système hormonal. Les autorités, elles, ne peuvent agir que si une méthode d'essai reconnue permet de le démontrer. PEPPER a été créée pour combler cet écart&nbsp;: organiser, financer et conduire la validation des méthodes, jusqu'à ce qu'elles deviennent des outils réglementaires.</p>
+    </div>
+  </div>
+
+  <section class="flush">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag" data-en="Our story">Notre histoire</span>
+        <h2 class="big"><span data-en="From a shared observation">D'un constat partagé</span> <em data-en="to a shared platform.">à une plateforme commune.</em></h2>
+      </div>
+      <div class="prose">
+        <p data-en="Research has established that certain substances interfere with the hormone system, at everyday exposure levels and sometimes at the earliest stages of life. Yet that knowledge carries no regulatory weight until a recognised assay can demonstrate it reproducibly, from one laboratory to the next. Years often pass between a published result and an international test guideline.">La recherche a établi que certaines substances interfèrent avec le système hormonal, à des niveaux d'exposition courants et parfois aux tout premiers stades de la vie. Cette connaissance n'a pourtant aucune portée réglementaire tant qu'un essai reconnu ne permet pas de la démontrer de façon reproductible, d'un laboratoire à l'autre. Entre un résultat publié et une ligne directrice internationale, il s'écoule souvent des années.</p>
+        <p data-en="Validating a method is long, expensive and necessarily collective work. It takes a stabilised protocol, several independent laboratories, and assays repeated then compared with one another. A method developer cannot afford it alone. A single company would not carry the legitimacy. Without a shared framework, promising methods stayed where they were: in the scientific literature.">Valider une méthode est un travail long, coûteux et nécessairement collectif. Il faut un protocole stabilisé, plusieurs laboratoires indépendants, des essais répétés puis comparés entre eux. Un développeur de méthode n'en a pas les moyens seul. Une entreprise seule n'en aurait pas la légitimité. Faute d'un cadre commun, des méthodes prometteuses restaient au stade de la publication scientifique.</p>
+        <p data-en="PEPPER grew out of that observation, at the initiative of public authorities and with the commitment of private stakeholders, as a non-profit association. Its role is a precise one: to take on what no one else was taking on. Select the methods, bring the laboratories together, fund the assays, and carry the work to the point where a method can be submitted to the bodies that adopt international test guidelines.">PEPPER est née de ce constat, à l'initiative des pouvoirs publics et avec l'engagement d'acteurs privés, sous la forme d'une association à but non lucratif. Son rôle est précis&nbsp;: prendre en charge ce que personne ne prenait en charge. Sélectionner les méthodes, réunir les laboratoires, financer les essais et conduire le travail jusqu'au point où une méthode peut être soumise aux instances qui adoptent les lignes directrices internationales.</p>
+      </div>
+      <p class="notice mt-32" data-en="Year of creation and founding milestones to be provided by the association. The date shown on the home page still needs to be confirmed.">Année de création et jalons fondateurs à compléter par l'association. La date affichée sur la page d'accueil reste à confirmer.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag" data-en="Our model">Le modèle</span>
+        <h2 class="big"><span data-en="Shared funding,">Un financement partagé,</span> <em data-en="public results.">des résultats publics.</em></h2>
+        <p data-en="PEPPER is a non-profit association. Public and private contributions are pooled to fund work that no one owns. Protocols, validation data and reports are published.">PEPPER est une association à but non lucratif. Des contributions publiques et privées y sont mises en commun pour financer des travaux dont personne n'est propriétaire. Les protocoles, les données de validation et les rapports sont publiés.</p>
+      </div>
+      <div class="cols4">
+        <div>
+          <h3 data-en="Pre-competitive">Pré-concurrentiel</h3>
+          <p data-en="The work concerns test methods, never products. Members gain no commercial advantage; they gain a reliable assessment framework, identical for everyone.">Les travaux portent sur des méthodes d'essai, jamais sur des produits. Un membre n'y obtient aucun avantage commercial&nbsp;; il obtient un cadre d'évaluation fiable, le même pour tous.</p>
+        </div>
+        <div>
+          <h3 data-en="Scientific independence">Indépendance scientifique</h3>
+          <p data-en="The choice of methods, the conduct of the assays and the interpretation of results are handled by a scientific body kept separate from the funders.">Le choix des méthodes, la conduite des essais et l'interprétation des résultats relèvent d'une instance scientifique distincte des contributeurs financiers.</p>
+        </div>
+        <div>
+          <h3 data-en="Open access">Accès ouvert</h3>
+          <p data-en="Standard operating procedures, results and reports are freely available. A method is only worth something if every laboratory can run it in exactly the same way.">Modes opératoires, résultats et rapports sont diffusés librement. Une méthode n'a de valeur que si chaque laboratoire peut l'appliquer à l'identique.</p>
+        </div>
+        <div>
+          <h3 data-en="A regulatory purpose">Une finalité réglementaire</h3>
+          <p data-en="Every project is designed to produce a dossier that the bodies adopting test guidelines can use — the OECD first among them.">Chaque projet est conçu pour produire un dossier exploitable par les instances qui adoptent les lignes directrices d'essai, au premier rang desquelles l'OCDE.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag" data-en="Governance">Gouvernance</span>
+        <h2 class="big"><span data-en="Who decides,">Qui décide,</span> <em data-en="and on what grounds.">et selon quels critères.</em></h2>
+        <p data-en="PEPPER's governance keeps three things apart: representation of the association, scientific expertise, and the direction set by the members. That separation is what makes the results trustworthy.">La gouvernance de PEPPER sépare trois choses&nbsp;: la représentation de l'association, l'expertise scientifique et l'orientation donnée par les membres. Cette séparation est la condition de la confiance accordée aux résultats.</p>
+      </div>
+      <div class="grid3">
+        <div class="card">
+          <h3 data-en="Presidency">Présidence</h3>
+          <p data-en="Represents the association before public authorities, members and international bodies. Ensures the statutory purpose is upheld and that stakeholders remain in balance.">Représente l'association auprès des pouvoirs publics, des membres et des instances internationales. Veille au respect de l'objet statutaire et à l'équilibre entre les parties prenantes.</p>
+        </div>
+        <div class="card">
+          <h3 data-en="Executive management">Direction</h3>
+          <p data-en="Runs the work programme: calls for methods, contracting with laboratories, scientific and budgetary monitoring of projects, reporting to the governing bodies.">Conduit le programme de travail&nbsp;: appels à méthodes, contractualisation avec les laboratoires, suivi scientifique et budgétaire des projets, information des instances.</p>
+        </div>
+        <div class="card">
+          <h3 data-en="Scientific council">Conseil scientifique</h3>
+          <p data-en="An independent expert body. Assesses candidate methods, approves protocols, reviews results and gives its opinion before any submission to international bodies.">Instance d'expertise indépendante. Évalue la pertinence des méthodes candidates, valide les protocoles, examine les résultats et se prononce avant toute soumission aux instances internationales.</p>
+        </div>
+        <div class="card">
+          <h3 data-en="Members' committee">Comité des membres</h3>
+          <p data-en="Brings together member organisations, both public and private. Voices priorities, monitors the use of pooled funds and proposes new validation topics.">Réunit les organisations adhérentes, publiques et privées. Exprime les priorités, suit l'emploi des fonds mis en commun et propose de nouveaux sujets de validation.</p>
+        </div>
+        <div class="card">
+          <h3 data-en="Secretariat">Secrétariat</h3>
+          <p data-en="Handles the association's day-to-day running: administration, contracts, member relations, communication and dissemination of the work.">Assure le fonctionnement quotidien de l'association&nbsp;: administration, contrats, relations avec les membres, communication et diffusion des travaux.</p>
+        </div>
+      </div>
+      <p class="notice mt-32" data-en="The names, individual titles, portraits and biographies of the people holding these roles will be provided by the association and added before launch. This mockup shows role and governance titles only.">Les noms, titres nominatifs, portraits et biographies des personnes exerçant ces fonctions seront fournis par l'association et intégrés avant la mise en ligne. Cette maquette ne présente que des intitulés de fonction et de gouvernance.</p>
+    </div>
+  </section>
+</div>
+
+<!-- ==================== DEVENIR MEMBRE ==================== -->
+<div class="view" id="v-member">
+  <div class="wrap pagehead">
+    <div class="sec-head">
+      <span class="tag" data-en="Become a member">Devenir membre</span>
+      <h1><span data-en="Validating a method">Valider une méthode</span> <em data-en="takes more than one laboratory.">demande plus qu'un laboratoire.</em></h1>
+      <p class="lead" data-en="PEPPER brings together research institutions, companies and public or non-profit organisations around work that none of them can carry alone: taking a test method to the level of evidence regulators require.">PEPPER réunit institutions de recherche, entreprises et acteurs publics ou associatifs autour d'un travail que personne ne peut mener seul&nbsp;: conduire une méthode d'essai jusqu'au niveau de preuve exigé par les régulateurs.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="#" data-en="Request a conversation">Demander un échange</a>
+        <a class="btn btn-g" href="#" data-view="projects" data-en="See the projects under way">Voir les projets en cours</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="flush">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag" data-en="Three ways to join">Trois façons de rejoindre</span>
+        <h2 class="big"><span data-en="Every member brings">Chaque membre apporte</span> <em data-en="what it does best.">ce qu'il sait faire.</em></h2>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3 data-en="Research institution">Institution de recherche</h3>
+          <p data-en="You develop the methods. PEPPER helps you take them to the point where regulation can adopt them.">Vous développez les méthodes. PEPPER vous aide à les conduire jusqu'au stade où la réglementation peut les reprendre.</p>
+          <ul>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Enter a method into a structured inter-laboratory validation programme.">Engager une méthode dans un programme de validation inter-laboratoires structuré.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Test your protocols against regulators' expectations before submission.">Confronter vos protocoles aux attentes des régulateurs avant la soumission.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Access the data and standard operating procedures produced by the platform.">Accéder aux données et aux modes opératoires produits par la plateforme.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Publish and build on the results within an open scientific framework.">Publier et valoriser les résultats dans un cadre scientifique ouvert.</span></li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3 data-en="Company">Entreprise</h3>
+          <p data-en="Cosmetics, chemicals, pharmaceuticals: you will be applying these methods before anyone else. Supporting their validation is how you prepare for the requirements ahead.">Cosmétique, chimie, pharmacie&nbsp;: vous appliquerez ces méthodes avant les autres. Contribuer à leur validation, c'est vous préparer aux exigences qui viennent.</p>
+          <ul>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Anticipate regulatory change rather than discover it.">Anticiper les évolutions réglementaires plutôt que les découvrir.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Understand what the methods actually measure, before they are adopted.">Comprendre ce que les méthodes mesurent réellement, avant leur adoption.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Take part in the scientific dialogue without exposing competitive information.">Participer au dialogue scientifique sans exposer d'information concurrentielle.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Anchor a verifiable commitment in your product safety work.">Inscrire un engagement vérifiable dans votre démarche de sécurité des produits.</span></li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3 data-en="Institutional or non-profit partner">Partenaire institutionnel ou associatif</h3>
+          <p data-en="Agencies, ministries, NGOs, federations: you carry the public interest into a debate that often stays technical.">Agences, ministères, ONG, fédérations&nbsp;: vous portez l'intérêt général dans un débat qui reste souvent technique.</p>
+          <ul>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Follow validation progress at the source, with no intermediary.">Suivre l'avancement des validations à la source, sans intermédiaire.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Bring the needs of the people you represent into the choice of priorities.">Faire valoir les besoins de vos publics dans le choix des priorités.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Draw on verified scientific material to inform and to decide.">Disposer d'éléments scientifiques vérifiés pour informer et pour décider.</span></li>
+            <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span data-en="Support public-interest work carried out transparently.">Soutenir un travail d'intérêt général conduit de manière transparente.</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="notice mt-32" data-en="The level of contribution depends on the nature and the size of your organisation. It is not published online: we set it out in a first conversation, with no commitment on your side.">Le montant de la contribution dépend de la nature et de la taille de votre organisation. Il n'est pas publié en ligne&nbsp;: nous vous le présentons lors d'un premier échange, sans engagement de votre part.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag" data-en="Joining">Adhésion</span>
+        <h2 class="big"><span data-en="Three steps,">Trois étapes,</span> <em data-en="nothing more.">rien de plus.</em></h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num">01</span>
+          <span class="thumb"><img src="img/nav-about.webp" width="640" height="480" loading="lazy" decoding="async" alt=""></span>
+          <h3 data-en="Get in touch">Prendre contact</h3>
+          <p data-en="Write to us in a few lines: who you are, what brings you here, what you would like to follow. We will suggest a meeting.">Vous nous écrivez en quelques lignes&nbsp;: qui vous êtes, ce qui vous amène, ce que vous souhaitez suivre. Nous vous proposons un rendez-vous.</p>
+        </div>
+        <div class="step">
+          <span class="num">02</span>
+          <span class="thumb"><img src="img/member-02.webp" width="900" height="675" loading="lazy" decoding="async" alt=""></span>
+          <h3 data-en="Agree the terms">Cadrer l'adhésion</h3>
+          <p data-en="Together we settle the right membership category, the level of contribution and the work you want to take part in.">Nous déterminons ensemble le type d'adhésion adapté, le niveau de contribution et les travaux auxquels vous voulez prendre part.</p>
+        </div>
+        <div class="step">
+          <span class="num">03</span>
+          <span class="thumb"><img src="img/process-02.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
+          <h3 data-en="Join the work">Rejoindre les travaux</h3>
+          <p data-en="Your membership is approved by the platform's governing bodies. You then have access to the members' area, the working groups and the progress meetings.">L'adhésion est approuvée par les instances de la plateforme. Vous accédez ensuite à l'espace membre, aux groupes de travail et aux points d'avancement.</p>
+        </div>
+      </div>
+      <p class="notice mt-32" data-en="No paperwork before the first conversation. The exact body that approves membership is to be confirmed by the association.">Aucun dossier à constituer avant le premier échange. L'instance qui approuve l'adhésion reste à confirmer par l'association.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="callout">
+        <h3 data-en="A pre-competitive effort">Une démarche pré-concurrentielle</h3>
+        <p data-en="PEPPER works on measurement methods, not on products. Members exchange no commercial data and none of them gains an exclusive advantage: protocols and validation results are meant to be published, then used by anyone — members and non-members alike.">PEPPER travaille sur des méthodes de mesure, pas sur des produits. Les membres n'y échangent aucune donnée commerciale et aucun n'en retire d'avantage exclusif&nbsp;: les protocoles et les résultats de validation ont vocation à être publiés, puis utilisés par tous — membres comme non-membres.</p>
+        <p data-en="That rule is what allows competitors to sit at the same table, and regulators to trust what comes out of it.">C'est cette règle qui permet à des concurrents de travailler à la même table, et aux régulateurs de faire confiance à ce qui en sort.</p>
       </div>
     </div>
   </section>
@@ -287,8 +629,8 @@
   <div class="wrap pagehead">
     <div class="sec-head">
       <span class="tag" data-en="Validation projects">Projets de validation</span>
-      <h2 class="big"><span data-en="From a promising method">D'une méthode prometteuse</span> <em data-en="to a regulatory standard.">à une norme réglementaire.</em></h2>
-      <p data-en="Each project is selected for its scientific relevance and its regulatory potential, then taken through inter-laboratory validation.">Chaque projet est sélectionné pour sa pertinence scientifique et son potentiel réglementaire, puis conduit jusqu'à la validation inter-laboratoires.</p>
+      <h1><span data-en="From a promising method">D'une méthode prometteuse</span> <em data-en="to a regulatory standard.">à une norme réglementaire.</em></h1>
+      <p class="lead" data-en="Each project is selected for its scientific relevance and its regulatory potential, then taken through inter-laboratory validation.">Chaque projet est sélectionné pour sa pertinence scientifique et son potentiel réglementaire, puis conduit jusqu'à la validation inter-laboratoires.</p>
     </div>
   </div>
   <section class="flush">
@@ -317,8 +659,8 @@
   <div class="wrap pagehead">
     <div class="sec-head">
       <span class="tag" data-en="Resources">Ressources</span>
-      <h2 class="big"><span data-en="Everything we produce,">Tout ce que nous produisons,</span> <em data-en="openly available.">en accès ouvert.</em></h2>
-      <p data-en="Publications, standard operating procedures, reports and newsletters. Everything is downloadable without an account.">Publications, modes opératoires, rapports et lettres d'information. Tout est téléchargeable sans compte.</p>
+      <h1><span data-en="Everything we produce,">Tout ce que nous produisons,</span> <em data-en="openly available.">en accès ouvert.</em></h1>
+      <p class="lead" data-en="Publications, standard operating procedures, reports and newsletters. Everything is downloadable without an account.">Publications, modes opératoires, rapports et lettres d'information. Tout est téléchargeable sans compte.</p>
     </div>
   </div>
   <section class="flush">
@@ -367,7 +709,8 @@
   </section>
 </div>
 
-<div class="news-band">
+<!-- ==================== LETTRE D'INFORMATION ==================== -->
+<div class="news-band" id="newsletter">
   <section>
     <div class="wrap nl">
       <div>
@@ -376,7 +719,7 @@
       </div>
       <div>
         <form class="nlform" id="nlform">
-          <label for="mail" class="skip" data-en="Email address">Adresse e-mail</label>
+          <label for="mail" class="sr-only" data-en="Email address">Adresse e-mail</label>
           <input id="mail" type="email" required placeholder="prenom.nom@organisation.eu" data-en-ph="firstname.lastname@organisation.eu">
           <button class="btn btn-p" type="submit" data-en="Subscribe">S'inscrire</button>
         </form>
@@ -388,6 +731,18 @@
 
 </main>
 
+<!-- Modale vidéo -->
+<dialog class="vmodal" id="video-modal" aria-label="Vidéo de présentation de PEPPER">
+  <div class="vmodal-inner">
+    <div class="vmodal-frame">
+      <div>
+        <p data-en="The video does not exist yet. This mockup shows where it would sit, next to the “Become a member” path, as set out in the client deck: the human impact of endocrine disruptors first, PEPPER's role second.">La vidéo n'existe pas encore. Cette maquette montre où elle prendrait place, au niveau du parcours « Devenir membre », conformément au deck&nbsp;: l'impact humain des perturbateurs endocriniens d'abord, le rôle de PEPPER ensuite.</p>
+      </div>
+    </div>
+    <button class="btn btn-w vmodal-close" type="button" data-video-close data-en="Close">Fermer</button>
+  </div>
+</dialog>
+
 <footer>
   <div class="wrap">
     <div class="fgrid">
@@ -397,12 +752,13 @@
           <b>PEPPER</b>
         </div>
         <p class="fdesc" data-en="Public-private platform for the validation of methods characterising endocrine disruptors.">Plateforme public-privé pour la validation des méthodes de caractérisation des perturbateurs endocriniens.</p>
+        <p class="fcredit" data-en="Photographs: Pexels licence (placeholder visuals). Mockup produced for presentation purposes.">Photographies&nbsp;: licence Pexels (visuels provisoires). Maquette réalisée à des fins de présentation.</p>
       </div>
       <div>
         <h4 data-en="Explore">Explorer</h4>
         <ul>
           <li><a href="#" data-view="home" data-en="Home">Accueil</a></li>
-          <li><a href="#" data-en="About PEPPER">À propos</a></li>
+          <li><a href="#" data-view="about" data-en="About PEPPER">À propos</a></li>
           <li><a href="#" data-view="projects" data-en="Validation projects">Projets de validation</a></li>
           <li><a href="#" data-view="resources" data-en="Resources">Ressources</a></li>
         </ul>
@@ -411,7 +767,7 @@
         <h4 data-en="Get involved">S'impliquer</h4>
         <ul>
           <li><a href="#news" data-en="News &amp; events">Actualités et événements</a></li>
-          <li><a href="#join" data-en="Become a member">Devenir membre</a></li>
+          <li><a href="#" data-view="member" data-en="Become a member">Devenir membre</a></li>
           <li><a href="#" data-en="Partnerships">Partenariats</a></li>
           <li><a href="#" data-en="Contact">Contact</a></li>
         </ul>

@@ -1,28 +1,80 @@
 # PEPPER — maquette de démonstration
 
 Maquette statique présentant une proposition de direction pour le site de la
-plateforme PEPPER. Contenus provisoires, site non officiel.
+plateforme PEPPER. Contenus et images provisoires, site non officiel.
 
 En ligne : https://denisbtl.github.io/pepper_maquette/
+
+## Ce que traduit cette version
+
+Elle applique les cinq références transmises par le client (document
+« Références de sites ») et la direction artistique du deck — *minimal, elegant,
+premium, editorial, breathing space* :
+
+| Référence client | Traduction dans la maquette |
+|---|---|
+| The Climate Pledge — typographie, liste 01/02/03 à vignettes rondes | Système typographique Instrument Sans / Instrument Serif ; section « Du laboratoire à la réglementation » en quatre étapes numérotées |
+| The Climate Pledge — « Join the Pledge » | Bloc vidéo sur fond encre + parcours d'adhésion en trois étapes, au niveau du bouton « Devenir membre » |
+| wellcome.org — chiffres clés | Bande « PEPPER en chiffres » : grands chiffres en serif, filets verticaux, phrase de sens sous chaque valeur |
+| nesta.org.uk — images dans le menu | Méga-menu « Explorer » à quatre cartes illustrées |
+| Arvato — mots-clés défilants | Bandeau des champs d'action sous le hero |
+| No More Plastic — intégration photo | Deux bandes photo pleine largeur, titre en capitales espacées |
+
+Le client demandant **moins d'animations** que The Climate Pledge, la maquette s'en
+tient à trois mouvements : le défilement des mots-clés (en pause au survol et au
+focus), une apparition discrète des cartes, et le survol des images du menu. Tout
+est neutralisé sous `prefers-reduced-motion`.
 
 ## Structure
 
 ```
 index.html      structure et contenus (FR par défaut, EN dans les attributs data-en)
-css/site.css    styles : variables de thème, composants, responsive
-js/site.js      bascule FR/EN, navigation entre vues, menu mobile, filtres, animations
+css/site.css    design system : jetons, échelle typographique, composants, responsive
+js/site.js      bascule FR/EN, vues, méga-menu, filtres, modale vidéo, apparitions
+img/            photographies provisoires (WebP)
 ```
+
+Cinq vues cohabitent dans un même document : accueil, à propos, projets de
+validation, ressources, devenir membre.
 
 ## Conventions
 
-- **Bilingue** : chaque élément traduisible porte un attribut `data-en` (ou
-  `data-en-ph` pour un placeholder). Le texte français est celui du HTML ; le
-  script mémorise la version FR au chargement et bascule à la demande.
-- **Vues** : les trois pages (accueil, projets, ressources) sont des blocs
-  `.view` d'un même document, affichés via les éléments `data-view`.
-- **Icônes** : un sprite `<symbol>` en tête de `<body>`, instancié par `<use>`.
-  Les icônes héritent de `currentColor` ; le logo utilise `--mark-1` / `--mark-2`.
-- **Aucun style ni script inline** : tout passe par les deux fichiers dédiés.
+- **Bilingue** : tout élément traduisible porte `data-en` (texte), `data-en-ph`
+  (placeholder) ou `data-en-alt` (texte alternatif d'image). Le français est dans
+  le HTML ; le script mémorise la version FR au chargement et bascule à la demande.
+- **Typographie** : Instrument Sans en variable 400–700 pour les titres, l'interface
+  et le corps ; Instrument Serif réservé aux incises italiques et aux grands
+  chiffres. Un micro-sous-ensemble grec d'Inter est chargé uniquement pour la
+  lettre γ de PPARγ, absente d'Instrument Sans.
+- **Échelle** : toutes les tailles sont des `clamp()` comportant un terme en `rem`,
+  pour que le zoom navigateur reste opérant (WCAG 1.4.4).
+- **Icônes** : sprite `<symbol>` en tête de `<body>`, instancié par `<use>`.
+- **Aucun style ni script inline.**
+
+## Images
+
+Les 13 photographies proviennent de **Pexels** et sont couvertes par la
+[licence Pexels](https://www.pexels.com/license/) : usage commercial libre,
+modification autorisée, aucune attribution juridiquement requise. Elles sont
+téléchargées, recadrées et converties en WebP dans `img/` — aucun appel à un
+service externe au moment du rendu.
+
+**Ce sont des visuels provisoires**, choisis pour illustrer la direction
+artistique. Le deck prévoit à terme une production originale (photographies,
+portraits, vidéo d'ouverture) ; l'achat de licences et la photographie sont hors
+périmètre du devis.
+
+Points de vigilance conservés dans la maquette : les personnes visibles ne sont
+jamais présentées comme membres, salariés ou personnes exposées ; les légendes
+restent descriptives.
+
+## Contenus à confirmer par l'association
+
+- Les chiffres de la bande « PEPPER en chiffres », dont l'année de création.
+- Les intitulés nominatifs de gouvernance et d'équipe (la maquette ne montre que
+  des fonctions).
+- Les modalités réelles d'adhésion et l'instance qui l'approuve.
+- La durée et le contenu de la vidéo, qui n'existe pas encore.
 
 ## Développement
 

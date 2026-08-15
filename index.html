@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PEPPER — Accélérer la validation des méthodes de détection des perturbateurs endocriniens</title>
+<meta name="description" content="PEPPER est la plateforme public-privé qui accélère la validation des méthodes permettant de mieux protéger la santé humaine et l'environnement face aux perturbateurs endocriniens.">
+<meta property="og:title" content="PEPPER">
+<meta property="og:description" content="Accélérer la validation des méthodes de détection des perturbateurs endocriniens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0F1330; --ink-2:#252A4C; --muted:#565C78;
+  --paper:#F7F6F3; --white:#fff; --sand:#EFEDE7;
+  --blue:#3B45A6; --blue-d:#2C3585; --blue-l:#EDEEF8;
+  --teal:#0E7C70; --teal-l:#E4F1EF;
+  --amber:#9A6614; --amber-l:#F6EEDF;
+  --line:#E3E0D9;
+  --r:14px;
+  --max:1180px;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --serif:'Instrument Serif',Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);
+  font-size:17px;line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;line-height:1.1;font-weight:400;letter-spacing:-.02em}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.01em}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:200;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+
+/* ---------- demo ribbon ---------- */
+.ribbon{background:var(--ink);color:#fff;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;
+  padding:9px 0;text-align:center;font-weight:500}
+.ribbon span{opacity:.62;text-transform:none;letter-spacing:0;font-size:13px;margin-left:10px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:100;background:rgba(247,246,243,.86);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:34px;height:74px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.logo .mark{width:30px;height:30px;flex-shrink:0}
+.logo b{font-size:21px;letter-spacing:.14em;font-weight:600}
+nav{display:flex;gap:28px;margin-left:auto;align-items:center}
+nav a,nav button.navlink{font-size:14.5px;color:var(--muted);text-decoration:none;background:none;border:0;
+  font-family:inherit;cursor:pointer;padding:6px 0;position:relative;transition:color .2s}
+nav a:hover,nav button.navlink:hover{color:var(--ink)}
+nav button.navlink[aria-current="page"]{color:var(--ink);font-weight:500}
+nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--blue)}
+.tools{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--white)}
+.lang button{border:0;background:none;font-family:inherit;font-size:12.5px;font-weight:500;letter-spacing:.05em;
+  padding:6px 12px;cursor:pointer;color:var(--muted);transition:.2s}
+.lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:9px;border-radius:999px;padding:12px 22px;font-size:14.5px;
+  font-weight:500;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:.2s}
+.btn-p{background:var(--blue);color:#fff}
+.btn-p:hover{background:var(--blue-d)}
+.btn-g{border-color:var(--ink);color:var(--ink)}
+.btn-g:hover{background:var(--ink);color:#fff}
+.btn-w{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-w:hover{background:#fff;color:var(--ink)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px;margin-left:auto}
+@media(max-width:940px){
+  nav{position:fixed;inset:74px 0 auto;background:var(--paper);flex-direction:column;align-items:flex-start;
+    gap:4px;padding:22px 28px 30px;border-bottom:1px solid var(--line);display:none;margin:0}
+  nav.open{display:flex}
+  nav a,nav button.navlink{font-size:19px;padding:10px 0}
+  .burger{display:block}
+  .tools .btn{display:none}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:104px 0 88px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:26px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--blue)}
+h1{font-size:clamp(2.6rem,5.4vw,4.35rem);line-height:1.05;letter-spacing:-.03em;font-weight:300}
+h1 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--blue)}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:33em;margin-top:26px;line-height:1.62}
+.hero .cta{display:flex;gap:13px;margin-top:38px;flex-wrap:wrap}
+.orbit{width:100%;height:auto}
+@media(max-width:940px){.hero{padding:64px 0 56px}.hero-grid{grid-template-columns:1fr;gap:44px}.orbit{max-width:340px;margin:0 auto}}
+
+/* ---------- stripe ---------- */
+.stripe{background:var(--ink);color:#fff;padding:78px 0}
+.stripe h2{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:300;letter-spacing:-.02em;max-width:19em}
+.stripe h2 em{font-family:var(--serif);font-style:italic;color:#A9B2F0}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:56px}
+.three h3{font-size:16px;font-weight:600;letter-spacing:.02em;margin-bottom:11px}
+.three p{color:rgba(255,255,255,.62);font-size:15.5px;line-height:1.6}
+.three .num{font-family:var(--serif);font-size:34px;color:#A9B2F0;display:block;margin-bottom:8px}
+@media(max-width:820px){.three{grid-template-columns:1fr;gap:32px}}
+
+/* ---------- sections ---------- */
+section{padding:96px 0}
+[id]{scroll-margin-top:96px}
+.sec-head{max-width:44em;margin-bottom:52px}
+.tag{display:inline-block;font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
+  font-weight:500;margin-bottom:18px}
+h2.big{font-size:clamp(2rem,3.6vw,3rem);font-weight:300;letter-spacing:-.03em}
+h2.big em{font-family:var(--serif);font-style:italic;color:var(--blue)}
+.sec-head p{color:var(--muted);font-size:18px;margin-top:20px;line-height:1.62}
+
+/* mission */
+.mission{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.mv blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.32;
+  letter-spacing:-.01em;color:var(--ink)}
+.mv .k{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);font-weight:500;
+  margin-bottom:18px;display:block}
+@media(max-width:820px){.mv{grid-template-columns:1fr;gap:40px}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stat{background:var(--paper);padding:34px 28px}
+.stat .v{font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.2rem);line-height:1;color:var(--blue);display:block}
+.stat .l{font-size:14.5px;color:var(--muted);margin-top:12px;display:block;line-height:1.45}
+@media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:900px){.grid3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.grid3,.grid2{grid-template-columns:1fr}}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px;
+  display:flex;flex-direction:column;gap:14px;transition:transform .25s,box-shadow .25s;text-decoration:none}
+a.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(15,19,48,.07)}
+.card h3{font-size:21px;font-weight:500;letter-spacing:-.01em}
+.card p{color:var(--muted);font-size:15.5px;line-height:1.6}
+.chip{display:inline-flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.07em;text-transform:uppercase;
+  font-weight:600;padding:5px 11px;border-radius:999px;align-self:flex-start}
+.chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.c-run{background:var(--teal-l);color:var(--teal)}
+.c-prep{background:var(--amber-l);color:var(--amber)}
+.c-done{background:var(--blue-l);color:var(--blue-d)}
+.meta{font-size:13.5px;color:var(--muted);letter-spacing:.02em;margin-top:auto;padding-top:8px;
+  border-top:1px solid var(--line)}
+.arrow{font-size:14.5px;color:var(--blue);font-weight:500;margin-top:auto}
+
+/* audiences */
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.aud div{background:var(--paper);padding:28px}
+.aud h3{font-size:15px;font-weight:600;letter-spacing:.02em;margin-bottom:9px}
+.aud p{font-size:14.5px;color:var(--muted);line-height:1.55}
+@media(max-width:820px){.aud{grid-template-columns:1fr}}
+
+/* join */
+.join{background:var(--blue);color:#fff;border-radius:var(--r);padding:clamp(40px,6vw,72px);
+  display:grid;grid-template-columns:1.2fr .8fr;gap:52px;align-items:center}
+.join h2{font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:300;letter-spacing:-.03em}
+.join h2 em{font-family:var(--serif);font-style:italic}
+.join p{color:rgba(255,255,255,.76);margin-top:18px;font-size:17px}
+.join ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:13px}
+.join li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;color:rgba(255,255,255,.9)}
+.join li svg{flex-shrink:0;margin-top:4px}
+@media(max-width:820px){.join{grid-template-columns:1fr;gap:34px}}
+
+/* newsletter */
+.news-band{background:var(--sand);border-top:1px solid var(--line)}
+.nl{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.nlform{display:flex;gap:10px;flex-wrap:wrap}
+.nlform input{flex:1;min-width:220px;padding:14px 18px;border:1px solid var(--line);border-radius:999px;
+  font-family:inherit;font-size:15.5px;background:var(--white);color:var(--ink)}
+.nlform input::placeholder{color:#9AA0B4}
+.nlhint{font-size:13px;color:var(--muted);margin-top:14px}
+@media(max-width:820px){.nl{grid-template-columns:1fr;gap:28px}}
+
+/* filters */
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:34px}
+.filters button{border:1px solid var(--line);background:var(--white);border-radius:999px;padding:9px 18px;
+  font-family:inherit;font-size:14px;color:var(--muted);cursor:pointer;transition:.2s}
+.filters button:hover{border-color:var(--ink);color:var(--ink)}
+.filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.rescount{font-size:14px;color:var(--muted);margin-bottom:22px}
+
+/* resource rows */
+.rows{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--white)}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;padding:22px 26px;
+  border-bottom:1px solid var(--line);text-decoration:none;transition:background .2s}
+.row:last-child{border-bottom:0}
+.row:hover{background:var(--blue-l)}
+.row .ic{width:38px;height:38px;border-radius:9px;background:var(--blue-l);color:var(--blue);
+  display:grid;place-items:center;flex-shrink:0}
+.row h3{font-size:16.5px;font-weight:500}
+.row .sub{font-size:13.5px;color:var(--muted);margin-top:3px}
+.row .dl{font-size:13px;color:var(--muted);white-space:nowrap}
+@media(max-width:640px){.row{grid-template-columns:auto 1fr;gap:16px}.row .dl{display:none}}
+
+/* footer */
+footer{background:var(--ink);color:rgba(255,255,255,.62);padding:72px 0 34px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:44px;padding-bottom:48px;
+  border-bottom:1px solid rgba(255,255,255,.12)}
+footer h4{color:#fff;font-size:13px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
+footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px}
+footer a{text-decoration:none;transition:color .2s}
+footer a:hover{color:#fff}
+.fbot{display:flex;justify-content:space-between;gap:20px;padding-top:26px;font-size:13px;flex-wrap:wrap}
+.flogo{display:flex;align-items:center;gap:11px;margin-bottom:18px}
+.flogo b{color:#fff;font-size:20px;letter-spacing:.14em;font-weight:600}
+@media(max-width:820px){.fgrid{grid-template-columns:1fr 1fr;gap:34px}}
+
+/* views */
+.view{display:none}
+.view.active{display:block}
+.pagehead{padding:74px 0 0}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-en="Skip to content">Aller au contenu</a>
+
+<div class="ribbon">
+  <span style="opacity:1;margin:0;text-transform:uppercase;letter-spacing:.06em">Maquette de démonstration</span>
+  <span data-en="Proposed direction · placeholder content · not an official PEPPER site">Proposition de direction · contenus provisoires · site non officiel</span>
+</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#" data-view="home">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="2.2" y="2.2" width="21" height="21" rx="6.5" stroke="#3B45A6" stroke-width="2.4"/>
+        <rect x="16.8" y="16.8" width="21" height="21" rx="6.5" stroke="#0F1330" stroke-width="2.4"/>
+      </svg>
+      <b>PEPPER</b>
+    </a>
+    <button class="burger" aria-label="Menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F1330" stroke-width="1.8">
+        <path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav id="nav">
+      <button class="navlink" data-view="home" aria-current="page" data-en="Home">Accueil</button>
+      <button class="navlink" data-view="projects" data-en="Validation projects">Projets de validation</button>
+      <button class="navlink" data-view="resources" data-en="Resources">Ressources</button>
+      <a href="#news" data-en="News &amp; events">Actualités</a>
+      <a href="#join" data-en="Become a member">Nous rejoindre</a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Langue">
+        <button data-lang="fr" aria-pressed="true">FR</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-p" href="#join" data-en="Join us">Nous rejoindre</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ==================== HOME ==================== -->
+<div class="view active" id="v-home">
+
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow" data-en="Public-private platform">Plateforme public-privé</span>
+        <h1>
+          <span data-en="Endocrine disruptors are everywhere.">Les perturbateurs endocriniens sont partout.</span><br>
+          <em data-en="The methods to prove it are not.">Les méthodes pour le prouver, non.</em>
+        </h1>
+        <p class="lead" data-en="PEPPER accelerates the validation of the test methods that regulators need to better protect human health and the environment. We connect research, industry and regulation around a single objective: turning science into usable standards.">
+          PEPPER accélère la validation des méthodes d'essai dont les régulateurs ont besoin pour mieux protéger la santé humaine et l'environnement. Nous relions la recherche, l'industrie et la réglementation autour d'un même objectif : transformer la science en normes utilisables.
+        </p>
+        <div class="cta">
+          <a class="btn btn-p" href="#" data-view="projects" data-en="Explore our projects">Découvrir nos projets</a>
+          <a class="btn btn-g" href="#mission" data-en="Why PEPPER exists">Pourquoi PEPPER existe</a>
+        </div>
+      </div>
+      <div>
+        <svg class="orbit" viewBox="0 0 420 420" fill="none" aria-hidden="true">
+          <g opacity=".45">
+            <circle cx="210" cy="210" r="176" stroke="#C9CCE8" stroke-width="1"/>
+            <circle cx="210" cy="210" r="130" stroke="#C9CCE8" stroke-width="1"/>
+            <circle cx="210" cy="210" r="84" stroke="#C9CCE8" stroke-width="1"/>
+          </g>
+          <g class="spin" style="transform-origin:210px 210px">
+            <circle cx="386" cy="210" r="7" fill="#3B45A6"/>
+            <circle cx="210" cy="80" r="6" fill="#0E7C70"/>
+            <circle cx="118" cy="302" r="6" fill="#9A6614"/>
+            <circle cx="300" cy="118" r="5" fill="#3B45A6" opacity=".55"/>
+          </g>
+          <rect x="150" y="150" width="72" height="72" rx="22" stroke="#3B45A6" stroke-width="2.6"/>
+          <rect x="198" y="198" width="72" height="72" rx="22" stroke="#0F1330" stroke-width="2.6"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="stripe">
+    <div class="wrap">
+      <h2>
+        <span data-en="A substance can be suspected for twenty years before a method exists to prove it.">Une substance peut être suspectée pendant vingt ans avant qu'une méthode existe pour le prouver.</span>
+        <em data-en="That gap is what we work on.">C'est sur cet écart que nous travaillons.</em>
+      </h2>
+      <div class="three">
+        <div>
+          <span class="num">01</span>
+          <h3 data-en="The problem">Le problème</h3>
+          <p data-en="Regulation can only act on what it can measure. Without validated methods, suspicion never becomes protection.">La réglementation ne peut agir que sur ce qu'elle sait mesurer. Sans méthode validée, le soupçon ne devient jamais protection.</p>
+        </div>
+        <div>
+          <span class="num">02</span>
+          <h3 data-en="What we do">Ce que nous faisons</h3>
+          <p data-en="We fund, coordinate and steer the validation of promising test methods, up to the point where regulators can adopt them.">Nous finançons, coordonnons et pilotons la validation de méthodes prometteuses, jusqu'au point où les régulateurs peuvent les adopter.</p>
+        </div>
+        <div>
+          <span class="num">03</span>
+          <h3 data-en="Why it matters">Pourquoi cela compte</h3>
+          <p data-en="Every validated method becomes a shared European tool, usable by every laboratory, every industry, every agency.">Chaque méthode validée devient un outil européen partagé, utilisable par chaque laboratoire, chaque industriel, chaque agence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="mission" id="mission">
+    <div class="wrap mv">
+      <div>
+        <span class="k" data-en="Mission">Mission</span>
+        <blockquote data-en="Accelerating the validation of methods that will improve the protection of human health and the environment against endocrine disruptors.">
+          Accélérer la validation des méthodes qui amélioreront la protection de la santé humaine et de l'environnement face aux perturbateurs endocriniens.
+        </blockquote>
+      </div>
+      <div>
+        <span class="k" data-en="Vision">Vision</span>
+        <blockquote data-en="To become the European reference platform bridging research, regulation and innovation.">
+          Devenir la plateforme européenne de référence entre recherche, réglementation et innovation.
+        </blockquote>
+        <p style="color:var(--muted);margin-top:26px;font-size:16px" data-en="PEPPER is a non-profit association bringing together public authorities, research institutions and industry around a shared, pre-competitive objective.">
+          PEPPER est une association à but non lucratif réunissant pouvoirs publics, institutions de recherche et industriels autour d'un objectif partagé et pré-concurrentiel.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat"><span class="v">2021</span><span class="l" data-en="Platform created">Création de la plateforme</span></div>
+        <div class="stat"><span class="v">4</span><span class="l" data-en="Validation projects under way">Projets de validation en cours</span></div>
+        <div class="stat"><span class="v">7</span><span class="l" data-en="Audiences served, from regulators to citizens">Publics adressés, des régulateurs aux citoyens</span></div>
+        <div class="stat"><span class="v">4</span><span class="l" data-en="Regulatory bodies engaged: EC, OECD, ECHA, EFSA">Instances mobilisées : CE, OCDE, ECHA, EFSA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag" data-en="Validation projects">Projets de validation</span>
+        <h2 class="big"><span data-en="Four methods,">Quatre méthodes,</span> <em data-en="one shared standard.">une norme partagée.</em></h2>
+        <p data-en="Each project targets a specific biological mechanism and follows the same path: scientific selection, inter-laboratory validation, then submission to regulators.">Chaque projet cible un mécanisme biologique précis et suit le même chemin : sélection scientifique, validation inter-laboratoires, puis soumission aux régulateurs.</p>
+      </div>
+      <div class="grid2">
+        <a class="card reveal" href="#" data-view="projects">
+          <span class="chip c-run" data-en="Validation in progress">Validation en cours</span>
+          <h3>TPO</h3>
+          <p data-en="Thyroid peroxidase inhibition. A key mechanism of thyroid disruption, still without a validated regulatory test.">Inhibition de la thyroperoxydase. Un mécanisme clé de la perturbation thyroïdienne, encore dépourvu de test réglementaire validé.</p>
+          <span class="meta" data-en="Inter-laboratory phase">Phase inter-laboratoires</span>
+        </a>
+        <a class="card reveal" href="#" data-view="projects">
+          <span class="chip c-run" data-en="Validation in progress">Validation en cours</span>
+          <h3>PPARγ</h3>
+          <p data-en="Metabolic receptor involved in adipogenesis. Central to understanding the metabolic effects of exposure.">Récepteur métabolique impliqué dans l'adipogenèse. Central pour comprendre les effets métaboliques de l'exposition.</p>
+          <span class="meta" data-en="Inter-laboratory phase">Phase inter-laboratoires</span>
+        </a>
+        <a class="card reveal" href="#" data-view="projects">
+          <span class="chip c-prep" data-en="In preparation">En préparation</span>
+          <h3>DIO1</h3>
+          <p data-en="Deiodinase 1, involved in the peripheral regulation of thyroid hormones.">Désiodase 1, impliquée dans la régulation périphérique des hormones thyroïdiennes.</p>
+          <span class="meta" data-en="Protocol design">Conception du protocole</span>
+        </a>
+        <a class="card reveal" href="#" data-view="projects">
+          <span class="chip c-prep" data-en="In preparation">En préparation</span>
+          <h3>TTR</h3>
+          <p data-en="Transthyretin, a transport protein whose disruption alters hormone availability.">Transthyrétine, protéine de transport dont la perturbation altère la disponibilité hormonale.</p>
+          <span class="meta" data-en="Protocol design">Conception du protocole</span>
+        </a>
+      </div>
+      <div style="margin-top:32px">
+        <a class="btn btn-g" href="#" data-view="projects" data-en="All validation projects">Tous les projets de validation</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag" data-en="Who we work with">Avec qui nous travaillons</span>
+        <h2 class="big"><span data-en="Nobody solves this">Personne ne résout cela</span> <em data-en="alone.">seul.</em></h2>
+      </div>
+      <div class="aud">
+        <div><h3 data-en="Regulators">Régulateurs</h3><p data-en="European Commission, OECD, ECHA, EFSA. They set the guidelines and the regulatory frameworks.">Commission européenne, OCDE, ECHA, EFSA. Ils élaborent les lignes directrices et les cadres réglementaires.</p></div>
+        <div><h3 data-en="Researchers &amp; universities">Chercheurs et universités</h3><p data-en="They generate the knowledge and develop the innovative methods we help validate.">Ils produisent les connaissances et développent les méthodes innovantes que nous aidons à valider.</p></div>
+        <div><h3 data-en="Method developers, CROs &amp; laboratories">Développeurs de méthodes, CRO et laboratoires</h3><p data-en="They develop, validate and implement methods in a regulatory context.">Ils développent, valident et mettent en œuvre les méthodes dans un cadre réglementaire.</p></div>
+        <div><h3 data-en="Industry">Industriels</h3><p data-en="Cosmetics, chemicals, pharmaceuticals. They design safer products and support responsible innovation.">Cosmétiques, chimie, pharmacie. Ils conçoivent des produits plus sûrs et soutiennent l'innovation responsable.</p></div>
+        <div><h3 data-en="NGOs &amp; associations">ONG et associations</h3><p data-en="They raise awareness and carry the voice of civil society.">Elles sensibilisent et portent la voix de la société civile.</p></div>
+        <div><h3 data-en="Media &amp; citizens">Médias et citoyens</h3><p data-en="They relay scientific information and contribute to informing the greatest number.">Ils relaient l'information scientifique et contribuent à informer le plus grand nombre.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag" data-en="News &amp; events">Actualités et événements</span>
+        <h2 class="big" data-en="What is moving">Ce qui avance</h2>
+      </div>
+      <div class="grid3">
+        <a class="card reveal" href="#">
+          <span class="chip c-done" data-en="Event">Événement</span>
+          <h3 data-en="Annual scientific webinar">Webinaire scientifique annuel</h3>
+          <p data-en="An open session presenting the progress of the four validation projects and the next regulatory steps.">Une séance ouverte présentant l'avancement des quatre projets de validation et les prochaines étapes réglementaires.</p>
+          <span class="meta">15.10.2026</span>
+        </a>
+        <a class="card reveal" href="#">
+          <span class="chip c-done" data-en="Publication">Publication</span>
+          <h3 data-en="Inter-laboratory report published">Publication du rapport inter-laboratoires</h3>
+          <p data-en="Results from the first validation round are now available, together with the full standard operating procedure.">Les résultats du premier tour de validation sont disponibles, accompagnés du mode opératoire complet.</p>
+          <span class="meta">02.09.2026</span>
+        </a>
+        <a class="card reveal" href="#">
+          <span class="chip c-done" data-en="Community">Communauté</span>
+          <h3 data-en="Three new members join the platform">Trois nouveaux membres rejoignent la plateforme</h3>
+          <p data-en="Two laboratories and one industry federation are joining the platform's work this autumn.">Deux laboratoires et une fédération industrielle rejoignent les travaux de la plateforme cet automne.</p>
+          <span class="meta">21.07.2026</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" style="padding-top:0">
+    <div class="wrap">
+      <div class="join">
+        <div>
+          <h2><span data-en="Validated science">La science validée</span> <em data-en="is a collective effort.">est un effort collectif.</em></h2>
+          <p data-en="Joining PEPPER means taking part in the pre-competitive effort that turns research into regulatory tools, and shaping the methods your sector will use tomorrow.">Rejoindre PEPPER, c'est prendre part à l'effort pré-concurrentiel qui transforme la recherche en outils réglementaires, et contribuer aux méthodes que votre secteur utilisera demain.</p>
+          <div class="cta" style="margin-top:32px">
+            <a class="btn btn-w" href="#" data-en="Become a member">Devenir membre</a>
+          </div>
+        </div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-en="Early access to validation results and protocols">Accès anticipé aux résultats et protocoles de validation</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-en="A seat in the scientific dialogue with regulators">Une place dans le dialogue scientifique avec les régulateurs</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-en="A European network of laboratories and experts">Un réseau européen de laboratoires et d'experts</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-en="Visibility on a public-interest commitment">De la visibilité sur un engagement d'intérêt général</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==================== PROJECTS ==================== -->
+<div class="view" id="v-projects">
+  <div class="wrap pagehead">
+    <div class="sec-head">
+      <span class="tag" data-en="Validation projects">Projets de validation</span>
+      <h2 class="big"><span data-en="From a promising method">D'une méthode prometteuse</span> <em data-en="to a regulatory standard.">à une norme réglementaire.</em></h2>
+      <p data-en="Each project is selected for its scientific relevance and its regulatory potential, then taken through inter-laboratory validation.">Chaque projet est sélectionné pour sa pertinence scientifique et son potentiel réglementaire, puis conduit jusqu'à la validation inter-laboratoires.</p>
+    </div>
+  </div>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Filtrer par statut">
+        <button data-f="all" aria-pressed="true" data-en="All">Tous</button>
+        <button data-f="run" aria-pressed="false" data-en="In progress">En cours</button>
+        <button data-f="prep" aria-pressed="false" data-en="In preparation">En préparation</button>
+        <button data-f="done" aria-pressed="false" data-en="Completed">Terminés</button>
+      </div>
+      <p class="rescount" id="pcount"></p>
+      <div class="grid3" id="plist">
+        <a class="card p-item" data-s="run" href="#"><span class="chip c-run" data-en="In progress">En cours</span><h3>TPO</h3><p data-en="Thyroid peroxidase inhibition assay.">Test d'inhibition de la thyroperoxydase.</p><span class="meta" data-en="6 laboratories · since 2023">6 laboratoires · depuis 2023</span></a>
+        <a class="card p-item" data-s="run" href="#"><span class="chip c-run" data-en="In progress">En cours</span><h3>PPARγ</h3><p data-en="Transactivation assay for the metabolic receptor PPARγ.">Test de transactivation du récepteur métabolique PPARγ.</p><span class="meta" data-en="5 laboratories · since 2023">5 laboratoires · depuis 2023</span></a>
+        <a class="card p-item" data-s="prep" href="#"><span class="chip c-prep" data-en="In preparation">En préparation</span><h3>DIO1</h3><p data-en="Deiodinase 1 inhibition, peripheral thyroid regulation.">Inhibition de la désiodase 1, régulation thyroïdienne périphérique.</p><span class="meta" data-en="Protocol design">Conception du protocole</span></a>
+        <a class="card p-item" data-s="prep" href="#"><span class="chip c-prep" data-en="In preparation">En préparation</span><h3>TTR</h3><p data-en="Transthyretin binding, hormone transport disruption.">Liaison à la transthyrétine, perturbation du transport hormonal.</p><span class="meta" data-en="Protocol design">Conception du protocole</span></a>
+        <a class="card p-item" data-s="done" href="#"><span class="chip c-done" data-en="Completed">Terminé</span><h3 data-en="Feasibility study">Étude de faisabilité</h3><p data-en="Preliminary screening of candidate methods for thyroid mechanisms.">Criblage préliminaire des méthodes candidates sur les mécanismes thyroïdiens.</p><span class="meta" data-en="Report published">Rapport publié</span></a>
+        <a class="card p-item" data-s="done" href="#"><span class="chip c-done" data-en="Completed">Terminé</span><h3 data-en="Method call 2022">Appel à méthodes 2022</h3><p data-en="Open call resulting in the selection of the first two validation projects.">Appel ouvert ayant conduit à la sélection des deux premiers projets de validation.</p><span class="meta" data-en="Closed">Clôturé</span></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ==================== RESOURCES ==================== -->
+<div class="view" id="v-resources">
+  <div class="wrap pagehead">
+    <div class="sec-head">
+      <span class="tag" data-en="Resources">Ressources</span>
+      <h2 class="big"><span data-en="Everything we produce,">Tout ce que nous produisons,</span> <em data-en="openly available.">en accès ouvert.</em></h2>
+      <p data-en="Publications, standard operating procedures, reports and newsletters. Everything is downloadable without an account.">Publications, modes opératoires, rapports et lettres d'information. Tout est téléchargeable sans compte.</p>
+    </div>
+  </div>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Filtrer par type">
+        <button data-r="all" aria-pressed="true" data-en="All">Tous</button>
+        <button data-r="pub" aria-pressed="false" data-en="Publications">Publications</button>
+        <button data-r="sop" aria-pressed="false" data-en="Protocols">Modes opératoires</button>
+        <button data-r="rep" aria-pressed="false" data-en="Reports">Rapports</button>
+        <button data-r="nl" aria-pressed="false" data-en="Newsletters">Lettres d'information</button>
+      </div>
+      <p class="rescount" id="rcount"></p>
+      <div class="rows" id="rlist">
+        <a class="row r-item" data-t="sop" href="#">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          <div><h3 data-en="Standard operating procedure — TPO inhibition assay">Mode opératoire — test d'inhibition TPO</h3><p class="sub" data-en="Protocol · v2.1 · English">Protocole · v2.1 · anglais</p></div>
+          <span class="dl">PDF · 1.4 MB</span>
+        </a>
+        <a class="row r-item" data-t="pub" href="#">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></span>
+          <div><h3 data-en="Peer-reviewed article — inter-laboratory reproducibility">Article à comité de lecture — reproductibilité inter-laboratoires</h3><p class="sub" data-en="Publication · 2026 · open access">Publication · 2026 · accès ouvert</p></div>
+          <span class="dl">PDF · 820 KB</span>
+        </a>
+        <a class="row r-item" data-t="rep" href="#">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg></span>
+          <div><h3 data-en="Annual activity report 2025">Rapport d'activité 2025</h3><p class="sub" data-en="Report · French and English">Rapport · français et anglais</p></div>
+          <span class="dl">PDF · 3.1 MB</span>
+        </a>
+        <a class="row r-item" data-t="sop" href="#">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          <div><h3 data-en="Standard operating procedure — PPARγ transactivation">Mode opératoire — transactivation PPARγ</h3><p class="sub" data-en="Protocol · v1.3 · English">Protocole · v1.3 · anglais</p></div>
+          <span class="dl">PDF · 1.1 MB</span>
+        </a>
+        <a class="row r-item" data-t="nl" href="#">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span>
+          <div><h3 data-en="Newsletter #12 — autumn 2026">Lettre d'information n° 12 — automne 2026</h3><p class="sub" data-en="Newsletter · French and English">Lettre · français et anglais</p></div>
+          <span class="dl">PDF · 480 KB</span>
+        </a>
+        <a class="row r-item" data-t="rep" href="#">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg></span>
+          <div><h3 data-en="Feasibility study — thyroid mechanisms">Étude de faisabilité — mécanismes thyroïdiens</h3><p class="sub" data-en="Report · 2024 · English">Rapport · 2024 · anglais</p></div>
+          <span class="dl">PDF · 2.6 MB</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="news-band">
+  <section>
+    <div class="wrap nl">
+      <div>
+        <h2 class="big" style="font-size:clamp(1.7rem,2.8vw,2.3rem)"><span data-en="Follow the">Suivez</span> <em data-en="progress.">l'avancement.</em></h2>
+        <p style="color:var(--muted);margin-top:16px" data-en="Four issues a year. Project progress, publications and regulatory news. Nothing else.">Quatre numéros par an. Avancement des projets, publications et actualité réglementaire. Rien d'autre.</p>
+      </div>
+      <div>
+        <form class="nlform" onsubmit="event.preventDefault();this.reset();alert('Démo : aucune donnée n\'est envoyée.')">
+          <label for="mail" class="skip" data-en="Email address">Adresse e-mail</label>
+          <input id="mail" type="email" required placeholder="prenom.nom@organisation.eu" data-en-ph="firstname.lastname@organisation.eu">
+          <button class="btn btn-p" type="submit" data-en="Subscribe">S'inscrire</button>
+        </form>
+        <p class="nlhint" data-en="Double opt-in, unsubscribe in one click, no third-party sharing.">Double confirmation, désinscription en un clic, aucun partage à des tiers.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="flogo">
+          <svg width="30" height="30" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="2.2" y="2.2" width="21" height="21" rx="6.5" stroke="#8F97D8" stroke-width="2.4"/>
+            <rect x="16.8" y="16.8" width="21" height="21" rx="6.5" stroke="#fff" stroke-width="2.4"/>
+          </svg>
+          <b>PEPPER</b>
+        </div>
+        <p style="max-width:26em" data-en="Public-private platform for the validation of methods characterising endocrine disruptors.">Plateforme public-privé pour la validation des méthodes de caractérisation des perturbateurs endocriniens.</p>
+      </div>
+      <div>
+        <h4 data-en="Explore">Explorer</h4>
+        <ul>
+          <li><a href="#" data-view="home" data-en="Home">Accueil</a></li>
+          <li><a href="#" data-en="About PEPPER">À propos</a></li>
+          <li><a href="#" data-view="projects" data-en="Validation projects">Projets de validation</a></li>
+          <li><a href="#" data-view="resources" data-en="Resources">Ressources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Get involved">S'impliquer</h4>
+        <ul>
+          <li><a href="#news" data-en="News &amp; events">Actualités et événements</a></li>
+          <li><a href="#join" data-en="Become a member">Devenir membre</a></li>
+          <li><a href="#" data-en="Partnerships">Partenariats</a></li>
+          <li><a href="#" data-en="Contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-en="Legal">Informations</h4>
+        <ul>
+          <li><a href="#" data-en="Legal notice">Mentions légales</a></li>
+          <li><a href="#" data-en="Privacy policy">Politique de confidentialité</a></li>
+          <li><a href="#" data-en="Accessibility">Accessibilité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span data-en="Demonstration mockup · not an official PEPPER site">Maquette de démonstration · site non officiel</span>
+      <span data-en="Audience measured without cookies">Mesure d'audience sans cookie</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+.spin{animation:sp 46s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+</style>
+
+<script>
+(function(){
+  "use strict";
+  var d=document;
+
+  /* ---------- langue ---------- */
+  var fr=new WeakMap(), frPh=new WeakMap();
+  d.querySelectorAll('[data-en]').forEach(function(el){ fr.set(el, el.innerHTML); });
+  d.querySelectorAll('[data-en-ph]').forEach(function(el){ frPh.set(el, el.placeholder); });
+
+  function setLang(l){
+    d.documentElement.lang = l;
+    d.querySelectorAll('[data-en]').forEach(function(el){
+      el.innerHTML = (l==='en') ? el.getAttribute('data-en') : fr.get(el);
+    });
+    d.querySelectorAll('[data-en-ph]').forEach(function(el){
+      el.placeholder = (l==='en') ? el.getAttribute('data-en-ph') : frPh.get(el);
+    });
+    d.querySelectorAll('.lang button').forEach(function(b){
+      b.setAttribute('aria-pressed', String(b.dataset.lang===l));
+    });
+    count();
+  }
+  d.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.dataset.lang); });
+  });
+
+  /* ---------- vues ---------- */
+  function show(v){
+    d.querySelectorAll('.view').forEach(function(s){ s.classList.toggle('active', s.id==='v-'+v); });
+    d.querySelectorAll('nav .navlink').forEach(function(b){
+      if(b.dataset.view===v){ b.setAttribute('aria-current','page'); } else { b.removeAttribute('aria-current'); }
+    });
+    d.getElementById('nav').classList.remove('open');
+    d.querySelector('.burger').setAttribute('aria-expanded','false');
+    window.scrollTo({top:0,behavior:'instant'});
+    reveal();
+  }
+  d.querySelectorAll('[data-view]').forEach(function(el){
+    el.addEventListener('click', function(e){ e.preventDefault(); show(el.dataset.view); });
+  });
+
+  /* ---------- menu mobile ---------- */
+  var burger=d.querySelector('.burger'), nav=d.getElementById('nav');
+  burger.addEventListener('click', function(){
+    var o=nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(o));
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+  });
+
+  /* ---------- filtres ---------- */
+  function count(){
+    var en = d.documentElement.lang==='en';
+    var p = d.querySelectorAll('#plist .p-item:not([hidden])').length;
+    var r = d.querySelectorAll('#rlist .r-item:not([hidden])').length;
+    var pc=d.getElementById('pcount'), rc=d.getElementById('rcount');
+    if(pc) pc.textContent = en ? (p+' project'+(p>1?'s':'')) : (p+' projet'+(p>1?'s':''));
+    if(rc) rc.textContent = en ? (r+' document'+(r>1?'s':'')) : (r+' document'+(r>1?'s':''));
+  }
+  function wire(btnSel, itemSel, attr){
+    d.querySelectorAll(btnSel).forEach(function(b){
+      b.addEventListener('click', function(){
+        d.querySelectorAll(btnSel).forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+        b.setAttribute('aria-pressed','true');
+        var v = b.getAttribute(attr==='data-s'?'data-f':'data-r');
+        d.querySelectorAll(itemSel).forEach(function(it){
+          it.hidden = !(v==='all' || it.getAttribute(attr)===v);
+        });
+        count();
+      });
+    });
+  }
+  wire('.filters [data-f]', '#plist .p-item', 'data-s');
+  wire('.filters [data-r]', '#rlist .r-item', 'data-t');
+
+  /* ---------- apparition ---------- */
+  var io = window.IntersectionObserver ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12}) : null;
+  function reveal(){
+    d.querySelectorAll('.reveal:not(.in)').forEach(function(el){
+      if(io){ io.observe(el); } else { el.classList.add('in'); }
+    });
+  }
+  reveal(); count();
+})();
+</script>
+</body>
+</html>

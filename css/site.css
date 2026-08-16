@@ -187,7 +187,7 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
    La première scène tient dans le premier écran : hauteur = fenêtre
    moins bandeau de démonstration (~38px) et en-tête (76px). */
 .hero{
-  position:relative;display:flex;align-items:flex-end;isolation:isolate;overflow:hidden;
+  position:relative;display:flex;align-items:center;isolation:isolate;overflow:hidden;
   min-height:calc(100vh - 114px);min-height:calc(100svh - 114px)
 }
 .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
@@ -195,7 +195,7 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   content:"";position:absolute;inset:0;z-index:-1;
   background:linear-gradient(100deg,rgba(11,34,57,.82) 0%,rgba(11,34,57,.52) 52%,rgba(11,34,57,.16) 100%)
 }
-.hero-inner{width:100%;padding-top:clamp(40px,6vh,88px);padding-bottom:clamp(84px,11vh,120px);color:#fff}
+.hero-inner{width:100%;padding-top:clamp(16px,3vh,44px);padding-bottom:clamp(96px,13vh,132px);color:#fff}
 /* flèche « scène suivante » : le hero invite à descendre vers le chapitre 01 */
 .scrollcue{
   position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:1;
@@ -211,6 +211,15 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 }
 .scrollcue svg{animation:cue 2.4s ease-in-out infinite}
 @keyframes cue{0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
+/* variante pour scène claire, posée dans le flux (fin du chapitre 02) */
+.scrollcue.flow{
+  position:static;transform:none;margin:clamp(32px,5vh,52px) auto 0;
+  color:var(--ink);opacity:.75;width:max-content
+}
+.scrollcue.flow .ring{border-color:rgba(11,34,57,.4);background:none}
+/* les ancres de scène plein écran se calent au sommet exact de la fenêtre
+   (l'en-tête s'efface au défilement, pas besoin de marge) */
+#mission,#why,#figures,#change{scroll-margin-top:0}
 .hero .eyebrow{color:var(--lilac)}
 .hero h1 em{color:var(--lilac)}
 .hero .lead{color:rgba(255,255,255,.85)}
@@ -266,25 +275,29 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 }
 
 /* ---------- bande sombre (mission) ---------- */
-/* chaque scène du récit vise une hauteur d'écran */
+/* chaque scène du récit occupe un écran : hauteur pleine fenêtre,
+   typographie plafonnée par la hauteur pour ne jamais déborder */
 .stripe{
-  background:var(--ink);color:#fff;padding:var(--sp-section) 0;
-  display:flex;align-items:center;min-height:min(92vh,860px)
+  background:var(--ink);color:#fff;position:relative;
+  padding:clamp(36px,5vh,72px) 0 clamp(88px,12vh,120px);
+  display:flex;align-items:center;min-height:100vh;min-height:100svh
 }
 .stripe>.wrap{width:100%}
-.stripe h2{font-size:var(--fs-h2-lg);line-height:1.06;letter-spacing:-.03em;max-width:21ch}
+.stripe h2{font-size:min(var(--fs-h2-lg),6.2vh);line-height:1.06;letter-spacing:-.03em;max-width:21ch}
 .stripe h2 em{color:var(--lilac)}
-.mv{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,64px);margin-top:var(--sp-block)}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,64px);margin-top:clamp(28px,5vh,56px)}
 .mv .k{
   font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;color:var(--lilac);
   font-weight:600;margin-bottom:16px;display:block
 }
 .mv blockquote{
-  margin:0;font-family:var(--serif);font-size:var(--fs-quote);line-height:1.32;
+  margin:0;font-family:var(--serif);font-size:min(var(--fs-quote),4.4vh);line-height:1.32;
   letter-spacing:-.01em;color:#fff;font-style:normal;max-width:24ch;text-wrap:pretty
 }
-.mv .note{color:var(--on-dark-soft);margin-top:24px;font-size:var(--fs-small);max-width:44ch}
+.mv .note{color:var(--on-dark-soft);margin-top:18px;font-size:var(--fs-small);max-width:44ch}
 @media(max-width:820px){.mv{grid-template-columns:1fr;gap:36px}}
+/* écrans peu hauts : la note contextuelle cède la place à la scène */
+@media(max-height:720px){.mv .note{display:none}}
 
 /* ---------- sections ---------- */
 section{padding:var(--sp-section) 0}
@@ -317,11 +330,12 @@ section{padding:var(--sp-section) 0}
 
 /* ---------- chiffres clés (réf. wellcome.org) ---------- */
 .figures{
-  background:var(--ink);color:#fff;padding:var(--sp-section) 0;
-  display:flex;align-items:center;min-height:min(88vh,800px)
+  background:var(--ink);color:#fff;position:relative;
+  padding:clamp(44px,6vh,80px) 0 clamp(96px,13vh,128px);
+  display:flex;align-items:center;min-height:100vh;min-height:100svh
 }
 .figures>.wrap{width:100%}
-.figures-head{text-align:center;margin-bottom:var(--sp-block)}
+.figures-head{text-align:center;margin-bottom:clamp(24px,4.5vh,56px)}
 .figures-head h2{margin:0 auto;max-width:20ch}
 .figures-head h2 em{color:var(--lilac)}
 .figures-head .period{color:var(--on-dark-soft);font-size:var(--fs-small);margin-top:12px}
@@ -329,7 +343,7 @@ section{padding:var(--sp-section) 0}
 .figure{padding:0 clamp(18px,2.4vw,34px);border-left:1px solid var(--rule-dark)}
 .figure:first-child{border-left:0;padding-left:0}
 .figure .v{
-  font-family:var(--serif);font-size:var(--fs-stat);font-weight:400;line-height:.92;letter-spacing:-.02em;
+  font-family:var(--serif);font-size:min(var(--fs-stat),9vh);font-weight:400;line-height:.92;letter-spacing:-.02em;
   color:#fff;display:block;font-variant-numeric:lining-nums
 }
 .figure .v small{font-family:var(--sans);font-size:var(--fs-h3);font-weight:500;letter-spacing:-.005em;margin-left:.18em}
@@ -347,17 +361,17 @@ section{padding:var(--sp-section) 0}
 }
 
 /* ---------- bandes photo pleine largeur (réf. nomoreplastic) ---------- */
-.photoband{position:relative;min-height:min(88vh,840px);display:grid;place-items:center;overflow:hidden;isolation:isolate}
+.photoband{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;overflow:hidden;isolation:isolate}
 .photoband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .photoband::after{content:"";position:absolute;inset:0;background:rgba(11,34,57,.62);z-index:-1}
-.photoband .pb-inner{text-align:center;color:#fff;padding:clamp(56px,8vw,96px) 28px;max-width:68ch}
+.photoband .pb-inner{text-align:center;color:#fff;padding:clamp(36px,6vh,64px) 28px;max-width:68ch}
 .photoband h2{
-  font-size:clamp(1.375rem,.95rem + 1.9vw,2.5rem);font-weight:600;letter-spacing:.2em;
+  font-size:min(clamp(1.375rem,.95rem + 1.9vw,2.5rem),4.6vh);font-weight:600;letter-spacing:.2em;
   text-transform:uppercase;line-height:1.35;max-width:none;color:#fff
 }
-.photoband p{margin-top:26px;color:rgba(255,255,255,.82);font-size:var(--fs-small);line-height:1.65;max-width:56ch;margin-inline:auto}
-.photoband .cta{justify-content:center;margin-top:34px}
-.photoband .credit{margin-top:30px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.photoband p{margin-top:clamp(14px,2.6vh,24px);color:rgba(255,255,255,.82);font-size:var(--fs-small);line-height:1.6;max-width:56ch;margin-inline:auto}
+.photoband .cta{justify-content:center;margin-top:clamp(18px,3.4vh,30px)}
+.photoband .credit{margin-top:clamp(14px,2.8vh,26px);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5)}
 
 /* ---------- vidéo + parcours d'adhésion (réf. Climate Pledge) ---------- */
 .joinblock{background:var(--ink);color:#fff;padding:var(--sp-section) 0}

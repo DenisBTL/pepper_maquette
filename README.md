@@ -5,6 +5,21 @@ plateforme PEPPER. Contenus et images provisoires, site non officiel.
 
 En ligne : https://denisbtl.github.io/pepper_maquette/
 
+## Le fil rouge
+
+La page d'accueil déroule un récit en quatre chapitres, calqué sur les trois
+questions du deck client (pourquoi PEPPER existe, pourquoi cela compte, pourquoi
+nous rejoindre) :
+
+**Hero plein écran** (le constat) → **01 — Pourquoi PEPPER existe** →
+**02 — Comment nous travaillons** → **03 — Ce que cela change** →
+**04 — Pourquoi vous**.
+
+Les bandes photo pleine largeur (« Avant de protéger, savoir mesurer » ;
+« Validée une fois, reconnue partout ») servent de charnières entre les
+chapitres. Le registre est délibérément photo + texte : pas de diagrammes,
+pas d'imagerie de laboratoire.
+
 ## Ce que traduit cette version
 
 Elle applique les cinq références transmises par le client (document
@@ -13,17 +28,16 @@ premium, editorial, breathing space* :
 
 | Référence client | Traduction dans la maquette |
 |---|---|
-| The Climate Pledge — typographie, liste 01/02/03 à vignettes rondes | Système typographique Instrument Sans / Instrument Serif ; section « Du laboratoire à la réglementation » en quatre étapes numérotées |
+| The Climate Pledge — typographie, liste 01/02/03 | Système typographique Instrument Sans / Instrument Serif ; section « Du laboratoire à la réglementation » en quatre étapes numérotées, purement typographiques |
 | The Climate Pledge — « Join the Pledge » | Bloc vidéo sur fond encre + parcours d'adhésion en trois étapes, au niveau du bouton « Devenir membre » |
 | wellcome.org — chiffres clés | Bande « PEPPER en chiffres » : grands chiffres en serif, filets verticaux, phrase de sens sous chaque valeur |
 | nesta.org.uk — images dans le menu | Méga-menu « Explorer » à quatre cartes illustrées |
 | Arvato — mots-clés défilants | Bandeau des champs d'action sous le hero |
-| No More Plastic — intégration photo | Deux bandes photo pleine largeur, titre en capitales espacées |
+| No More Plastic — intégration photo | Hero plein écran et deux bandes photo pleine largeur, titre en capitales espacées |
 
-Le client demandant **moins d'animations** que The Climate Pledge, la maquette s'en
-tient à trois mouvements : le défilement des mots-clés (en pause au survol et au
-focus), une apparition discrète des cartes, et le survol des images du menu. Tout
-est neutralisé sous `prefers-reduced-motion`.
+Le mouvement reste sobre : apparitions en cascade au défilement, dérive lente
+des bandes photo, défilement des mots-clés (en pause au survol et au focus),
+fondu du méga-menu. Tout est neutralisé sous `prefers-reduced-motion`.
 
 ## Structure
 

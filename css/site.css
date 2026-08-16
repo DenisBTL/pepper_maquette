@@ -178,9 +178,18 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   .mega-foot a{color:var(--muted)}
 }
 
-/* ---------- hero ---------- */
-.hero{padding:clamp(56px,7vw,104px) 0 clamp(48px,6vw,88px);position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(36px,5vw,64px);align-items:center}
+/* ---------- hero plein écran ---------- */
+.hero{position:relative;min-height:min(88vh,860px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,rgba(15,19,48,.82) 0%,rgba(15,19,48,.52) 52%,rgba(15,19,48,.16) 100%)
+}
+.hero-inner{width:100%;padding-top:clamp(120px,16vh,200px);padding-bottom:clamp(56px,9vh,104px);color:#fff}
+.hero .eyebrow{color:var(--lilac)}
+.hero h1 em{color:var(--lilac)}
+.hero .lead{color:rgba(255,255,255,.85)}
+.hero-note{margin-top:36px;font-size:.8125rem;letter-spacing:.02em;color:rgba(255,255,255,.55)}
 .eyebrow,.tag{
   display:inline-flex;align-items:center;gap:10px;font-size:var(--fs-eyebrow);letter-spacing:.14em;
   text-transform:uppercase;font-weight:600;font-variant-numeric:tabular-nums
@@ -188,19 +197,17 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 .eyebrow{color:var(--blue);margin-bottom:26px}
 .eyebrow::before{content:"";width:26px;height:1px;background:currentColor}
 .tag{color:var(--muted);margin-bottom:18px}
-/* Le hero est sur deux colonnes : le h1 y est plus contenu que le palier plein cadre. */
-.hero h1{font-size:clamp(2.5rem,1.52rem + 4.18vw,5rem);max-width:14ch}
+/* jalons du fil rouge : 01 — Pourquoi · 02 — Comment · 03 — Ce que cela change · 04 — Vous */
+.chap{
+  display:block;font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;
+  font-weight:600;font-variant-numeric:tabular-nums;color:var(--muted);margin-bottom:22px
+}
+.stripe .chap,.joinblock .chap{color:var(--lilac)}
+.hero h1{max-width:13ch}
 .lead{font-size:var(--fs-lead);color:var(--muted);max-width:34ch;margin-top:26px;line-height:1.5;text-wrap:pretty}
 .cta{display:flex;gap:13px;margin-top:38px;flex-wrap:wrap}
-.hero-media{position:relative;border-radius:var(--r-lg);overflow:hidden;background:var(--sand)}
-.hero-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/11}
-.hero-cap{
-  position:absolute;left:0;right:0;bottom:0;padding:26px 24px 18px;color:#fff;font-size:.8125rem;
-  letter-spacing:.02em;background:linear-gradient(transparent,rgba(15,19,48,.72))
-}
 @media(max-width:940px){
-  .hero-grid{grid-template-columns:1fr;gap:36px}
-  .hero h1{max-width:none}
+  .hero{min-height:78vh}
 }
 
 /* ---------- bandeau de mots-clés (réf. Arvato) ---------- */
@@ -252,27 +259,22 @@ section{padding:var(--sp-section) 0}
 .process{background:var(--blue-pale);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .steps{border-top:1px solid rgba(15,19,48,.14)}
 .step{
-  display:grid;grid-template-columns:64px 104px minmax(180px,1fr) 1.5fr;gap:clamp(18px,2.6vw,36px);
-  align-items:center;padding:clamp(24px,3vw,34px) 0;border-bottom:1px solid rgba(15,19,48,.14)
+  display:grid;grid-template-columns:76px minmax(210px,1fr) 1.6fr;gap:clamp(18px,3vw,44px);
+  align-items:baseline;padding:clamp(26px,3.4vw,40px) 0;border-bottom:1px solid rgba(15,19,48,.14)
 }
 .step .num{
-  font-size:var(--fs-eyebrow);letter-spacing:.14em;font-weight:600;color:var(--blue-d);
-  font-variant-numeric:tabular-nums
+  font-family:var(--serif);font-size:clamp(1.5rem,1.2rem + 1.3vw,2.5rem);font-weight:400;
+  color:var(--blue-d);font-variant-numeric:tabular-nums lining-nums
 }
-.step .thumb{width:104px;height:104px;border-radius:50%;overflow:hidden;background:var(--sand)}
-.step .thumb img{width:100%;height:100%;object-fit:cover}
-.step h3{font-size:clamp(1.25rem,1.05rem + .9vw, 1.875rem);font-weight:600;letter-spacing:-.02em;max-width:14ch}
+.step h3{font-size:clamp(1.35rem,1.08rem + 1.2vw,2.125rem);font-weight:600;letter-spacing:-.02em;max-width:14ch}
 .step p{color:var(--ink-2);font-size:var(--fs-small);line-height:1.6;max-width:52ch}
 @media(max-width:900px){
-  .step{grid-template-columns:46px 76px 1fr;row-gap:14px}
-  .step .thumb{width:76px;height:76px}
-  .step p{grid-column:2 / -1}
+  .step{grid-template-columns:56px 1fr;row-gap:12px}
+  .step p{grid-column:2}
 }
 @media(max-width:560px){
-  .step{grid-template-columns:44px 1fr}
-  .step .thumb{width:64px;height:64px;grid-row:1;grid-column:2;justify-self:end}
-  .step h3{grid-column:1 / -1}
-  .step p{grid-column:1 / -1}
+  .step{grid-template-columns:1fr;row-gap:8px}
+  .step p{grid-column:auto}
 }
 
 /* ---------- chiffres clés (réf. wellcome.org) ---------- */
@@ -533,66 +535,10 @@ footer .fdesc{max-width:26em}
 .stagger.in > *:nth-child(5){transition-delay:.36s}
 .stagger.in > *:nth-child(6){transition-delay:.45s}
 
-/* --- hero : encart de mesure --- */
-.readout{
-  position:absolute;left:20px;bottom:20px;width:min(272px,58%);padding:16px 18px 12px;
-  background:rgba(15,19,48,.82);backdrop-filter:blur(10px);border-radius:12px;color:#fff
-}
-.readout .rl{
-  font-size:.6875rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600;
-  color:var(--lilac);display:block;margin-bottom:8px
-}
-.readout .rc{font-size:.6875rem;color:rgba(255,255,255,.6);margin-top:6px;line-height:1.4}
-.readout svg{width:100%;height:auto;overflow:visible}
-.readout .axis{fill:none;stroke:rgba(255,255,255,.32);stroke-width:1}
-.readout .pt{fill:var(--lilac);opacity:0}
-.in .readout .pt{animation:ptIn .5s var(--ease) forwards}
-.in .readout .pt:nth-of-type(2){animation-delay:.10s}
-.in .readout .pt:nth-of-type(3){animation-delay:.18s}
-.in .readout .pt:nth-of-type(4){animation-delay:.26s}
-.in .readout .pt:nth-of-type(5){animation-delay:.34s}
-.in .readout .pt:nth-of-type(6){animation-delay:.42s}
-.in .readout .pt:nth-of-type(7){animation-delay:.50s}
-.in .readout .pt:nth-of-type(8){animation-delay:.58s}
-@keyframes ptIn{from{opacity:0;transform:translateY(5px)}to{opacity:.85;transform:none}}
-.readout .fit{
-  fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;
-  stroke-dasharray:340;stroke-dashoffset:340
-}
-.in .readout .fit{animation:draw 1.7s var(--ease) .55s forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-
-/* --- preuve inter-laboratoires --- */
-.proof{background:var(--ink);color:#fff;padding:var(--sp-section) 0;overflow:hidden}
-.proof h2{color:#fff}
-.proof h2 em{color:var(--lilac)}
-.proof .sec-head p{color:var(--on-dark)}
-.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,68px);align-items:center}
-.proof-cap{margin-top:20px;font-size:var(--fs-small);color:var(--on-dark);line-height:1.6;max-width:44ch}
-.proof-note{margin-top:14px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--on-dark-soft)}
-@media(max-width:900px){.proof-grid{grid-template-columns:1fr;gap:40px}}
-
-/* microplaque 96 puits : chaque puits se remplit à son tour */
-.plate{
-  display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(4px,.7vw,8px);
-  padding:clamp(14px,2vw,22px);border:1px solid var(--rule-dark);border-radius:12px;background:rgba(255,255,255,.03)
-}
-.plate i{
-  display:block;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.08);
-  box-shadow:inset 0 0 0 1px rgba(255,255,255,.10)
-}
-.in .plate i{animation:wellFill .7s var(--ease) forwards;animation-delay:calc(var(--d) * 26ms)}
-@keyframes wellFill{
-  from{background:rgba(255,255,255,.08)}
-  to{background:var(--wc)}
-}
-
 /* --- rail de progression des étapes --- */
 .steps{position:relative}
 .step .num{transition:color .5s var(--ease)}
 .step.in .num{color:var(--blue-d)}
-.step .thumb{clip-path:inset(0 0 100% 0);transition:clip-path 1s var(--ease)}
-.step.in .thumb{clip-path:inset(0 0 0 0)}
 
 /* --- bandes photo : dérive lente --- */
 .photoband img{transform:scale(1.02);transition:transform 1.6s var(--ease)}
@@ -605,10 +551,6 @@ footer .fdesc{max-width:26em}
 
 @media (prefers-reduced-motion:reduce){
   [data-anim],.stagger > *{opacity:1!important;transform:none!important}
-  .readout .pt{opacity:.85!important}
-  .readout .fit{stroke-dashoffset:0!important}
-  .plate i{background:var(--wc)!important}
-  .step .thumb{clip-path:none!important}
   .photoband img{transform:none!important}
 }
 

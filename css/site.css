@@ -183,14 +183,19 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   .mega{display:none!important}
 }
 
-/* ---------- hero plein écran ---------- */
-.hero{position:relative;min-height:min(88vh,860px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+/* ---------- hero plein écran ----------
+   La première scène tient dans le premier écran : hauteur = fenêtre
+   moins bandeau de démonstration (~38px) et en-tête (76px). */
+.hero{
+  position:relative;display:flex;align-items:flex-end;isolation:isolate;overflow:hidden;
+  min-height:calc(100vh - 114px);min-height:calc(100svh - 114px)
+}
 .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .hero::after{
   content:"";position:absolute;inset:0;z-index:-1;
   background:linear-gradient(100deg,rgba(11,34,57,.82) 0%,rgba(11,34,57,.52) 52%,rgba(11,34,57,.16) 100%)
 }
-.hero-inner{width:100%;padding-top:clamp(120px,16vh,200px);padding-bottom:clamp(104px,14vh,150px);color:#fff}
+.hero-inner{width:100%;padding-top:clamp(40px,6vh,88px);padding-bottom:clamp(84px,11vh,120px);color:#fff}
 /* flèche « scène suivante » : le hero invite à descendre vers le chapitre 01 */
 .scrollcue{
   position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:1;
@@ -209,7 +214,6 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 .hero .eyebrow{color:var(--lilac)}
 .hero h1 em{color:var(--lilac)}
 .hero .lead{color:rgba(255,255,255,.85)}
-.hero-note{margin-top:36px;font-size:.8125rem;letter-spacing:.02em;color:rgba(255,255,255,.55)}
 .eyebrow,.tag{
   display:inline-flex;align-items:center;gap:10px;font-size:var(--fs-eyebrow);letter-spacing:.14em;
   text-transform:uppercase;font-weight:600;font-variant-numeric:tabular-nums
@@ -223,7 +227,16 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   font-weight:600;font-variant-numeric:tabular-nums;color:var(--muted);margin-bottom:22px
 }
 .stripe .chap,.joinblock .chap{color:var(--lilac)}
-.hero h1{max-width:13ch}
+/* calibré pour que chaque segment tienne sur une ligne dès ~1100px :
+   deux lignes de titre au lieu de trois, la scène tient dans l'écran */
+.hero h1{font-size:clamp(2.75rem,5.9vw,5.25rem)}
+.hero .lead{max-width:44ch}
+/* écrans peu hauts (portables 768p et moins) : on resserre le chapeau */
+@media (max-height:700px){
+  .hero .lead{font-size:1.125rem;max-width:54ch;margin-top:20px}
+  .hero .cta{margin-top:28px}
+  .hero-inner{padding-bottom:72px}
+}
 .lead{font-size:var(--fs-lead);color:var(--muted);max-width:34ch;margin-top:26px;line-height:1.5;text-wrap:pretty}
 .cta{display:flex;gap:13px;margin-top:38px;flex-wrap:wrap}
 @media(max-width:940px){

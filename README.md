@@ -20,6 +20,14 @@ Les bandes photo pleine largeur (« Avant de protéger, savoir mesurer » ;
 chapitres. Le registre est délibérément photo + texte : pas de diagrammes,
 pas d'imagerie de laboratoire.
 
+## Palette
+
+La maquette applique la piste **03 « Rigueur et impact »** de la planche
+d'exploration colorimétrique (bleu profond aligné sur le logo Pepper, cyan pâle
+en accent sur fond sombre, pêche en tinte chaude, neutres gris-bleu). Toutes les
+couleurs sont des variables CSS dans `:root` : basculer vers la piste 01 ou 02
+se fait en changeant une dizaine de valeurs.
+
 ## Ce que traduit cette version
 
 Elle applique les cinq références transmises par le client (document

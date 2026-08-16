@@ -110,6 +110,30 @@
     });
   }
 
+  /* ---------- en-tête rétractable ----------
+     Se masque en descendant (passé le hero), réapparaît dès qu'on
+     remonte, et jamais quand le menu mobile ou le méga-menu est ouvert. */
+  var header = d.querySelector('header');
+  var lastY = window.scrollY, scrollTicking = false;
+  function headerOnScroll(){
+    var y = window.scrollY;
+    if (Math.abs(y - lastY) > 8){
+      var menuOpen = (nav && nav.classList.contains('open')) ||
+        megaTriggers.some(function(t){ return t.getAttribute('aria-expanded') === 'true'; });
+      if (y > lastY && y > 140 && !menuOpen){
+        header.classList.add('hide');
+      } else if (y < lastY){
+        header.classList.remove('hide');
+      }
+      lastY = y;
+    }
+    scrollTicking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if (!scrollTicking){ scrollTicking = true; window.requestAnimationFrame(headerOnScroll); }
+  }, { passive:true });
+  header.addEventListener('focusin', function(){ header.classList.remove('hide'); });
+
   /* ---------- filtres ---------- */
   function count(){
     var en = d.documentElement.lang === 'en';

@@ -6,19 +6,23 @@
    ============================================================ */
 
 :root{
-  /* --- couleurs — palette 03 « Rigueur et impact » (planche client) :
-     bleu profond du logo, cyan pâle en accent sur fond sombre,
-     pêche en tinte chaude, neutres gris-bleu --- */
-  --ink:#0B2239; --ink-2:#1D3C5C; --muted:#54687C;
-  --paper:#F7F6F3; --white:#fff; --sand:#F8EDDC;
-  --blue:#0F4F8C; --blue-d:#0A3B6B; --blue-l:#E7F0F8; --blue-pale:#E2EDF6;
-  --teal:#0F7285; --teal-l:#DFF2F6;
-  --amber:#8F5E1A; --amber-l:#F8E4C6;
-  --line:#DFE3E6;
-  --on-dark:rgba(255,255,255,.72);
-  --on-dark-soft:rgba(255,255,255,.56);
-  --rule-dark:rgba(255,255,255,.16);
-  --lilac:#BFE9F2;
+  /* --- couleurs — palette client (planche, piste 01) :
+     #36A9D6 bleu vif · #174B6B marine · #E8B76D ambre ·
+     #A7B3BC gris-bleu · #E3F0F4 bleu glacier.
+     Le bleu vif ne tient pas le contraste AA en texte courant :
+     il est réservé aux grands accents (--bright), et décliné en
+     #1B6E9C pour les boutons et petits textes. --- */
+  --ink:#174B6B; --ink-2:#1D5E8C; --muted:#5C7183;
+  --paper:#F7F6F3; --white:#fff; --sand:#F7E9CF;
+  --bright:#36A9D6;
+  --blue:#1B6E9C; --blue-d:#14567C; --blue-l:#DCEBF2; --blue-pale:#E3F0F4;
+  --teal:#186F94; --teal-l:#DDF0F7;
+  --amber:#7A5512; --amber-l:#F7E7C8;
+  --line:#D9E0E4;
+  --on-dark:rgba(255,255,255,.76);
+  --on-dark-soft:rgba(255,255,255,.6);
+  --rule-dark:rgba(255,255,255,.2);
+  --lilac:#9FD6ED;
 
   /* --- formes --- */
   --r:14px; --r-lg:20px;
@@ -89,7 +93,7 @@ h4{font-weight:600;line-height:1.2}
 .flush{padding-top:0}
 .sprite{position:absolute;width:0;height:0;overflow:hidden}
 .mark{width:30px;height:30px;flex-shrink:0;--mark-1:var(--blue);--mark-2:var(--ink)}
-.flogo .mark{--mark-1:#8FB9DE;--mark-2:#fff}
+.flogo .mark{--mark-1:#7FC2E2;--mark-2:#fff}
 .join li svg{color:#fff}
 
 /* ---------- bandeau de démonstration ---------- */
@@ -193,7 +197,7 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .hero::after{
   content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(100deg,rgba(11,34,57,.82) 0%,rgba(11,34,57,.52) 52%,rgba(11,34,57,.16) 100%)
+  background:linear-gradient(100deg,rgba(23,75,107,.82) 0%,rgba(23,75,107,.52) 52%,rgba(23,75,107,.16) 100%)
 }
 .hero-inner{width:100%;padding-top:clamp(16px,3vh,44px);padding-bottom:clamp(96px,13vh,132px);color:#fff}
 /* flèche « scène suivante » : le hero invite à descendre vers le chapitre 01 */
@@ -207,7 +211,7 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 .scrollcue:hover{opacity:1}
 .scrollcue .ring{
   width:44px;height:44px;border:1px solid rgba(255,255,255,.55);border-radius:50%;
-  display:grid;place-items:center;background:rgba(11,34,57,.18)
+  display:grid;place-items:center;background:rgba(23,75,107,.18)
 }
 .scrollcue svg{animation:cue 2.4s ease-in-out infinite}
 @keyframes cue{0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
@@ -216,12 +220,12 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   position:static;transform:none;margin:clamp(32px,5vh,52px) auto 0;
   color:var(--ink);opacity:.75;width:max-content
 }
-.scrollcue.flow .ring{border-color:rgba(11,34,57,.4);background:none}
+.scrollcue.flow .ring{border-color:rgba(23,75,107,.4);background:none}
 /* les ancres de scène plein écran se calent au sommet exact de la fenêtre
    (l'en-tête s'efface au défilement, pas besoin de marge) */
 #mission,#why,#how,#figures,#change,#projets{scroll-margin-top:0}
 .hero .eyebrow{color:var(--lilac)}
-.hero h1 em{color:var(--lilac)}
+.hero h1 em{color:var(--bright)}
 .hero .lead{color:rgba(255,255,255,.85)}
 .eyebrow,.tag{
   display:inline-flex;align-items:center;gap:10px;font-size:var(--fs-eyebrow);letter-spacing:.14em;
@@ -284,7 +288,7 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 }
 .stripe>.wrap{width:100%}
 .stripe h2{font-size:min(var(--fs-h2-lg),6.2vh);line-height:1.06;letter-spacing:-.03em;max-width:21ch}
-.stripe h2 em{color:var(--lilac)}
+.stripe h2 em{color:var(--bright)}
 .mv{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,64px);margin-top:clamp(28px,5vh,56px)}
 .mv .k{
   font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;color:var(--lilac);
@@ -308,10 +312,10 @@ section{padding:var(--sp-section) 0}
 
 /* ---------- étapes numérotées à vignettes rondes (réf. Climate Pledge) ---------- */
 .process{background:var(--blue-pale);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.steps{border-top:1px solid rgba(11,34,57,.14)}
+.steps{border-top:1px solid rgba(23,75,107,.14)}
 .step{
   display:grid;grid-template-columns:76px minmax(210px,1fr) 1.6fr;gap:clamp(18px,3vw,44px);
-  align-items:baseline;padding:clamp(20px,2.6vw,30px) 0;border-bottom:1px solid rgba(11,34,57,.14)
+  align-items:baseline;padding:clamp(20px,2.6vw,30px) 0;border-bottom:1px solid rgba(23,75,107,.14)
 }
 .step .num{
   font-family:var(--serif);font-size:clamp(1.5rem,1.2rem + 1.3vw,2.5rem);font-weight:400;
@@ -337,7 +341,7 @@ section{padding:var(--sp-section) 0}
 .figures>.wrap{width:100%}
 .figures-head{text-align:center;margin-bottom:clamp(24px,4.5vh,56px)}
 .figures-head h2{margin:0 auto;max-width:20ch}
-.figures-head h2 em{color:var(--lilac)}
+.figures-head h2 em{color:var(--bright)}
 .figures-head .period{color:var(--on-dark-soft);font-size:var(--fs-small);margin-top:12px}
 .figures-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
 .figure{padding:0 clamp(18px,2.4vw,34px);border-left:1px solid var(--rule-dark)}
@@ -363,7 +367,7 @@ section{padding:var(--sp-section) 0}
 /* ---------- bandes photo pleine largeur (réf. nomoreplastic) ---------- */
 .photoband{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;overflow:hidden;isolation:isolate}
 .photoband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.photoband::after{content:"";position:absolute;inset:0;background:rgba(11,34,57,.62);z-index:-1}
+.photoband::after{content:"";position:absolute;inset:0;background:rgba(23,75,107,.62);z-index:-1}
 .photoband .pb-inner{text-align:center;color:#fff;padding:clamp(36px,6vh,64px) 28px clamp(88px,12vh,112px);max-width:68ch}
 .photoband h2{
   font-size:min(clamp(1.375rem,.95rem + 1.9vw,2.5rem),4.6vh);font-weight:600;letter-spacing:.2em;
@@ -377,22 +381,22 @@ section{padding:var(--sp-section) 0}
 .joinblock{background:var(--ink);color:#fff;padding:var(--sp-section) 0}
 .joinblock .tag{color:var(--on-dark)}
 .joinblock h2{color:#fff}
-.joinblock h2 em{color:var(--lilac)}
+.joinblock h2 em{color:var(--bright)}
 .joinblock .sec-head p{color:var(--on-dark)}
 .jv{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(34px,4.5vw,64px);align-items:start}
 .player{position:relative;border-radius:var(--r);overflow:hidden;background:var(--ink-2);aspect-ratio:16/9}
 .player img{width:100%;height:100%;object-fit:cover}
 .player .play{
-  position:absolute;inset:0;display:grid;place-items:center;background:rgba(11,34,57,.28);
+  position:absolute;inset:0;display:grid;place-items:center;background:rgba(23,75,107,.28);
   border:0;cursor:pointer;color:#fff;font-family:inherit;transition:background .25s
 }
-.player .play:hover{background:rgba(11,34,57,.44)}
+.player .play:hover{background:rgba(23,75,107,.44)}
 .player .play span{
   width:76px;height:76px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--ink);
   display:grid;place-items:center
 }
 .player .badge{
-  position:absolute;top:14px;left:14px;background:rgba(11,34,57,.78);color:#fff;font-size:.6875rem;
+  position:absolute;top:14px;left:14px;background:rgba(23,75,107,.78);color:#fff;font-size:.6875rem;
   letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:7px 12px;border-radius:999px
 }
 .jv-cap{margin-top:22px;color:var(--on-dark);font-size:var(--fs-small);line-height:1.6;max-width:52ch}
@@ -435,7 +439,7 @@ section{padding:var(--sp-section) 0}
   background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px;
   display:flex;flex-direction:column;gap:14px;transition:transform .25s,box-shadow .25s;text-decoration:none
 }
-a.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(11,34,57,.07)}
+a.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(23,75,107,.07)}
 .card h3{font-size:1.3125rem;font-weight:600;letter-spacing:-.015em}
 .card p{color:var(--muted);font-size:var(--fs-small);line-height:1.6}
 .chip{

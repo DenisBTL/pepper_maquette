@@ -22,11 +22,12 @@ pas d'imagerie de laboratoire.
 
 ## Palette
 
-La maquette applique la piste **03 « Rigueur et impact »** de la planche
-d'exploration colorimétrique (bleu profond aligné sur le logo Pepper, cyan pâle
-en accent sur fond sombre, pêche en tinte chaude, neutres gris-bleu). Toutes les
-couleurs sont des variables CSS dans `:root` : basculer vers la piste 01 ou 02
-se fait en changeant une dizaine de valeurs.
+La maquette applique les couleurs de la planche client : `#36A9D6` (bleu vif),
+`#174B6B` (marine), `#E8B76D` (ambre), `#A7B3BC` (gris-bleu), `#E3F0F4` (bleu
+glacier). Un ajustement d'accessibilité : le bleu vif ne tient pas le contraste
+WCAG AA en texte courant, il est donc réservé aux grands accents (italiques des
+titres sur fond sombre) et décliné en `#1B6E9C` pour les boutons et petits
+textes. Toutes les couleurs sont des variables CSS dans `:root`.
 
 ## Ce que traduit cette version
 

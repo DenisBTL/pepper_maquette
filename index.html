@@ -134,7 +134,7 @@
 
   <div class="hero">
     <div class="wrap-wide hero-grid">
-      <div>
+      <div data-anim="up">
         <span class="eyebrow" data-en="A European public-private platform">Plateforme public-privé européenne</span>
         <h1>
           <span data-en="Suspicion protects no one.">Un soupçon ne protège personne.</span><br>
@@ -148,11 +148,28 @@
           <a class="btn btn-g" href="#mission" data-en="Why PEPPER exists">Pourquoi PEPPER existe</a>
         </div>
       </div>
-      <div class="hero-media">
+      <div class="hero-media" data-anim="zoom">
         <img src="img/hero.webp" width="1600" height="1100" fetchpriority="high" decoding="async"
           alt="Vue aérienne d'une rivière sombre qui serpente entre des boisements et des prairies, partiellement recouverte d'une nappe de brume au petit matin."
           data-en-alt="Aerial view of a dark river winding between woodland and meadows, partly veiled by a low blanket of mist at dawn.">
-        <p class="hero-cap" data-en="Diffuse exposure: water, air, soil, everyday products.">Une exposition diffuse : l'eau, l'air, les sols, les produits du quotidien.</p>
+        <!-- Encart de mesure : les points relevés, puis la courbe qui s'en dégage. -->
+        <div class="readout">
+          <span class="rl" data-en="Measured signal">Signal mesuré</span>
+          <svg viewBox="0 0 260 116" role="img" aria-labelledby="readout-title">
+            <title id="readout-title" data-en="Illustrative dose–response curve fitted to measured points.">Courbe dose-réponse illustrative ajustée sur des points mesurés.</title>
+            <path class="axis" d="M18 8 V102 H248"/>
+            <circle class="pt" cx="34" cy="96" r="3"/>
+            <circle class="pt" cx="56" cy="92" r="3"/>
+            <circle class="pt" cx="78" cy="89" r="3"/>
+            <circle class="pt" cx="100" cy="72" r="3"/>
+            <circle class="pt" cx="122" cy="57" r="3"/>
+            <circle class="pt" cx="146" cy="36" r="3"/>
+            <circle class="pt" cx="180" cy="27" r="3"/>
+            <circle class="pt" cx="216" cy="19" r="3"/>
+            <path class="fit" d="M22 98 C72 97 94 88 118 62 C142 36 164 24 242 18"/>
+          </svg>
+          <p class="rc" data-en="Dose–response — illustrative curve">Réponse en fonction de la dose — courbe illustrative</p>
+        </div>
       </div>
     </div>
   </div>
@@ -213,25 +230,25 @@
         <p data-en="Validating a test method takes years of methodical work. Every step has to be documented, checked, then accepted by regulators. This is the path we fund and coordinate.">Valider une méthode d'essai demande des années de travail méthodique. Chaque étape doit être documentée, vérifiée, puis acceptée par les régulateurs. Voici le chemin que nous finançons et coordonnons.</p>
       </div>
       <div class="steps">
-        <div class="step">
+        <div class="step" data-anim="up">
           <span class="num">01</span>
           <span class="thumb"><img src="img/process-01.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
           <h3 data-en="Spot what is missing">Repérer ce qui manque</h3>
           <p data-en="Working with scientists and regulators, we identify the mechanisms of endocrine disruption that no regulatory test covers yet. We then select the methods mature enough to withstand validation.">Avec les scientifiques et les régulateurs, nous identifions les mécanismes de perturbation endocrinienne qu'aucun test réglementaire ne couvre encore. Puis nous retenons les méthodes assez matures pour franchir la validation.</p>
         </div>
-        <div class="step">
+        <div class="step" data-anim="up">
           <span class="num">02</span>
           <span class="thumb"><img src="img/process-02.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
           <h3 data-en="Firm up the protocol">Consolider le protocole</h3>
           <p data-en="A promising idea is not yet a method. We have it optimised and described step by step — conditions, reference substances, acceptance criteria — until it returns the same results run after run.">Une bonne idée de laboratoire n'est pas encore une méthode. Nous la faisons optimiser et décrire pas à pas — conditions, substances de référence, critères d'acceptation — jusqu'à ce qu'elle donne les mêmes résultats d'un essai à l'autre.</p>
         </div>
-        <div class="step">
+        <div class="step" data-anim="up">
           <span class="num">03</span>
           <span class="thumb"><img src="img/process-03.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
           <h3 data-en="Validate across laboratories">Valider entre laboratoires</h3>
           <p data-en="Several independent laboratories then run the same protocol on the same substances, each on its own. If the results agree, the method is reproducible — and that collective proof is what regulators require.">Plusieurs laboratoires indépendants appliquent alors le même protocole aux mêmes substances, chacun de son côté. Si les résultats concordent, la méthode est reproductible&nbsp;: c'est cette preuve collective que les régulateurs attendent.</p>
         </div>
-        <div class="step">
+        <div class="step" data-anim="up">
           <span class="num">04</span>
           <span class="thumb"><img src="img/process-04.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
           <h3 data-en="See the method adopted">Faire adopter la méthode</h3>
@@ -241,14 +258,35 @@
     </div>
   </section>
 
+  <!-- La preuve inter-laboratoires : le cœur scientifique du travail de PEPPER -->
+  <section class="proof" id="proof">
+    <div class="wrap">
+      <div class="sec-head" data-anim="up">
+        <span class="tag" data-en="The evidence">La preuve</span>
+        <h2 class="big"><span data-en="Five laboratories,">Cinq laboratoires,</span> <em data-en="one same result.">un même résultat.</em></h2>
+        <p data-en="A method is not validated because it works once. It is validated when independent laboratories, following the same protocol on the same substances, obtain results that agree.">Une méthode n'est pas validée parce qu'elle fonctionne une fois. Elle l'est lorsque des laboratoires indépendants, suivant le même protocole sur les mêmes substances, obtiennent des résultats qui concordent.</p>
+      </div>
+      <div class="proof-grid">
+        <div data-anim="left">
+          <div class="plate" id="plate" aria-hidden="true"></div>
+          <p class="proof-note" data-en="Illustrative visual">Visuel illustratif</p>
+        </div>
+        <div data-anim="right">
+          <p class="proof-cap" data-en="Each plate holds 96 wells: twelve increasing concentrations, eight replicates each. An assay only counts if it returns the same reading, plate after plate.">Chaque plaque compte 96 puits&nbsp;: douze concentrations croissantes, huit réplicats chacune. Un essai ne vaut que s'il redonne la même lecture, plaque après plaque.</p>
+          <p class="proof-cap" data-en="Several independent laboratories then repeat the operation, on the same substances, without consulting one another. That agreement is what regulators call reproducibility — and what turns a promising assay into a usable standard.">Plusieurs laboratoires indépendants répètent ensuite l'opération, sur les mêmes substances, sans se concerter. C'est cette concordance que les régulateurs appellent reproductibilité — et c'est elle qui transforme un essai prometteur en norme utilisable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Chiffres clés (réf. wellcome.org) -->
   <section class="figures" id="figures">
     <div class="wrap">
-      <div class="figures-head">
+      <div class="figures-head" data-anim="up">
         <h2><span>PEPPER</span> <em data-en="in numbers">en chiffres</em></h2>
         <p class="period" data-en="Our work since 2021">Notre travail depuis 2021</p>
       </div>
-      <div class="figures-grid">
+      <div class="figures-grid stagger">
         <div class="figure">
           <span class="v">2021</span>
           <span class="u" data-en="Platform created">Création de la plateforme</span>
@@ -275,11 +313,11 @@
   </section>
 
   <!-- Bande photo 1 (réf. nomoreplastic.co) -->
-  <section class="photoband">
+  <section class="photoband" data-anim="fade">
     <img src="img/band-impact.webp" width="1920" height="900" loading="lazy" decoding="async"
       alt="Une petite main d'enfant plonge dans l'eau claire d'un ruisseau qui coule entre des pierres et des mousses vertes."
       data-en-alt="A child's small hand dips into the clear water of a stream running between stones and green moss.">
-    <div class="pb-inner">
+    <div class="pb-inner" data-anim="up">
       <h2 data-en="To protect, first measure">Avant de protéger, savoir mesurer</h2>
       <p data-en="The endocrine system governs reproduction, development and metabolism, in humans as in the species around us. As long as an effect cannot be measured reliably, it stays beyond the reach of public decision-making.">Le système endocrinien gouverne la reproduction, le développement et le métabolisme, chez l'humain comme chez les espèces qui peuplent nos milieux. Tant qu'un effet ne peut être mesuré de façon fiable, il reste hors de portée de la décision publique.</p>
       <div class="cta"><a class="btn btn-w" href="#mission" data-en="Why PEPPER exists">Pourquoi PEPPER existe</a></div>
@@ -334,7 +372,7 @@
         <span class="tag" data-en="Who we work with">Avec qui nous travaillons</span>
         <h2 class="big"><span data-en="Nobody solves this">Personne ne résout cela</span> <em data-en="alone.">seul.</em></h2>
       </div>
-      <div class="aud">
+      <div class="aud stagger">
         <div><h3 data-en="Regulators">Régulateurs</h3><p data-en="European Commission, OECD, ECHA, EFSA. They set the guidelines and the regulatory frameworks.">Commission européenne, OCDE, ECHA, EFSA. Ils élaborent les lignes directrices et les cadres réglementaires.</p></div>
         <div><h3 data-en="Researchers &amp; universities">Chercheurs et universités</h3><p data-en="They generate the knowledge and develop the innovative methods we help validate.">Ils produisent les connaissances et développent les méthodes innovantes que nous aidons à valider.</p></div>
         <div><h3 data-en="Method developers, CROs &amp; laboratories">Développeurs de méthodes, CRO et laboratoires</h3><p data-en="They develop, validate and implement methods in a regulatory context.">Ils développent, valident et mettent en œuvre les méthodes dans un cadre réglementaire.</p></div>
@@ -401,7 +439,7 @@
           </p>
           <p class="jv-meta" data-en="Subtitles in French and English. Full transcript available below the video.">Sous-titres en français et en anglais. Transcription intégrale disponible sous la vidéo.</p>
         </div>
-        <div class="jsteps">
+        <div class="jsteps stagger">
           <div class="jstep">
             <span class="st" data-en="Step one">Étape 01</span>
             <h3 data-en="Understand what is at stake">Comprendre ce qui se joue</h3>
@@ -427,11 +465,11 @@
   </section>
 
   <!-- Bande photo 2 -->
-  <section class="photoband">
+  <section class="photoband" data-anim="fade">
     <img src="img/band-europe.webp" width="1920" height="900" loading="lazy" decoding="async"
       alt="Hémicycle vide du Parlement européen : rangées courbes de pupitres en bois clair et, au fond, les drapeaux des États membres."
       data-en-alt="The empty European Parliament chamber: curved rows of pale wooden desks and, at the far end, the member-state flags.">
-    <div class="pb-inner">
+    <div class="pb-inner" data-anim="up">
       <h2 data-en="Validated once, recognised everywhere">Validée une fois, reconnue partout</h2>
       <p data-en="A method taken up in an OECD test guideline becomes a shared instrument: data produced under it are recognised from one country to the next. That is the scale PEPPER works at, in dialogue with the bodies that write those frameworks.">Une méthode reprise dans une ligne directrice de l'OCDE devient un instrument commun&nbsp;: les données produites selon ce référentiel sont reconnues d'un pays à l'autre. C'est à cette échelle que PEPPER travaille, en dialogue avec les instances qui écrivent ces référentiels.</p>
       <div class="cta"><a class="btn btn-w" href="#" data-view="projects" data-en="The validation projects">Les projets de validation</a></div>
@@ -472,7 +510,7 @@
         <h2 class="big"><span data-en="Shared funding,">Un financement partagé,</span> <em data-en="public results.">des résultats publics.</em></h2>
         <p data-en="PEPPER is a non-profit association. Public and private contributions are pooled to fund work that no one owns. Protocols, validation data and reports are published.">PEPPER est une association à but non lucratif. Des contributions publiques et privées y sont mises en commun pour financer des travaux dont personne n'est propriétaire. Les protocoles, les données de validation et les rapports sont publiés.</p>
       </div>
-      <div class="cols4">
+      <div class="cols4 stagger">
         <div>
           <h3 data-en="Pre-competitive">Pré-concurrentiel</h3>
           <p data-en="The work concerns test methods, never products. Members gain no commercial advantage; they gain a reliable assessment framework, identical for everyone.">Les travaux portent sur des méthodes d'essai, jamais sur des produits. Un membre n'y obtient aucun avantage commercial&nbsp;; il obtient un cadre d'évaluation fiable, le même pour tous.</p>
@@ -547,7 +585,7 @@
         <span class="tag" data-en="Three ways to join">Trois façons de rejoindre</span>
         <h2 class="big"><span data-en="Every member brings">Chaque membre apporte</span> <em data-en="what it does best.">ce qu'il sait faire.</em></h2>
       </div>
-      <div class="plans">
+      <div class="plans stagger">
         <div class="plan">
           <h3 data-en="Research institution">Institution de recherche</h3>
           <p data-en="You develop the methods. PEPPER helps you take them to the point where regulation can adopt them.">Vous développez les méthodes. PEPPER vous aide à les conduire jusqu'au stade où la réglementation peut les reprendre.</p>
@@ -590,19 +628,19 @@
         <h2 class="big"><span data-en="Three steps,">Trois étapes,</span> <em data-en="nothing more.">rien de plus.</em></h2>
       </div>
       <div class="steps">
-        <div class="step">
+        <div class="step" data-anim="up">
           <span class="num">01</span>
           <span class="thumb"><img src="img/nav-about.webp" width="640" height="480" loading="lazy" decoding="async" alt=""></span>
           <h3 data-en="Get in touch">Prendre contact</h3>
           <p data-en="Write to us in a few lines: who you are, what brings you here, what you would like to follow. We will suggest a meeting.">Vous nous écrivez en quelques lignes&nbsp;: qui vous êtes, ce qui vous amène, ce que vous souhaitez suivre. Nous vous proposons un rendez-vous.</p>
         </div>
-        <div class="step">
+        <div class="step" data-anim="up">
           <span class="num">02</span>
           <span class="thumb"><img src="img/member-02.webp" width="900" height="675" loading="lazy" decoding="async" alt=""></span>
           <h3 data-en="Agree the terms">Cadrer l'adhésion</h3>
           <p data-en="Together we settle the right membership category, the level of contribution and the work you want to take part in.">Nous déterminons ensemble le type d'adhésion adapté, le niveau de contribution et les travaux auxquels vous voulez prendre part.</p>
         </div>
-        <div class="step">
+        <div class="step" data-anim="up">
           <span class="num">03</span>
           <span class="thumb"><img src="img/process-02.webp" width="520" height="520" loading="lazy" decoding="async" alt=""></span>
           <h3 data-en="Join the work">Rejoindre les travaux</h3>

@@ -162,15 +162,42 @@
     dlg.addEventListener('click', function(e){ if (e.target === dlg) dlg.close(); });
   }
 
-  /* ---------- apparition au défilement ---------- */
+  /* ---------- microplaque 96 puits ----------
+     Douze colonnes de concentration croissante, huit réplicats par colonne :
+     le remplissage progressif figure une gamme dose-réponse. Décoratif. */
+  function buildPlate(){
+    var plate = d.getElementById('plate');
+    if (!plate || plate.childElementCount) return;
+    var frag = d.createDocumentFragment();
+    for (var row = 0; row < 8; row++){
+      for (var col = 0; col < 12; col++){
+        var well = d.createElement('i');
+        var jitter = ((row * 37 + col * 11) % 9) / 9 * .07;
+        var intensity = Math.min(1, .10 + (col / 11) * .82 + jitter);
+        well.style.setProperty('--d', col * 3 + row);
+        well.style.setProperty('--wc', 'rgba(169,178,240,' + intensity.toFixed(3) + ')');
+        frag.appendChild(well);
+      }
+    }
+    plate.appendChild(frag);
+  }
+  buildPlate();
+
+  /* ---------- apparition au défilement ----------
+     Les chiffres clés ne sont volontairement PAS animés en compteur : une
+     valeur qui resterait bloquée à zéro afficherait un chiffre faux, ce qui
+     n'est pas acceptable sur une page qui engage la crédibilité scientifique.
+     La mise en scène passe par la cascade d'apparition seule. */
   var io = window.IntersectionObserver ? new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
-      if (entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
     });
-  }, { threshold:.12 }) : null;
+  }, { threshold:.15, rootMargin:'0px 0px -8% 0px' }) : null;
 
   function reveal(){
-    d.querySelectorAll('.reveal:not(.in)').forEach(function(el){
+    d.querySelectorAll('.reveal:not(.in), [data-anim]:not(.in), .stagger:not(.in)').forEach(function(el){
       if (io){ io.observe(el); } else { el.classList.add('in'); }
     });
   }

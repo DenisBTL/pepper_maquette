@@ -219,7 +219,7 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 .scrollcue.flow .ring{border-color:rgba(11,34,57,.4);background:none}
 /* les ancres de scène plein écran se calent au sommet exact de la fenêtre
    (l'en-tête s'efface au défilement, pas besoin de marge) */
-#mission,#why,#figures,#change{scroll-margin-top:0}
+#mission,#why,#how,#figures,#change,#projets{scroll-margin-top:0}
 .hero .eyebrow{color:var(--lilac)}
 .hero h1 em{color:var(--lilac)}
 .hero .lead{color:rgba(255,255,255,.85)}
@@ -364,7 +364,7 @@ section{padding:var(--sp-section) 0}
 .photoband{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;overflow:hidden;isolation:isolate}
 .photoband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .photoband::after{content:"";position:absolute;inset:0;background:rgba(11,34,57,.62);z-index:-1}
-.photoband .pb-inner{text-align:center;color:#fff;padding:clamp(36px,6vh,64px) 28px;max-width:68ch}
+.photoband .pb-inner{text-align:center;color:#fff;padding:clamp(36px,6vh,64px) 28px clamp(88px,12vh,112px);max-width:68ch}
 .photoband h2{
   font-size:min(clamp(1.375rem,.95rem + 1.9vw,2.5rem),4.6vh);font-weight:600;letter-spacing:.2em;
   text-transform:uppercase;line-height:1.35;max-width:none;color:#fff

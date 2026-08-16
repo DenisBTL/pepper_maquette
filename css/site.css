@@ -108,6 +108,7 @@ nav a,nav button.navlink{
   font-size:.9375rem;color:var(--muted);text-decoration:none;background:none;border:0;
   font-family:inherit;font-weight:500;cursor:pointer;padding:8px 0;position:relative;transition:color .2s
 }
+.nav-mob{display:none}
 nav a:hover,nav button.navlink:hover{color:var(--ink)}
 nav button.navlink[aria-current="page"]{color:var(--ink)}
 nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--blue)}
@@ -168,14 +169,10 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   nav a,nav button.navlink{font-size:1.125rem;padding:11px 0}
   .burger{display:block}
   .tools .btn{display:none}
-  .mega{position:static;background:none;color:inherit;border:0;padding:0}
-  .mega-inner{padding:6px 0 16px}
-  .mega-grid{grid-template-columns:1fr 1fr;gap:14px}
-  .mega-card{color:var(--ink)}
-  .mega-card h3{font-size:.9375rem}
-  .mega-card p{display:none}
-  .mega-foot{border-top-color:var(--line);gap:16px;margin-top:18px}
-  .mega-foot a{color:var(--muted)}
+  /* sur mobile, le méga-menu cède la place à des liens directs dans le menu */
+  nav [data-mega]{display:none}
+  .nav-mob{display:block}
+  .mega{display:none!important}
 }
 
 /* ---------- hero plein écran ---------- */
@@ -185,7 +182,22 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   content:"";position:absolute;inset:0;z-index:-1;
   background:linear-gradient(100deg,rgba(15,19,48,.82) 0%,rgba(15,19,48,.52) 52%,rgba(15,19,48,.16) 100%)
 }
-.hero-inner{width:100%;padding-top:clamp(120px,16vh,200px);padding-bottom:clamp(56px,9vh,104px);color:#fff}
+.hero-inner{width:100%;padding-top:clamp(120px,16vh,200px);padding-bottom:clamp(104px,14vh,150px);color:#fff}
+/* flèche « scène suivante » : le hero invite à descendre vers le chapitre 01 */
+.scrollcue{
+  position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:1;
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  color:#fff;text-decoration:none;font-size:.75rem;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;opacity:.85;transition:opacity .2s;
+  white-space:nowrap
+}
+.scrollcue:hover{opacity:1}
+.scrollcue .ring{
+  width:44px;height:44px;border:1px solid rgba(255,255,255,.55);border-radius:50%;
+  display:grid;place-items:center;background:rgba(15,19,48,.18)
+}
+.scrollcue svg{animation:cue 2.4s ease-in-out infinite}
+@keyframes cue{0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
 .hero .eyebrow{color:var(--lilac)}
 .hero h1 em{color:var(--lilac)}
 .hero .lead{color:rgba(255,255,255,.85)}

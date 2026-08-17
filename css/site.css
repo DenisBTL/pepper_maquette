@@ -136,6 +136,53 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 }
 .lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
 
+/* ---------- barre de lecture + grille de lecture (réf. monchai.fr) ----------
+   Deux repères complémentaires : la barre dit où l'on en est dans la page,
+   la grille dit dans quelle scène. Les deux sont réservés aux écrans assez
+   larges pour que la colonne latérale ne morde pas sur le texte : sous ce
+   seuil, le menu reprend ce rôle. */
+.readbar,.sidenav{display:none}
+
+/* 1340px : en deçà, la colonne de repères viendrait à moins de 50px du texte
+   des sections (max 1180px + gouttières). Seuil à tenir identique dans js/site.js. */
+@media(min-width:1340px){
+  .readbar{
+    display:block;position:fixed;top:0;left:0;right:0;height:3px;z-index:101;
+    background:rgba(0,77,140,.12)
+  }
+  .readbar span{display:block;width:0;height:100%;background:var(--blue);transition:width .08s linear}
+
+  .sidenav{
+    --tick:rgba(11,36,64,.3);
+    --tick-on:var(--blue);
+    --lbl:var(--ink);
+    position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:99;
+    display:flex;flex-direction:column;align-items:flex-end;gap:11px
+  }
+  .sidenav[hidden]{display:none}
+  .sidenav a{
+    display:flex;align-items:center;justify-content:flex-end;gap:12px;
+    padding:5px 0;text-decoration:none
+  }
+  .sidenav .tick{
+    display:block;width:16px;height:2px;border-radius:2px;background:var(--tick);
+    transition:width .3s var(--ease),background-color .3s ease
+  }
+  .sidenav a.on .tick,.sidenav a:hover .tick{width:34px;background:var(--tick-on)}
+  .sidenav .lbl{
+    order:-1;color:var(--lbl);font:600 12.5px/1 var(--sans);white-space:nowrap;
+    opacity:0;transform:translateX(6px);pointer-events:none;
+    transition:color .25s ease,opacity .25s ease,transform .25s var(--ease)
+  }
+  .sidenav a:hover .lbl,.sidenav a:focus-visible .lbl{opacity:1;transform:none}
+  /* au-dessus d'une scène sombre, les repères passent en clair */
+  .sidenav a.inv{--tick:rgba(255,255,255,.5);--tick-on:var(--bright);--lbl:#fff}
+  .sidenav a.inv .lbl{text-shadow:0 2px 8px rgba(0,20,40,.55)}
+}
+@media(min-width:1560px){
+  .sidenav{right:38px}
+}
+
 /* ---------- boutons ---------- */
 .btn{
   display:inline-flex;align-items:center;gap:9px;border-radius:999px;padding:13px 24px;
@@ -240,7 +287,7 @@ section:has(.scrollcue.flow),.joinblock:has(.scrollcue.flow){padding-bottom:clam
 .joinblock .scrollcue.flow .ring{border-color:rgba(255,255,255,.5)}
 /* les ancres de scène plein écran se calent au sommet exact de la fenêtre
    (l'en-tête s'efface au défilement, pas besoin de marge) */
-#mission,#why,#how,#figures,#change,#projets,#publics,#news,#join,#newsletter{scroll-margin-top:0}
+#accueil,#mission,#why,#how,#figures,#change,#projets,#publics,#news,#join,#newsletter{scroll-margin-top:0}
 /* L'accompagnement du défilement (recalage doux des scènes au sommet de la
    fenêtre) est conduit par js/site.js, et non par scroll-snap : le snap CSS
    bloquerait la lecture des scènes dont le contenu dépasse la hauteur

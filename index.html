@@ -132,12 +132,32 @@
   </div>
 </header>
 
+<!-- Barre de lecture : progression du défilement. Purement décorative —
+     l'information est déjà portée par la grille de lecture ci-dessous. -->
+<div class="readbar" aria-hidden="true"><span id="readbar-fill"></span></div>
+
+<!-- Grille de lecture : un repère par scène, l'étiquette apparaît au survol.
+     Réservée aux écrans larges ; sur mobile le menu reprend ce rôle. -->
+<nav class="sidenav" id="sidenav" aria-label="Navigation par section">
+  <a href="#accueil"><span class="tick"></span><span class="lbl" data-en="Home">Accueil</span></a>
+  <a href="#mission"><span class="tick"></span><span class="lbl" data-en="Why PEPPER exists">Pourquoi PEPPER existe</span></a>
+  <a href="#why"><span class="tick"></span><span class="lbl" data-en="Detect to protect">Détecter pour protéger</span></a>
+  <a href="#how"><span class="tick"></span><span class="lbl" data-en="How we work">Comment nous travaillons</span></a>
+  <a href="#figures"><span class="tick"></span><span class="lbl" data-en="PEPPER in numbers">PEPPER en chiffres</span></a>
+  <a href="#change"><span class="tick"></span><span class="lbl" data-en="What it changes">Ce que cela change</span></a>
+  <a href="#projets"><span class="tick"></span><span class="lbl" data-en="Validation projects">Projets de validation</span></a>
+  <a href="#publics"><span class="tick"></span><span class="lbl" data-en="Bringing expertise together">Conjuguer les expertises</span></a>
+  <a href="#news"><span class="tick"></span><span class="lbl" data-en="News">Actualités</span></a>
+  <a href="#join"><span class="tick"></span><span class="lbl" data-en="Join us">Nous rejoindre</span></a>
+  <a href="#newsletter"><span class="tick"></span><span class="lbl" data-en="Newsletter">Lettre d'information</span></a>
+</nav>
+
 <main id="main">
 
 <!-- ==================== ACCUEIL ==================== -->
 <div class="view active" id="v-home">
 
-  <div class="hero">
+  <div class="hero" id="accueil">
     <img src="img/accueil.jpg" width="1170" height="745" fetchpriority="high" decoding="async"
       alt="Surface d'eau calme parcourue de rides concentriques, où se reflètent un ciel bleu et une lumière orangée."
       data-en-alt="Calm water rippling in concentric rings, reflecting a blue sky and warm orange light.">
@@ -162,7 +182,7 @@
   </div>
 
   <!-- Mission -->
-  <div class="stripe" id="mission">
+  <div class="stripe" id="mission" data-nav-contrast="light">
     <img class="stripe-bg" src="img/video-poster.webp" width="1280" height="720" loading="lazy" decoding="async"
       alt="Deux jeunes éclaireuses observent une grappe de baies rouges à la loupe, dans un sous-bois."
       data-en-alt="Two young scouts examine a cluster of red berries through a magnifying glass in woodland.">
@@ -197,8 +217,8 @@
   </div>
 
   <!-- Bande photo 1 (réf. nomoreplastic.co) -->
-  <section class="photoband" id="why" data-anim="fade">
-    <img src="img/band-impact.webp" width="1920" height="900" loading="lazy" decoding="async"
+  <section class="photoband" id="why" data-anim="fade" data-nav-contrast="light">
+    <img src="img/band-impact.jpg" width="1920" height="900" loading="lazy" decoding="async"
       alt="Vue de dessus d'une famille allongée dans l'herbe : les parents et trois enfants sourient."
       data-en-alt="Overhead view of a family lying in the grass: parents and three children smiling.">
     <div class="pb-inner" data-anim="up">
@@ -254,7 +274,7 @@
   </section>
 
   <!-- Chiffres clés (réf. wellcome.org) -->
-  <section class="figures" id="figures">
+  <section class="figures" id="figures" data-nav-contrast="light">
     <div class="wrap">
       <div class="figures-head" data-anim="up">
         <h2><span>PEPPER</span> <em data-en="in numbers">en chiffres</em></h2>
@@ -291,7 +311,7 @@
   </section>
 
   <!-- Bande photo 2 -->
-  <section class="photoband" id="change" data-anim="fade">
+  <section class="photoband" id="change" data-anim="fade" data-nav-contrast="light">
     <img src="img/band-europe.webp" width="1920" height="900" loading="lazy" decoding="async"
       alt="Hémicycle vide du Parlement européen : rangées courbes de pupitres en bois clair et, au fond, les drapeaux des États membres."
       data-en-alt="The empty European Parliament chamber: curved rows of pale wooden desks and, at the far end, the member-state flags.">
@@ -419,7 +439,7 @@
   </section>
 
   <!-- Vidéo + parcours d'adhésion (réf. The Climate Pledge « Join the Pledge ») -->
-  <section class="joinblock" id="join">
+  <section class="joinblock" id="join" data-nav-contrast="light">
     <div class="wrap">
       <div class="jv">
         <div class="jlead">
@@ -776,7 +796,7 @@
   </div>
 </dialog>
 
-<footer>
+<footer data-nav-contrast="light">
   <div class="wrap">
     <div class="fgrid">
       <div>

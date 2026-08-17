@@ -90,6 +90,7 @@
     if (burger) burger.setAttribute('aria-expanded', 'false');
     window.scrollTo({ top: 0, behavior: 'instant' });
     reveal();
+    syncChrome(v);
   }
   d.querySelectorAll('[data-view]').forEach(function(el){
     el.addEventListener('click', function(e){ e.preventDefault(); show(el.dataset.view); });
@@ -127,12 +128,66 @@
       }
       lastY = y;
     }
+    chrome(y);
     scrollTicking = false;
   }
   window.addEventListener('scroll', function(){
     if (!scrollTicking){ scrollTicking = true; window.requestAnimationFrame(headerOnScroll); }
   }, { passive:true });
   header.addEventListener('focusin', function(){ header.classList.remove('hide'); });
+
+  /* ---------- barre de lecture et grille de lecture ----------
+     Un seul passage par image : la barre suit la progression dans la page,
+     la grille marque la scène en cours et inverse ses repères au-dessus des
+     scènes sombres. Les deux ne sont calculés qu'au-delà du seuil où le CSS
+     les affiche — inutile de travailler pour des éléments invisibles. */
+  var readbar = d.getElementById('readbar-fill');
+  var sidenav = d.getElementById('sidenav');
+  var navLinks = sidenav ? Array.prototype.slice.call(sidenav.querySelectorAll('a')) : [];
+  /* seuil identique à celui du media query de css/site.css */
+  var wide = window.matchMedia('(min-width:1340px)');
+
+  function chrome(y){
+    if (!wide.matches || (sidenav && sidenav.hidden)) return;
+    if (readbar){
+      var total = d.documentElement.scrollHeight - window.innerHeight;
+      readbar.style.width = (total > 0 ? Math.min(100, Math.max(0, y / total * 100)) : 0) + '%';
+    }
+    if (!navLinks.length) return;
+
+    /* la scène courante est la dernière dont le sommet est passé au-dessus
+       du milieu de la fenêtre */
+    var mid = y + window.innerHeight / 2, active = 0;
+    navLinks.forEach(function(a, i){
+      var sec = d.getElementById(a.getAttribute('href').slice(1));
+      if (!sec) return;
+      if (mid >= sec.getBoundingClientRect().top + y) active = i;
+    });
+    navLinks.forEach(function(a, i){
+      a.classList.toggle('on', i === active);
+      if (i === active) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+
+    /* un repère posé devant une scène sombre passe en clair */
+    var dark = Array.prototype.map.call(
+      d.querySelectorAll('#v-home [data-nav-contrast="light"], footer[data-nav-contrast="light"]'),
+      function(el){ return el.getBoundingClientRect(); }
+    );
+    navLinks.forEach(function(a){
+      var r = a.getBoundingClientRect(), c = r.top + r.height / 2;
+      a.classList.toggle('inv', dark.some(function(z){ return z.top <= c && z.bottom >= c; }));
+    });
+  }
+
+  /* la grille ne vaut que pour le récit de l'accueil : les vues intérieures
+     n'ont pas ces scènes */
+  function syncChrome(view){
+    if (sidenav) sidenav.hidden = (view !== 'home');
+    if (readbar && view !== 'home') readbar.style.width = '0%';
+    chrome(window.scrollY);
+  }
+  wide.addEventListener('change', function(){ chrome(window.scrollY); });
 
   /* ---------- filtres ---------- */
   function count(){
@@ -207,6 +262,7 @@
 
   reveal();
   count();
+  chrome(window.scrollY);
 
   /* ---------- accompagnement du défilement ----------
      Les flèches de transition et les liens d'ancre ne « sautent » plus d'une

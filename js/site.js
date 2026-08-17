@@ -207,4 +207,116 @@
 
   reveal();
   count();
+
+  /* ---------- accompagnement du défilement ----------
+     Les flèches de transition et les liens d'ancre ne « sautent » plus d'une
+     scène à l'autre : le défilement est conduit sur une courbe amortie, assez
+     lente pour que l'œil suive le passage d'une section à la suivante.
+     Neutralisé sous prefers-reduced-motion, où le saut direct reste la
+     réponse attendue. */
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function easeInOutCubic(t){
+    return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  }
+
+  var glideFrame = null, gliding = false;
+
+  function glideTo(targetY, done, speed){
+    if (glideFrame) window.cancelAnimationFrame(glideFrame);
+    var startY = window.scrollY;
+    var max = Math.max(0, d.documentElement.scrollHeight - window.innerHeight);
+    var endY = Math.max(0, Math.min(targetY, max));
+    var delta = endY - startY;
+    if (Math.abs(delta) < 2){ if (done) done(); return; }
+    /* durée proportionnelle à la distance, bornée : une scène voisine se
+       rejoint en ~0,6 s, un saut de plusieurs écrans ne dépasse pas 1,1 s.
+       Le recalage de fin de défilement (speed « short ») va deux fois plus vite. */
+    var dur = speed === 'short'
+      ? Math.min(420, Math.max(240, Math.abs(delta) * 2.2))
+      : Math.min(1100, Math.max(600, Math.abs(delta) * .45));
+    var t0 = null;
+    gliding = true;
+    function step(ts){
+      if (t0 === null) t0 = ts;
+      var p = Math.min(1, (ts - t0) / dur);
+      window.scrollTo(0, startY + delta * easeInOutCubic(p));
+      if (p < 1){ glideFrame = window.requestAnimationFrame(step); }
+      else { glideFrame = null; gliding = false; if (done) done(); }
+    }
+    glideFrame = window.requestAnimationFrame(step);
+  }
+
+  /* un geste de l'utilisateur reprend toujours la main sur l'animation */
+  ['wheel','touchstart','keydown'].forEach(function(evt){
+    window.addEventListener(evt, function(){
+      if (glideFrame){ window.cancelAnimationFrame(glideFrame); glideFrame = null; gliding = false; }
+    }, { passive:true });
+  });
+
+  if (!reduceMotion){
+    /* le défilement amorti remplace le scroll-behavior natif du CSS */
+    d.documentElement.style.scrollBehavior = 'auto';
+
+    d.addEventListener('click', function(e){
+      var a = e.target.closest('a[href^="#"]');
+      /* le lien d'évitement doit rester instantané : au clavier, on attend
+         d'atterrir sur le contenu, pas de regarder une animation */
+      if (!a || a.classList.contains('skip')) return;
+      var id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      var target = d.getElementById(id);
+      if (!target || !target.offsetParent) return;
+      e.preventDefault();
+      var style = window.getComputedStyle(target);
+      var offset = parseFloat(style.scrollMarginTop) || 0;
+      glideTo(target.getBoundingClientRect().top + window.scrollY - offset, function(){
+        if (history.replaceState) history.replaceState(null, '', '#' + id);
+        /* le focus suit le défilement : la navigation clavier reste cohérente */
+        var prevTabIndex = target.getAttribute('tabindex');
+        if (prevTabIndex === null) target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll:true });
+        if (prevTabIndex === null){
+          target.addEventListener('blur', function handler(){
+            target.removeAttribute('tabindex');
+            target.removeEventListener('blur', handler);
+          });
+        }
+      });
+    });
+
+    /* --- recalage des scènes en fin de défilement ---
+       Quand le défilement s'arrête à quelques dizaines de pixels du sommet
+       d'une scène plein écran, la scène est ramenée au cadre. Deux garde-fous :
+       le recalage n'agit qu'au voisinage immédiat (jamais au milieu d'une
+       lecture) et jamais sur une scène plus haute que la fenêtre — sinon le
+       bas de son contenu deviendrait inatteignable. */
+    var scenes = Array.prototype.slice.call(
+      d.querySelectorAll('#v-home .hero, #v-home .stripe, #v-home .photoband, #v-home .figures')
+    );
+    var settleTimer = null;
+
+    function settle(){
+      if (gliding) return;
+      var vh = window.innerHeight;
+      var threshold = Math.min(110, vh * .13);
+      var best = null, bestGap = Infinity;
+      scenes.forEach(function(scene){
+        if (!scene.offsetParent) return;
+        if (scene.offsetHeight > vh + 8) return;
+        var gap = scene.getBoundingClientRect().top;
+        if (Math.abs(gap) < Math.abs(bestGap)){ bestGap = gap; best = scene; }
+      });
+      if (!best || Math.abs(bestGap) < 3 || Math.abs(bestGap) > threshold) return;
+      /* en butée haute ou basse de page, on laisse le défilement où il est */
+      var y = window.scrollY;
+      if (y < 4 || y > d.documentElement.scrollHeight - vh - 4) return;
+      glideTo(y + bestGap, null, 'short');
+    }
+
+    window.addEventListener('scroll', function(){
+      if (settleTimer) window.clearTimeout(settleTimer);
+      settleTimer = window.setTimeout(settle, 160);
+    }, { passive:true });
+  }
 })();

@@ -6,21 +6,23 @@
    ============================================================ */
 
 :root{
-  /* --- couleurs — palette 03 « Rigueur et impact » (Inspiration Pepper.pdf) :
-     bleu profond #004D8C (échantillonné dans le PDF), cyan pâle en
-     accent sur fond sombre, pêche en tinte chaude, gris #DDE3E2
-     (échantillonné) pour les filets. Encre bleu nuit dérivée du bleu. --- */
+  /* --- couleurs — palette 03 « Rigueur et impact » (Inspiration Pepper.pdf).
+     Valeurs échantillonnées dans les pavés vectoriels du PDF :
+     bleu profond #004D8C · cyan pâle #B5FBFF · sable #F5CC94 ·
+     gris #9CA1AC · filets #DCE2EA. Le fond de page est un blanc froid
+     dérivé des gris ; l'encre bleu nuit est dérivée du bleu profond. --- */
   --ink:#0B2440; --ink-2:#1C4470; --muted:#54687E;
-  --paper:#F7F6F3; --white:#fff; --sand:#F8ECD9;
-  --bright:#C9EFF7;
-  --blue:#004D8C; --blue-d:#003A6B; --blue-l:#E4EEF6; --blue-pale:#E9F1F7;
-  --teal:#0E7086; --teal-l:#DFF1F6;
-  --amber:#8A5C15; --amber-l:#F7E5C4;
-  --line:#DDE3E2;
-  --on-dark:rgba(255,255,255,.76);
-  --on-dark-soft:rgba(255,255,255,.6);
-  --rule-dark:rgba(255,255,255,.2);
-  --lilac:#A9DEF0;
+  --paper:#F4F7F9; --white:#fff;
+  --sand:#FAEBD3; --sand-strong:#F5CC94;
+  --bright:#B5FBFF;
+  --blue:#004D8C; --blue-d:#003A6B; --blue-l:#E4EEF6; --blue-pale:#E7F1F8;
+  --grey:#9CA1AC;
+  --line:#DCE2EA;
+  --on-dark:rgba(255,255,255,.8);
+  /* .68 et pas moins : sur le bleu #004D8C, un blanc plus effacé passerait
+     sous le rapport de contraste AA (4,5:1) pour le corps de texte */
+  --on-dark-soft:rgba(255,255,255,.68);
+  --rule-dark:rgba(255,255,255,.22);
 
   /* --- formes --- */
   --r:14px; --r-lg:20px;
@@ -106,7 +108,7 @@ h4{font-weight:600;line-height:1.2}
 /* L'en-tête s'efface quand on descend dans le récit et revient
    dès qu'on remonte (ou que le focus clavier y entre). */
 header{
-  position:sticky;top:0;z-index:100;background:rgba(247,246,243,.88);backdrop-filter:blur(14px);
+  position:sticky;top:0;z-index:100;background:rgba(244,247,249,.88);backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);transition:transform .35s var(--ease)
 }
 header.hide{transform:translateY(-100%)}
@@ -194,12 +196,18 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   position:relative;display:flex;align-items:center;isolation:isolate;overflow:hidden;
   min-height:calc(100vh - 114px);min-height:calc(100svh - 114px)
 }
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%;z-index:-2}
+/* Aucune teinte n'est posée sur la photographie : le dégradé est un blanc
+   pur, qui éclaircit seulement la colonne du texte et laisse l'eau, le bleu
+   et les reflets orangés à leurs couleurs sur la moitié droite. */
 .hero::after{
   content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(100deg,rgba(11,36,64,.82) 0%,rgba(11,36,64,.52) 52%,rgba(11,36,64,.16) 100%)
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.62) 0%,rgba(255,255,255,0) 26%),
+    linear-gradient(0deg,rgba(255,255,255,.72) 0%,rgba(255,255,255,0) 20%),
+    linear-gradient(96deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.86) 34%,rgba(255,255,255,.5) 62%,rgba(255,255,255,.12) 88%)
 }
-.hero-inner{width:100%;padding-top:clamp(16px,3vh,44px);padding-bottom:clamp(96px,13vh,132px);color:#fff}
+.hero-inner{width:100%;padding-top:clamp(16px,3vh,44px);padding-bottom:clamp(96px,13vh,132px);color:var(--ink)}
 /* flèche « scène suivante » : le hero invite à descendre vers le chapitre 01 */
 .scrollcue{
   position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:1;
@@ -211,7 +219,7 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 .scrollcue:hover{opacity:1}
 .scrollcue .ring{
   width:44px;height:44px;border:1px solid rgba(255,255,255,.55);border-radius:50%;
-  display:grid;place-items:center;background:rgba(11,36,64,.18)
+  display:grid;place-items:center;background:rgba(0,0,0,.22)
 }
 .scrollcue svg{animation:cue 2.4s ease-in-out infinite}
 @keyframes cue{0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
@@ -221,12 +229,25 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   color:var(--ink);opacity:.75;width:max-content
 }
 .scrollcue.flow .ring{border-color:rgba(11,36,64,.4);background:none}
+/* le hero est une scène claire : sa flèche est à l'encre, comme son texte */
+.hero .scrollcue{color:var(--ink);opacity:.8}
+.hero .scrollcue .ring{border-color:rgba(11,36,64,.42);background:rgba(255,255,255,.5)}
+/* une section qui se termine par une flèche porte déjà sa propre respiration :
+   son fond de page n'a plus besoin du plein espacement de section */
+section:has(.scrollcue.flow),.joinblock:has(.scrollcue.flow){padding-bottom:clamp(44px,4.5vw,68px)}
+/* variante des flèches posées dans le flux sur scène sombre (fin du chapitre 04) */
+.joinblock .scrollcue.flow{color:#fff;opacity:.85}
+.joinblock .scrollcue.flow .ring{border-color:rgba(255,255,255,.5)}
 /* les ancres de scène plein écran se calent au sommet exact de la fenêtre
    (l'en-tête s'efface au défilement, pas besoin de marge) */
-#mission,#why,#how,#figures,#change,#projets{scroll-margin-top:0}
-.hero .eyebrow{color:var(--lilac)}
-.hero h1 em{color:var(--bright)}
-.hero .lead{color:rgba(255,255,255,.85)}
+#mission,#why,#how,#figures,#change,#projets,#publics,#news,#join,#newsletter{scroll-margin-top:0}
+/* L'accompagnement du défilement (recalage doux des scènes au sommet de la
+   fenêtre) est conduit par js/site.js, et non par scroll-snap : le snap CSS
+   bloquerait la lecture des scènes dont le contenu dépasse la hauteur
+   d'écran, ce qui arrive sur mobile et sur les portables peu hauts. */
+.hero .eyebrow{color:var(--blue)}
+.hero h1 em{color:var(--blue)}
+.hero .lead{color:var(--ink-2)}
 .eyebrow,.tag{
   display:inline-flex;align-items:center;gap:10px;font-size:var(--fs-eyebrow);letter-spacing:.14em;
   text-transform:uppercase;font-weight:600;font-variant-numeric:tabular-nums
@@ -239,7 +260,7 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   display:block;font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;
   font-weight:600;font-variant-numeric:tabular-nums;color:var(--muted);margin-bottom:22px
 }
-.stripe .chap,.joinblock .chap{color:var(--lilac)}
+.stripe .chap,.joinblock .chap{color:var(--bright)}
 /* calibré pour que chaque segment tienne sur une ligne dès ~1100px :
    deux lignes de titre au lieu de trois, la scène tient dans l'écran */
 .hero h1{font-size:clamp(2.75rem,5.9vw,5.25rem)}
@@ -255,6 +276,16 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
 @media(max-width:940px){
   .hero{min-height:78vh}
 }
+/* mobile : la flèche de transition se resserre et les scènes gagnent du
+   dégagement en bas — le texte ne vient plus toucher la flèche */
+@media(max-width:640px){
+  .scrollcue{bottom:14px;gap:8px;font-size:.6875rem;letter-spacing:.1em}
+  .scrollcue .ring{width:38px;height:38px}
+  .hero-inner{padding-bottom:158px}
+  .stripe{padding-bottom:158px}
+  .photoband .pb-inner{padding-bottom:158px}
+  .figures{padding-bottom:158px}
+}
 
 /* ---------- bande sombre (mission) ---------- */
 /* chaque scène du récit occupe un écran : hauteur pleine fenêtre,
@@ -268,13 +299,18 @@ nav button.navlink[aria-current="page"]::after{content:"";position:absolute;left
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;
   z-index:-2
 }
-.stripe::after{content:"";position:absolute;inset:0;background:rgba(11,36,64,.76);z-index:-1}
+/* Voile neutre, plus dense du côté du texte : il assombrit ce qu'il faut pour
+   la lisibilité sans reteinter la photographie, qui garde ses couleurs. */
+.stripe::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(96deg,rgba(0,0,0,.76) 0%,rgba(0,0,0,.68) 48%,rgba(0,0,0,.56) 100%)
+}
 .stripe>.wrap{width:100%}
 .stripe h2{font-size:min(var(--fs-h2-lg),6.2vh);line-height:1.06;letter-spacing:-.03em;max-width:21ch}
 .stripe h2 em{color:var(--bright)}
 .mv{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,64px);margin-top:clamp(28px,5vh,56px)}
 .mv .k{
-  font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;color:var(--lilac);
+  font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;color:var(--bright);
   font-weight:600;margin-bottom:16px;display:block
 }
 .mv blockquote{
@@ -328,7 +364,7 @@ section{padding:var(--sp-section) 0}
 
 /* ---------- chiffres clés (réf. wellcome.org) ---------- */
 .figures{
-  background:var(--ink);color:#fff;position:relative;
+  background:linear-gradient(180deg,var(--blue) 0%,var(--blue-d) 100%);color:#fff;position:relative;
   padding:clamp(44px,6vh,80px) 0 clamp(96px,13vh,128px);
   display:flex;align-items:center;min-height:100vh;min-height:100svh
 }
@@ -361,9 +397,16 @@ section{padding:var(--sp-section) 0}
 /* ---------- bandes photo pleine largeur (réf. nomoreplastic) ---------- */
 .photoband{position:relative;min-height:100vh;min-height:100svh;display:grid;place-items:center;overflow:hidden;isolation:isolate}
 .photoband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-#why>img{object-position:center 42%}
+#why>img{object-position:center 40%}
 #change>img{object-position:center}
-.photoband::after{content:"";position:absolute;inset:0;background:rgba(11,36,64,.62);z-index:-1}
+/* le texte des bandes photo est centré : l'ombre neutre se concentre au centre
+   et relâche vers les bords, où la photographie reste pleinement lisible */
+.photoband::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(0deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,0) 28%),
+    radial-gradient(ellipse 78% 56% at 50% 46%,rgba(0,0,0,.74) 0%,rgba(0,0,0,.58) 55%,rgba(0,0,0,.42) 100%)
+}
 .photoband .pb-inner{text-align:center;color:#fff;padding:clamp(36px,6vh,64px) 28px clamp(88px,12vh,112px);max-width:68ch}
 .photoband h2{
   font-size:min(clamp(1.375rem,.95rem + 1.9vw,2.5rem),4.6vh);font-weight:600;letter-spacing:.2em;
@@ -374,34 +417,37 @@ section{padding:var(--sp-section) 0}
 .photoband .credit{margin-top:clamp(14px,2.8vh,26px);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5)}
 
 /* ---------- vidéo + parcours d'adhésion (réf. Climate Pledge) ---------- */
-.joinblock{background:var(--ink);color:#fff;padding:var(--sp-section) 0}
+.joinblock{background:linear-gradient(165deg,var(--blue) 0%,#00315C 100%);color:#fff;padding:var(--sp-section) 0}
 .joinblock .tag{color:var(--on-dark)}
 .joinblock h2{color:#fff}
 .joinblock h2 em{color:var(--bright)}
 .joinblock .sec-head p{color:var(--on-dark)}
-.jv{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(34px,4.5vw,64px);align-items:start}
+/* La colonne de gauche porte le chapitre, le titre et la vidéo ; celle de
+   droite les trois étapes, centrées sur la hauteur : plus de vide sous la vidéo. */
+.jv{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(34px,4.5vw,64px);align-items:stretch}
+.jlead .sec-head{margin-bottom:clamp(24px,3.5vh,40px)}
 .player{position:relative;border-radius:var(--r);overflow:hidden;background:var(--ink-2);aspect-ratio:16/9}
 .player img{width:100%;height:100%;object-fit:cover}
 .player .play{
-  position:absolute;inset:0;display:grid;place-items:center;background:rgba(11,36,64,.28);
+  position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.24);
   border:0;cursor:pointer;color:#fff;font-family:inherit;transition:background .25s
 }
-.player .play:hover{background:rgba(11,36,64,.44)}
+.player .play:hover{background:rgba(0,0,0,.4)}
 .player .play span{
   width:76px;height:76px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--ink);
   display:grid;place-items:center
 }
 .player .badge{
-  position:absolute;top:14px;left:14px;background:rgba(11,36,64,.78);color:#fff;font-size:.6875rem;
+  position:absolute;top:14px;left:14px;background:rgba(0,0,0,.62);color:#fff;font-size:.6875rem;
   letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:7px 12px;border-radius:999px
 }
 .jv-cap{margin-top:22px;color:var(--on-dark);font-size:var(--fs-small);line-height:1.6;max-width:52ch}
 .jv-meta{margin-top:14px;color:var(--on-dark-soft);font-size:.8125rem;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
 .jv-meta a{color:#fff}
-.jsteps{display:flex;flex-direction:column;gap:0}
+.jsteps{display:flex;flex-direction:column;gap:0;justify-content:center}
 .jstep{padding:24px 0;border-top:1px solid var(--rule-dark)}
 .jstep:first-child{border-top:0;padding-top:0}
-.jstep .st{font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--lilac)}
+.jstep .st{font-size:var(--fs-eyebrow);letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--bright)}
 .jstep h3{margin-top:10px;color:#fff}
 .jstep p{margin-top:10px;color:var(--on-dark);font-size:var(--fs-small);line-height:1.6;max-width:44ch}
 .jstep .cta{margin-top:18px}
@@ -443,8 +489,8 @@ a.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(11,36,64,.07
   font-weight:600;padding:5px 11px;border-radius:999px;align-self:flex-start
 }
 .chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
-.c-run{background:var(--teal-l);color:var(--teal)}
-.c-prep{background:var(--amber-l);color:var(--amber)}
+.c-run{background:var(--bright);color:var(--blue-d)}
+.c-prep{background:var(--sand-strong);color:#63410E}
 .c-done{background:var(--blue-l);color:var(--blue-d)}
 .meta{
   font-size:.84375rem;color:var(--muted);letter-spacing:.02em;margin-top:auto;padding-top:8px;
@@ -459,12 +505,12 @@ a.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(11,36,64,.07
 .audience-band{background:var(--sand)}
 .audience-band .aud{counter-reset:audience;gap:16px}
 .audience-band .aud div{
-  counter-increment:audience;position:relative;background:rgba(255,255,255,.68);
+  counter-increment:audience;position:relative;background:rgba(255,255,255,.72);
   border:1px solid rgba(11,36,64,.12);border-top:3px solid var(--blue);
-  border-radius:var(--r);padding:26px 24px 28px;transition:transform .25s,box-shadow .25s
+  border-radius:var(--r);padding:20px 22px 22px;transition:transform .25s,box-shadow .25s
 }
 .audience-band .aud div::before{
-  content:counter(audience,decimal-leading-zero);display:block;margin-bottom:28px;
+  content:counter(audience,decimal-leading-zero);display:block;margin-bottom:12px;
   font-family:var(--serif);font-size:1.5rem;line-height:1;color:var(--blue)
 }
 .audience-band .aud div:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(11,36,64,.08)}

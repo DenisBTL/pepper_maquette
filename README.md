@@ -55,6 +55,9 @@ index.html      structure et contenus (FR par défaut, EN dans les attributs dat
 css/site.css    design system : jetons, échelle typographique, composants, responsive
 js/site.js      bascule FR/EN, vues, méga-menu, filtres, modale vidéo, apparitions
 img/            photographies provisoires (WebP)
+charte.html     charte graphique : couleurs, typographie, boutons, composants, icônes, images
+css/charte.css  mise en page de la charte (les composants restent rendus par site.css)
+js/charte.js    lecture des variables de site.css, contrastes calculés, copie des codes couleur
 ```
 
 Cinq vues cohabitent dans un même document : accueil, à propos, projets de

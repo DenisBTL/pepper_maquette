@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-04",
+  "result": "PASS",
+  "checks": [
+    {
+      "browser": "Chromium",
+      "version": "148.0.7778.96",
+      "pass": true,
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1280,
+        1440,
+        1920
+      ],
+      "nextControls": 12,
+      "lateralLinks": 12,
+      "checks": [
+        "progress 0 and 100 percent",
+        "header down/up/focus/menu/dialog",
+        "all sequential links and focus targets",
+        "active section and inverse contrast",
+        "keyboard navigation",
+        "FR/EN labels and URL",
+        "reduced motion live change",
+        "scroll animation interruption",
+        "responsive and text zoom",
+        "article reading progress",
+        "no JavaScript or HTTP errors"
+      ]
+    },
+    {
+      "browser": "WebKit",
+      "version": "18.2",
+      "pass": true,
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1280,
+        1440,
+        1920
+      ],
+      "nextControls": 12,
+      "lateralLinks": 12,
+      "checks": [
+        "progress 0 and 100 percent",
+        "header down/up/focus/menu/dialog",
+        "all sequential links and focus targets",
+        "active section and inverse contrast",
+        "keyboard navigation",
+        "FR/EN labels and URL",
+        "reduced motion live change",
+        "scroll animation interruption",
+        "responsive and text zoom",
+        "article reading progress",
+        "no JavaScript or HTTP errors"
+      ]
+    }
+  ],
+  "additionalChecks": [
+    "skip link visible above the fixed header and no heading occlusion",
+    "direct English section link",
+    "native section navigation without JavaScript"
+  ],
+  "keyboardScope": "Chromium: native first Tab to skip link. WebKit: explicit skip-link focus followed by Enter; native Tab order depends on browser keyboard settings.",
+  "arrivalHeader": true,
+  "captures": [
+    "navigation-ordinateur.png",
+    "navigation-mobile.png",
+    "navigation-laterale.png"
+  ]
+}

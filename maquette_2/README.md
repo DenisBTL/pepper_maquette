@@ -15,9 +15,8 @@ Ouvrir `index.html` ou servir la racine du dépôt avec un serveur statique,
 puis visiter `/maquette_2/`. Aucun build ni installation nécessaire.
 L’article est accessible depuis la première carte d’actualité.
 
-L’adresse GitHub Pages prévue après intégration dans `main` est
+L’adresse de consultation sur GitHub Pages est
 `https://denisbtl.github.io/pepper_maquette/maquette_2/`.
-La présence de ce fichier ne vaut pas confirmation de publication.
 
 ## Organisation
 
@@ -80,3 +79,42 @@ sont donc des liens et boutons HTML natifs, conformément à cette pile.
 5. Aucun échec HTTP local ni erreur JavaScript pendant les parcours vérifiés.
 
 Les contrôles exacts et leur portée figurent dans `validation/resultats.json`.
+
+## Aides de lecture reprises de la première maquette
+
+L’accueil propose une flèche à la fin de chaque tableau pour rejoindre le
+suivant, puis un retour au début depuis le pied de page. Les écrans larges
+disposent aussi de repères latéraux pour accéder directement aux douze
+tableaux. Le libellé apparaît au survol et au focus ; le repère actif est
+signalé visuellement et par `aria-current="location"`.
+
+La barre en haut indique la progression dans la page, sur ordinateur comme
+sur mobile et dans l’article. L’en-tête reste fixé en haut, s’efface lors de
+la descente après le début de page et réapparaît à la remontée. Il reste
+visible quand son menu est ouvert, quand un de ses contrôles a le focus ou
+qu’une fenêtre de dialogue est ouverte.
+
+Préconisation UX/UI et critères de vérification de cette reprise :
+
+- Entrées : flèches en fin de tableau, repères latéraux, menu et lien d’évitement.
+- Hiérarchie : le contenu conserve la priorité ; les aides de lecture restent
+  secondaires, dans les couleurs de la direction Vert botanique.
+- États et feedback : tableau actif, haut et bas de page, progression de 0 à
+  100 %, en-tête affiché ou rétracté, menu ouvert et focus clavier.
+- Navigation : défilement amorti comme dans la première maquette, interrompu
+  dès que l’utilisateur reprend la main. À l’arrivée, le focus suit la cible,
+  l’adresse conserve la langue et indique le tableau rejoint. L’en-tête revient
+  à l’arrivée pour situer le tableau, puis s’efface à la prochaine descente.
+- Responsive : repères latéraux à partir de 1340 px et 600 px de hauteur ;
+  flèches et barre disponibles sur les petits écrans, sans recouvrir le texte.
+- Accessibilité : liens natifs, libellés français/anglais, focus visible,
+  compensation de la hauteur de l’en-tête et mouvement réduit respecté,
+  y compris si la préférence change pendant la visite.
+- Repli : sans JavaScript, les ancres et le contenu restent accessibles ;
+  une cible inexistante n’est pas interceptée et ne bloque pas la navigation.
+- Acceptation : toutes les flèches mènent au tableau suivant, les douze repères
+  suivent la lecture, la barre atteint ses bornes, le header revient en remontant
+  et au clavier ; vérifier les menus, les dialogues, le zoom et le mouvement réduit.
+
+Les contrôles de cette évolution et les captures correspondantes sont dans
+`validation/navigation.json`.

@@ -1,0 +1,39 @@
+{
+  "fileKey": "xUIcohxRF4x1gGH0oX9Kg7",
+  "direction": "Cyan et miel",
+  "frames": {
+    "home": "71:128",
+    "article": "84:98",
+    "moodboard": "65:450"
+  },
+  "assets": [
+    {
+      "file": "foret.webp",
+      "figmaAsset": "c27c0",
+      "originalSha256": "09b7666c8bf8895f5aeb4408de455e73aff5f12f8c4ed58f9f8904a31e49572b",
+      "sha256": "10ee74af2a564a672e43731e71d0235fe4eb30bcd12cb4381049cdc7fc38fb18",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "rosee.webp",
+      "figmaAsset": "7ed5c",
+      "originalSha256": "9d68caafc028bc8e0baa75d1c4e562ca43d8911d05697da8b9cb87948fc0c552",
+      "sha256": "97b4ed262e3c8934fb812e211f33b5f4e8b6e938ee7340771d643c1caeea21b1",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "champ.webp",
+      "figmaAsset": "45706",
+      "originalSha256": "dd67a11dafe71290bc6b875a340ce435d90b4bf02aafb09c0e77bd8bef2d847e",
+      "sha256": "ef0cda6dc966a3fbe28977553c42bacad1300a7b0475ffffeffba60cb196c87e",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "europe.webp",
+      "figmaAsset": "e3783",
+      "originalSha256": "5c2e92a03fe840c5025ca502b283407b04a017c03e1d6818022a0ce8f640c808",
+      "sha256": "7182b2181f7026118eb146589e77344cecf40a05c5e8ff326e36683d1522547c",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    }
+  ]
+}

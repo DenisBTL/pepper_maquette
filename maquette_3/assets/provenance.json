@@ -1,0 +1,101 @@
+{
+  "fileKey": "xUIcohxRF4x1gGH0oX9Kg7",
+  "direction": "Bleu éditorial",
+  "frames": {
+    "home": "17:38",
+    "article": "84:173",
+    "moodboard": "68:162"
+  },
+  "assets": [
+    {
+      "file": "famille.webp",
+      "figmaAsset": "3a84b",
+      "originalSha256": "eb41eb391cb6b82ee7146771f11e2a8a0137700e62e201e598c5358f0a9d5b04",
+      "sha256": "4783705e8798af3ef07137a8e8884287fb22d47e4841a2debdb5a1c9bd0c2daf",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "foret.webp",
+      "figmaAsset": "c27c0",
+      "originalSha256": "09b7666c8bf8895f5aeb4408de455e73aff5f12f8c4ed58f9f8904a31e49572b",
+      "sha256": "10ee74af2a564a672e43731e71d0235fe4eb30bcd12cb4381049cdc7fc38fb18",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "feuille.webp",
+      "figmaAsset": "4e521",
+      "originalSha256": "375aaf010524036de2dc8b8622e38c735a165fc391fd28470c2ddd920859ddb2",
+      "sha256": "44f603b2f2c48927c748920ef231a65abf206f45c9101253d09f739f7547f73e",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "identifier.webp",
+      "figmaAsset": "eaf10",
+      "originalSha256": "621328a25dd7acb33b91459fed1b41b1722f6f2d799f29c6838cc92fda51c1ed",
+      "sha256": "373a3b5884e8f56fa43632e878dbaff305f009fcbac13d0cf6f555ad629d98de",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "protocole.webp",
+      "figmaAsset": "27003",
+      "originalSha256": "7719e0938dcddfed6f9fa5bb7070fa16bba721fd4a3a721c4c9a898493507f89",
+      "sha256": "5e65b9c46d48b29b8fdbb630d3f1be1ccbff8e4361ac66d4849530bc88c5a503",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "laboratoires.webp",
+      "figmaAsset": "aac99",
+      "originalSha256": "d18dfd0e00eacb0b51e68d6ce81deb3a802fa291167acaae4da8370d10961c10",
+      "sha256": "5879d4fac8f90a2777b8e1f512cea1f441f2cf59a84e239b8bd2b4ca1ce83557",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "europe-detail.webp",
+      "figmaAsset": "9da81",
+      "originalSha256": "2219a63c584c8b45e4096917ae6b960bbba69ebd41e7ccaa96070b0f5422cbc3",
+      "sha256": "1d426c63f7880b3ffac3dedd5cfcc5fe3882a28bd009fef1082835024941c7cc",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "hemicycle.webp",
+      "figmaAsset": "3f1be",
+      "originalSha256": "b16c049b8c43213770089110dd844012c18a1ecb2845ec4f8bd7615ada0b90fc",
+      "sha256": "963373429cb74b93e94e911fee1572e5249274630ff9d5866bce93dcd069f198",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "microscope.webp",
+      "figmaAsset": "d4fc7",
+      "originalSha256": "19a26f2fd39d23c1e1618edf18492fcea3714321a9d4d542726eadba6973fa9a",
+      "sha256": "a93be5ed168848990e9e06f038d8172df84b20fe137c443f82b26cfaf0bf5c41",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "generations.webp",
+      "figmaAsset": "a0d7d",
+      "originalSha256": "128ae48db07b5a11a2179b3020289843cd94d75d3721436e6cc0cec1b3ed4753",
+      "sha256": "b272942446c3e32ce2f7f7d2d00a05cf9fcfb5f1f229f977ac037d50923a5c43",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "conference.webp",
+      "figmaAsset": "a0ccd",
+      "originalSha256": "aaf9c81e88200ab2413645d5b3adc1d621da4f3b24bbae3397faad4cc3f085f8",
+      "sha256": "b1cf7a935b6bdaf94706326956df14e14503f259581f39871a36f4779ee1b2b5",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "pousses.webp",
+      "figmaAsset": "72bab",
+      "originalSha256": "aee7119d348958ab8cd33b81be45e9a232709574018a13683c05c70ffb87524a",
+      "sha256": "78c9ae0e73cc5f491f2223915fc933d30c696c97c9559fcdee6d67902385dcd4",
+      "processing": "Redimensionnement proportionnel, maximum 1920 × 1600 ; WebP qualité 87 ; aucune retouche du contenu."
+    },
+    {
+      "file": "proportion-thyroide.svg",
+      "figmaAsset": "9c619",
+      "sha256": "926ba27a01691f9a7592b66508906ce41ac33f0c2a47dbe053aad1f1b85b448b",
+      "processing": "SVG Figma conservé sans modification."
+    }
+  ]
+}

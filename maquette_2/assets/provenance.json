@@ -1,0 +1,194 @@
+{
+  "figmaFile": "xUIcohxRF4x1gGH0oX9Kg7",
+  "home": "60:663",
+  "article": "84:123",
+  "assets": [
+    {
+      "file": "composition-accueil.png",
+      "node": "60:972",
+      "designBounds": {
+        "width": 815,
+        "height": 508
+      },
+      "slot": "hero-composition",
+      "bytes": 593991,
+      "sha256": "87299949f35855d030394b8fa692dd5142f64c25096d2b4a30c56a17942a6583"
+    },
+    {
+      "file": "logo-pepper.png",
+      "node": "60:665",
+      "designBounds": {
+        "width": 144,
+        "height": 64
+      },
+      "slot": "brand",
+      "bytes": 3334,
+      "sha256": "a2b23c3487cbd2dae70857f168fefe35d372cf4c42a2599750706391c84c2273"
+    },
+    {
+      "file": "mission.png",
+      "node": "60:745",
+      "designBounds": {
+        "width": 154,
+        "height": 97
+      },
+      "slot": "mission-heading",
+      "bytes": 16801,
+      "sha256": "00111bff9212014fa0b9fee889d3d683ffcd84fe0e90f49f009472d1d5996d67"
+    },
+    {
+      "file": "vision.png",
+      "node": "60:755",
+      "designBounds": {
+        "width": 149,
+        "height": 88
+      },
+      "slot": "mission-heading",
+      "bytes": 17362,
+      "sha256": "c2b2789d8c4e092433ea096c9d9afbbd17c8b4b6e42aeb9d8aa9083c18e60780"
+    },
+    {
+      "file": "lancement.png",
+      "node": "60:789",
+      "designBounds": {
+        "width": 203,
+        "height": 176
+      },
+      "slot": "stat-illustration",
+      "bytes": 24805,
+      "sha256": "acb9860ad57bc509a340d9832b96176d8787cfca00a12acfd78d4ecb3c9ddd26"
+    },
+    {
+      "file": "validation.png",
+      "node": "60:811",
+      "designBounds": {
+        "width": 217,
+        "height": 128
+      },
+      "slot": "stat-illustration",
+      "bytes": 24715,
+      "sha256": "dc846757234ebfa3ffa8af8f26dda263d624f4b6907b5e6cd56cd8b1eea01088"
+    },
+    {
+      "file": "thyroide.png",
+      "node": "60:805",
+      "designBounds": {
+        "width": 139,
+        "height": 111
+      },
+      "slot": "stat-illustration",
+      "bytes": 17209,
+      "sha256": "dcc5bd165eb31826fc73c88b2fbc1f0518e80fedf76a9d7e436e4bb185fb8515"
+    },
+    {
+      "file": "instances.png",
+      "node": "60:817",
+      "designBounds": {
+        "width": 210,
+        "height": 135
+      },
+      "slot": "stat-illustration",
+      "bytes": 25975,
+      "sha256": "5b32d42c431e3a9a89a18f4483ef15f527d33448b49d7b4f5b91097686841235"
+    },
+    {
+      "file": "processus.png",
+      "node": "60:773",
+      "designBounds": {
+        "width": 1440,
+        "height": 909
+      },
+      "slot": "process background",
+      "bytes": 1688012,
+      "sha256": "bf8798c6f973cff525ae922c0f77e71ada3bb7ca872aaf53d5d811c70e2a07d7"
+    },
+    {
+      "file": "projets-feuille.png",
+      "node": "60:742",
+      "designBounds": {
+        "width": 1440,
+        "height": 1127
+      },
+      "slot": "projects background",
+      "bytes": 990992,
+      "sha256": "5a5182f4e7a7fb8ac0f2b30a47d3b0f36670d056d81c3f1a0ae8cd7fbddfdd50"
+    },
+    {
+      "file": "europe.png",
+      "node": "60:828",
+      "designBounds": {
+        "width": 635,
+        "height": 376
+      },
+      "slot": "impact-grid",
+      "bytes": 423598,
+      "sha256": "12d8ecca9a97b27f48dbe789ebf9a36dde7f54bed12b2b61790ffa1034bd2a33"
+    },
+    {
+      "file": "expertises.png",
+      "node": "60:884",
+      "designBounds": {
+        "width": 345,
+        "height": 229.603
+      },
+      "slot": "expertise-heading",
+      "bytes": 7783,
+      "sha256": "90a4b3fc97c3bdb57204a909af98a123c9d0d91ec9805630f451a45f8030fec4"
+    },
+    {
+      "file": "formation.png",
+      "node": "60:971",
+      "designBounds": {
+        "width": 668,
+        "height": 596
+      },
+      "slot": "training-image",
+      "bytes": 600473,
+      "sha256": "60d656caa77b366ff16a6d1623d9e48c4d3a2092abdb24ac2b8317a61f1b506e"
+    },
+    {
+      "file": "lecture.svg",
+      "node": "60:912",
+      "designBounds": {
+        "width": 72,
+        "height": 72
+      },
+      "slot": "video-placeholder",
+      "bytes": 255,
+      "sha256": "0bedb1a7646d7a19ad4f702856cfebb557dd025ac5d97d4db2a06ca8b13f9550"
+    },
+    {
+      "file": "fleche.svg",
+      "node": "60:731",
+      "designBounds": {
+        "width": 22,
+        "height": 14.7279
+      },
+      "slot": "button-arrow",
+      "bytes": 698,
+      "sha256": "f1bb1aee9db22338c5efaccb5e4911d0247bbdb6a64f12ec9680430928d3dacd"
+    },
+    {
+      "file": "article-feuille.png",
+      "node": "84:130",
+      "designBounds": {
+        "width": 545,
+        "height": 416
+      },
+      "slot": "article-hero",
+      "bytes": 1318622,
+      "sha256": "9d68caafc028bc8e0baa75d1c4e562ca43d8911d05697da8b9cb87948fc0c552"
+    },
+    {
+      "file": "fondu.svg",
+      "node": "60:774",
+      "designBounds": {
+        "width": 1440,
+        "height": 250
+      },
+      "slot": "process background transition",
+      "bytes": 488,
+      "sha256": "a97771f50623af5a881e0dff99d4aacd6c1dbf7b56081429e5147c6a220b218f"
+    }
+  ]
+}

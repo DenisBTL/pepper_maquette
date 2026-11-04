@@ -1,0 +1,190 @@
+{
+  "date": "2026-11-04",
+  "result": "PASS",
+  "source": {
+    "home": "Figma 60:663",
+    "article": "Figma 84:123"
+  },
+  "chromium": {
+    "frenchHomeWidths": [
+      320,
+      375,
+      390,
+      768,
+      1024,
+      1280,
+      1440,
+      1920
+    ],
+    "frenchArticleWidths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "dialogTriggers": 9,
+    "checks": [
+      "no horizontal or element overflow",
+      "all images decoded",
+      "Arsenal and Outfit loaded",
+      "FR/EN home and article navigation",
+      "all modal triggers and Escape closure",
+      "focus restored to trigger",
+      "newsletter preview and reset",
+      "mobile menu and Escape closure",
+      "reduced motion",
+      "no JavaScript errors",
+      "no failed HTTP responses",
+      "no external network requests"
+    ]
+  },
+  "crossBrowser": [
+    {
+      "browser": "Chromium",
+      "width": 320,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 320,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 390,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 390,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 768,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 768,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 1280,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 1280,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 1440,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "width": 1440,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "Chromium",
+      "scenario": "200 percent text zoom",
+      "width": 1440,
+      "scroll": 1440
+    },
+    {
+      "browser": "WebKit",
+      "width": 320,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 320,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 390,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 390,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 768,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 768,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 1280,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 1280,
+      "route": "article.html?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 1440,
+      "route": "?lang=en",
+      "pass": true
+    },
+    {
+      "browser": "WebKit",
+      "width": 1440,
+      "route": "article.html?lang=en",
+      "pass": true
+    }
+  ],
+  "additionalChecks": [
+    "contact topic selection and preview without any request",
+    "FR/EN/FR removes language parameter from article link",
+    "200 percent text size without horizontal overflow at 1440 px",
+    "non-empty asset files and SHA-256 provenance recorded",
+    "node --check js/site.js",
+    "git diff --cached --check"
+  ],
+  "scopeLimits": [
+    "Automated functional and layout checks, plus visual review; not a complete accessibility audit.",
+    "Video and news images intentionally remain placeholders from Figma.",
+    "Forms are demonstrations and never transmit data.",
+    "English content is a demonstration translation for validation.",
+    "No deployed version verified: available GitHub account lacks repository push permission."
+  ],
+  "captures": [
+    "accueil-ordinateur.png",
+    "accueil-mobile.png",
+    "article-ordinateur.png",
+    "article-mobile.png"
+  ]
+}

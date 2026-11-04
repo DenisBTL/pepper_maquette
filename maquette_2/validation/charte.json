@@ -1,0 +1,304 @@
+{
+  "date": "2026-11-04",
+  "result": "PASS",
+  "figma": "68:98",
+  "checks": [
+    {
+      "browser": "Chromium",
+      "version": "148.0.7778.96",
+      "result": "PASS",
+      "routes": [
+        "index.html",
+        "article.html",
+        "charte.html"
+      ],
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1280,
+        1440,
+        1920
+      ],
+      "checks": [
+        "M visible next to FR/EN on all three pages",
+        "FR/EN round trip and page titles",
+        "five palette values and clipboard success",
+        "clipboard denial feedback and code retained",
+        "footer entry",
+        "all images decoded",
+        "contents and real project link",
+        "newsletter dialog and mobile menu",
+        "200 percent text zoom",
+        "no HTTP or JavaScript errors",
+        "no external requests"
+      ],
+      "images": [
+        {
+          "src": "assets/logo-pepper.png",
+          "natural": [
+            144,
+            64
+          ],
+          "rendered": [
+            144,
+            64
+          ]
+        },
+        {
+          "src": "assets/moodboard-rosee.png",
+          "natural": [
+            224,
+            200
+          ],
+          "rendered": [
+            224,
+            200
+          ]
+        },
+        {
+          "src": "assets/moodboard-champ.png",
+          "natural": [
+            224,
+            200
+          ],
+          "rendered": [
+            224,
+            200
+          ]
+        },
+        {
+          "src": "assets/moodboard-europe.png",
+          "natural": [
+            224,
+            200
+          ],
+          "rendered": [
+            224,
+            200
+          ]
+        },
+        {
+          "src": "assets/moodboard-feuille.png",
+          "natural": [
+            224,
+            200
+          ],
+          "rendered": [
+            224,
+            200
+          ]
+        },
+        {
+          "src": "assets/charte-mission.svg",
+          "natural": [
+            190,
+            120
+          ],
+          "rendered": [
+            189.984375,
+            119.671875
+          ]
+        },
+        {
+          "src": "assets/charte-vision.svg",
+          "natural": [
+            190,
+            112
+          ],
+          "rendered": [
+            189.96875,
+            112.203125
+          ]
+        },
+        {
+          "src": "assets/charte-thyroide.svg",
+          "natural": [
+            170,
+            136
+          ],
+          "rendered": [
+            170.296875,
+            136
+          ]
+        },
+        {
+          "src": "assets/expertises.png",
+          "natural": [
+            290,
+            193
+          ],
+          "rendered": [
+            190,
+            126.4375
+          ]
+        },
+        {
+          "src": "assets/fleche.svg",
+          "natural": [
+            22,
+            15
+          ],
+          "rendered": [
+            22,
+            14.71875
+          ]
+        }
+      ]
+    },
+    {
+      "browser": "WebKit",
+      "version": "18.2",
+      "result": "PASS",
+      "routes": [
+        "index.html",
+        "article.html",
+        "charte.html"
+      ],
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1280,
+        1440,
+        1920
+      ],
+      "checks": [
+        "M visible next to FR/EN on all three pages",
+        "FR/EN round trip and page titles",
+        "five palette values and clipboard success",
+        "clipboard denial feedback and code retained",
+        "footer entry",
+        "all images decoded",
+        "contents and real project link",
+        "newsletter dialog and mobile menu",
+        "200 percent text zoom",
+        "no HTTP or JavaScript errors",
+        "no external requests"
+      ],
+      "images": [
+        {
+          "src": "assets/logo-pepper.png",
+          "natural": [
+            144,
+            64
+          ],
+          "rendered": [
+            144,
+            64
+          ]
+        },
+        {
+          "src": "assets/moodboard-rosee.png",
+          "natural": [
+            224,
+            200
+          ],
+          "rendered": [
+            224,
+            200
+          ]
+        },
+        {
+          "src": "assets/moodboard-champ.png",
+          "natural": [
+            224,
+            200
+          ],
+          "rendered": [
+            224,
+            200
+          ]
+        },
+        {
+          "src": "assets/moodboard-europe.png",
+          "natural": [
+            224,
+            200
+          ],
+          "rendered": [
+            224,
+            200
+          ]
+        },
+        {
+          "src": "assets/moodboard-feuille.png",
+          "natural": [
+            224,
+            200
+          ],
+          "rendered": [
+            224,
+            200
+          ]
+        },
+        {
+          "src": "assets/charte-mission.svg",
+          "natural": [
+            190,
+            119
+          ],
+          "rendered": [
+            190,
+            119.671875
+          ]
+        },
+        {
+          "src": "assets/charte-vision.svg",
+          "natural": [
+            190,
+            112
+          ],
+          "rendered": [
+            190,
+            112.203125
+          ]
+        },
+        {
+          "src": "assets/charte-thyroide.svg",
+          "natural": [
+            170,
+            136
+          ],
+          "rendered": [
+            170.296875,
+            136
+          ]
+        },
+        {
+          "src": "assets/expertises.png",
+          "natural": [
+            290,
+            193
+          ],
+          "rendered": [
+            190,
+            126.4375
+          ]
+        },
+        {
+          "src": "assets/fleche.svg",
+          "natural": [
+            22,
+            14
+          ],
+          "rendered": [
+            22,
+            14.71875
+          ]
+        }
+      ]
+    }
+  ],
+  "captures": [
+    "charte-ordinateur.png",
+    "charte-mobile.png"
+  ],
+  "additionalChecks": [
+    "SVG originals preserve illustration transparency",
+    "project card colours, fonts and corners match homepage component",
+    "reading controls preserved after header addition"
+  ]
+}

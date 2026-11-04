@@ -189,6 +189,84 @@
       "slot": "process background transition",
       "bytes": 488,
       "sha256": "a97771f50623af5a881e0dff99d4aacd6c1dbf7b56081429e5147c6a220b218f"
+    },
+    {
+      "file": "moodboard-rosee.png",
+      "node": "68:129",
+      "designBounds": {
+        "width": 224,
+        "height": 200
+      },
+      "slot": "charte-moodboard-grid",
+      "bytes": 81164,
+      "sha256": "b92e5e9fd4d0bd4c449b0bd4ee03dd326369d0d25ec2a524b81705c474d5a150"
+    },
+    {
+      "file": "moodboard-champ.png",
+      "node": "68:130",
+      "designBounds": {
+        "width": 224,
+        "height": 200
+      },
+      "slot": "charte-moodboard-grid",
+      "bytes": 75588,
+      "sha256": "8116ef6326c66f4bfd34c824b4c63fad73b049d02d9309abd4aee23de092c450"
+    },
+    {
+      "file": "moodboard-europe.png",
+      "node": "68:131",
+      "designBounds": {
+        "width": 224,
+        "height": 200
+      },
+      "slot": "charte-moodboard-grid",
+      "bytes": 88914,
+      "sha256": "8569612044754b2339123402931c0f2428ace353abad2ddd87ba5321231b157b"
+    },
+    {
+      "file": "moodboard-feuille.png",
+      "node": "95:101",
+      "designBounds": {
+        "width": 224,
+        "height": 200
+      },
+      "slot": "charte-moodboard-grid",
+      "bytes": 42809,
+      "sha256": "de57b723bb38f6483b498598af6a0abd4ab0419cda2827e96e8bb159514674f8"
+    },
+    {
+      "file": "charte-mission.svg",
+      "node": "92:119",
+      "designBounds": {
+        "width": 190,
+        "height": 119.675
+      },
+      "slot": "charte-engraving-stage",
+      "bytes": 3178015,
+      "sha256": "b7c9ed7ad8ce25672ede9e8e6edab6f35f7e4fe38350408634f7b808abfb4ef1"
+    },
+    {
+      "file": "charte-vision.svg",
+      "node": "92:128",
+      "designBounds": {
+        "width": 190,
+        "height": 112.215
+      },
+      "slot": "charte-engraving-stage",
+      "bytes": 3615829,
+      "sha256": "a24f9e957ba67103aebe80430afcfa3725c91916b1defe92cb9071744a6d1997"
+    },
+    {
+      "file": "charte-thyroide.svg",
+      "node": "92:137",
+      "designBounds": {
+        "width": 170.306,
+        "height": 136
+      },
+      "slot": "charte-engraving-stage",
+      "bytes": 472089,
+      "sha256": "fc85558c73bb52f4a0ecd97b89fac91dd847216785816472067d55474d33153e"
     }
-  ]
+  ],
+  "charte": "68:98"
 }

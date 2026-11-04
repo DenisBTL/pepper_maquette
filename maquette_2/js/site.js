@@ -7,7 +7,8 @@
     ['data-en', 'innerHTML'],
     ['data-en-alt', 'alt'],
     ['data-en-label', 'aria-label'],
-    ['data-en-ph', 'placeholder']
+    ['data-en-ph', 'placeholder'],
+    ['data-en-title', 'title']
   ];
   const french = new WeakMap();
   translations.forEach(([attribute, property]) => {
@@ -28,14 +29,18 @@
       });
     });
     doc.querySelectorAll('[data-lang]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
-    doc.title = language === 'en'
-      ? (doc.body.classList.contains('article-page') ? 'Pepper · Call for partner laboratories · Mockup 2' : 'Pepper · Better detection of endocrine disruptors · Mockup 2')
-      : (doc.body.classList.contains('article-page') ? 'Pepper · Appel à laboratoires partenaires · Maquette 2' : 'Pepper · Mieux détecter les perturbateurs endocriniens · Maquette 2');
+    const page = doc.body.classList.contains('charte-page') ? 'charte' : doc.body.classList.contains('article-page') ? 'article' : 'home';
+    const titles = {
+      home: { fr: 'Pepper · Mieux détecter les perturbateurs endocriniens · Maquette 2', en: 'Pepper · Better detection of endocrine disruptors · Mockup 2' },
+      article: { fr: 'Pepper · Appel à laboratoires partenaires · Maquette 2', en: 'Pepper · Call for partner laboratories · Mockup 2' },
+      charte: { fr: 'Pepper · Direction artistique · Vert botanique', en: 'Pepper · Art direction · Botanical green' }
+    };
+    doc.title = titles[page][language];
     const url = new URL(location.href);
     if (language === 'en') url.searchParams.set('lang', 'en');
     else url.searchParams.delete('lang');
     if (location.protocol !== 'file:') history.replaceState(null, '', url);
-    doc.querySelectorAll('a[data-article-link],a[data-home-link]').forEach(link => {
+    doc.querySelectorAll('a[data-article-link],a[data-home-link],a[data-local-link]').forEach(link => {
       const destination = new URL(link.href);
       if (language === 'en') destination.searchParams.set('lang', 'en');
       else destination.searchParams.delete('lang');

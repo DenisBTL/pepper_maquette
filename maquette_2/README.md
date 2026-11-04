@@ -118,3 +118,27 @@ Préconisation UX/UI et critères de vérification de cette reprise :
 
 Les contrôles de cette évolution et les captures correspondantes sont dans
 `validation/navigation.json`.
+
+## Direction artistique et moodboard
+
+`charte.html` reprend la planche Figma « Direction 01 · Vert botanique »
+(68:98) : palette, Arsenal et Outfit, quatre photographies et gravures.
+Les composants supplémentaires réutilisent les styles réels de la maquette.
+
+- Entrées : bouton « M » à côté de FR/EN sur l’accueil, l’article et la charte,
+  libellé « Moodboard · Direction artistique » ; lien dans le pied de page.
+- Hiérarchie : direction et intention, couleurs, typographies, iconographie,
+  moodboard photographique puis exemples de composants et de leurs états.
+- États : accès actif sur la charte, survol et focus des liens ; copie d’un
+  code couleur réussie ou indisponible avec retour textuel explicite.
+- Feedback : le code hexadécimal reste lisible et sélectionnable ; une erreur
+  de presse-papiers ne masque pas le code. Aucun formulaire ne transmet de données.
+- Responsive : bouton M conservé à côté des langues, grilles de cinq couleurs
+  et quatre images réorganisées sur petit écran ; aucun recouvrement du menu.
+- Accessibilité : libellé développé pour M, clavier, focus, titres structurés,
+  alternatives d’images et état courant. Les liens de retour conservent la langue.
+- Acceptation : ouvrir la charte depuis l’accueil et l’article, revenir dans la
+  même langue, consulter tous les visuels, copier une couleur, gérer un refus du
+  presse-papiers, vérifier mobile, grand écran et zoom à 200 %.
+
+Les résultats et captures de cette évolution sont dans `validation/charte.json`.

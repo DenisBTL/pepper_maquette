@@ -1,0 +1,3831 @@
+{
+  "date": "2026-11-05T00:40:14.595Z",
+  "base": "http://127.0.0.1:8769",
+  "baseline": "2ba3eed2ef9474473f9dd197d9fef10a28c6a237",
+  "layouts": [
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "index",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "article",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "file": "charte",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "index",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "article",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "file": "charte",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    }
+  ],
+  "geometry": [
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 320,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 5957.015625,
+          "titleTop": 6062.609375,
+          "detailTop": 6116.609375
+        },
+        {
+          "cardTop": 6248.609375,
+          "titleTop": 6354.203125,
+          "detailTop": 6444.203125
+        },
+        {
+          "cardTop": 6603.203125,
+          "titleTop": 6708.796875,
+          "detailTop": 6762.796875
+        },
+        {
+          "cardTop": 6994.296875,
+          "titleTop": 7099.890625,
+          "detailTop": 7189.890625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          10582.40625
+        ],
+        [
+          10834.1875
+        ],
+        [
+          11112.359375
+        ],
+        [
+          11337.75
+        ],
+        [
+          11590.140625
+        ],
+        [
+          11761.53125
+        ]
+      ],
+      "editorialAxes": [
+        20
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 320,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 5658.046875,
+          "titleTop": 5763.640625,
+          "detailTop": 5817.640625
+        },
+        {
+          "cardTop": 5976.640625,
+          "titleTop": 6082.234375,
+          "detailTop": 6172.234375
+        },
+        {
+          "cardTop": 6304.234375,
+          "titleTop": 6409.828125,
+          "detailTop": 6463.828125
+        },
+        {
+          "cardTop": 6668.328125,
+          "titleTop": 6773.921875,
+          "detailTop": 6863.921875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          10044.0625
+        ],
+        [
+          10295.84375
+        ],
+        [
+          10547.625
+        ],
+        [
+          10746.015625
+        ],
+        [
+          10971.40625
+        ],
+        [
+          11169.796875
+        ]
+      ],
+      "editorialAxes": [
+        20
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 390,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 5508.5,
+          "titleTop": 5614.09375,
+          "detailTop": 5668.09375
+        },
+        {
+          "cardTop": 5800.09375,
+          "titleTop": 5905.6875,
+          "detailTop": 5959.6875
+        },
+        {
+          "cardTop": 6091.6875,
+          "titleTop": 6197.28125,
+          "detailTop": 6251.28125
+        },
+        {
+          "cardTop": 6455.78125,
+          "titleTop": 6561.375,
+          "detailTop": 6651.375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          9706.515625
+        ],
+        [
+          9904.90625
+        ],
+        [
+          10129.6875
+        ],
+        [
+          10328.078125
+        ],
+        [
+          10553.46875
+        ],
+        [
+          10724.859375
+        ]
+      ],
+      "editorialAxes": [
+        20
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 390,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 5190.15625,
+          "titleTop": 5295.75,
+          "detailTop": 5349.75
+        },
+        {
+          "cardTop": 5481.75,
+          "titleTop": 5587.34375,
+          "detailTop": 5641.34375
+        },
+        {
+          "cardTop": 5746.34375,
+          "titleTop": 5851.9375,
+          "detailTop": 5905.9375
+        },
+        {
+          "cardTop": 6083.4375,
+          "titleTop": 6189.03125,
+          "detailTop": 6243.03125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          9146.171875
+        ],
+        [
+          9344.5625
+        ],
+        [
+          9569.34375
+        ],
+        [
+          9767.734375
+        ],
+        [
+          9993.125
+        ],
+        [
+          10164.515625
+        ]
+      ],
+      "editorialAxes": [
+        20
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 650,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4741.40625,
+          "titleTop": 4847,
+          "detailTop": 4901
+        },
+        {
+          "cardTop": 4979,
+          "titleTop": 5084.59375,
+          "detailTop": 5138.59375
+        },
+        {
+          "cardTop": 5216.59375,
+          "titleTop": 5322.1875,
+          "detailTop": 5376.1875
+        },
+        {
+          "cardTop": 5553.6875,
+          "titleTop": 5659.28125,
+          "detailTop": 5713.28125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8183.421875
+        ],
+        [
+          8354.8125
+        ],
+        [
+          8526.203125
+        ],
+        [
+          8697.59375
+        ],
+        [
+          8868.984375
+        ],
+        [
+          9013.375
+        ]
+      ],
+      "editorialAxes": [
+        32.5
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 650,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4633.40625,
+          "titleTop": 4739,
+          "detailTop": 4793
+        },
+        {
+          "cardTop": 4871,
+          "titleTop": 4976.59375,
+          "detailTop": 5030.59375
+        },
+        {
+          "cardTop": 5108.59375,
+          "titleTop": 5214.1875,
+          "detailTop": 5268.1875
+        },
+        {
+          "cardTop": 5418.6875,
+          "titleTop": 5524.28125,
+          "detailTop": 5578.28125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7994.421875
+        ],
+        [
+          8165.8125
+        ],
+        [
+          8337.203125
+        ],
+        [
+          8508.59375
+        ],
+        [
+          8679.984375
+        ],
+        [
+          8824.375
+        ]
+      ],
+      "editorialAxes": [
+        32.5
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 768,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4092.5,
+          "titleTop": 4196.09375,
+          "detailTop": 4278.09375
+        },
+        {
+          "cardTop": 4092.5,
+          "titleTop": 4196.09375,
+          "detailTop": 4278.09375
+        },
+        {
+          "cardTop": 4437.09375,
+          "titleTop": 4540.6875,
+          "detailTop": 4622.6875
+        },
+        {
+          "cardTop": 4437.09375,
+          "titleTop": 4540.6875,
+          "detailTop": 4622.6875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7312.1875
+        ],
+        [
+          7454.1875
+        ],
+        [
+          7596.1875
+        ],
+        [
+          7741.1875
+        ],
+        [
+          7883.1875
+        ],
+        [
+          7998.1875
+        ]
+      ],
+      "editorialAxes": [
+        291.88
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 768,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4005.3125,
+          "titleTop": 4108.90625,
+          "detailTop": 4190.90625
+        },
+        {
+          "cardTop": 4005.3125,
+          "titleTop": 4108.90625,
+          "detailTop": 4190.90625
+        },
+        {
+          "cardTop": 4322.90625,
+          "titleTop": 4426.5,
+          "detailTop": 4475.5
+        },
+        {
+          "cardTop": 4322.90625,
+          "titleTop": 4426.5,
+          "detailTop": 4475.5
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7039
+        ],
+        [
+          7181
+        ],
+        [
+          7323
+        ],
+        [
+          7468
+        ],
+        [
+          7610
+        ],
+        [
+          7731
+        ]
+      ],
+      "editorialAxes": [
+        291.88
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1024,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4257.40625,
+          "titleTop": 4361,
+          "detailTop": 4480.5
+        },
+        {
+          "cardTop": 4257.40625,
+          "titleTop": 4361,
+          "detailTop": 4480.5
+        },
+        {
+          "cardTop": 4257.40625,
+          "titleTop": 4361,
+          "detailTop": 4480.5
+        },
+        {
+          "cardTop": 4257.40625,
+          "titleTop": 4361,
+          "detailTop": 4480.5
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7241.890625
+        ],
+        [
+          7362.890625
+        ],
+        [
+          7493.484375
+        ],
+        [
+          7652.875
+        ],
+        [
+          7803.875
+        ],
+        [
+          7905.671875
+        ]
+      ],
+      "editorialAxes": [
+        383.02
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1024,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4140.015625,
+          "titleTop": 4243.609375,
+          "detailTop": 4363.109375
+        },
+        {
+          "cardTop": 4140.015625,
+          "titleTop": 4243.609375,
+          "detailTop": 4363.109375
+        },
+        {
+          "cardTop": 4140.015625,
+          "titleTop": 4243.609375,
+          "detailTop": 4363.109375
+        },
+        {
+          "cardTop": 4140.015625,
+          "titleTop": 4243.609375,
+          "detailTop": 4363.109375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6928.703125
+        ],
+        [
+          7049.703125
+        ],
+        [
+          7180.296875
+        ],
+        [
+          7310.890625
+        ],
+        [
+          7461.890625
+        ],
+        [
+          7563.6875
+        ]
+      ],
+      "editorialAxes": [
+        383.02
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1100,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4185.953125,
+          "titleTop": 4293.53125,
+          "detailTop": 4413.03125
+        },
+        {
+          "cardTop": 4185.953125,
+          "titleTop": 4293.53125,
+          "detailTop": 4413.03125
+        },
+        {
+          "cardTop": 4185.953125,
+          "titleTop": 4293.53125,
+          "detailTop": 4413.03125
+        },
+        {
+          "cardTop": 4185.953125,
+          "titleTop": 4293.53125,
+          "detailTop": 4413.03125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7055.0625
+        ],
+        [
+          7176.0625
+        ],
+        [
+          7306.65625
+        ],
+        [
+          7466.046875
+        ],
+        [
+          7587.046875
+        ],
+        [
+          7688.84375
+        ]
+      ],
+      "editorialAxes": [
+        382.58,
+        378.13
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1100,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3970.0625,
+          "titleTop": 4077.640625,
+          "detailTop": 4197.140625
+        },
+        {
+          "cardTop": 3970.0625,
+          "titleTop": 4077.640625,
+          "detailTop": 4197.140625
+        },
+        {
+          "cardTop": 3970.0625,
+          "titleTop": 4077.640625,
+          "detailTop": 4197.140625
+        },
+        {
+          "cardTop": 3970.0625,
+          "titleTop": 4077.640625,
+          "detailTop": 4197.140625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6740.15625
+        ],
+        [
+          6861.15625
+        ],
+        [
+          6991.75
+        ],
+        [
+          7122.34375
+        ],
+        [
+          7243.34375
+        ],
+        [
+          7345.140625
+        ]
+      ],
+      "editorialAxes": [
+        382.58,
+        378.13
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1280,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4062.546875,
+          "titleTop": 4180.859375,
+          "detailTop": 4300.359375
+        },
+        {
+          "cardTop": 4062.546875,
+          "titleTop": 4180.859375,
+          "detailTop": 4300.359375
+        },
+        {
+          "cardTop": 4062.546875,
+          "titleTop": 4180.859375,
+          "detailTop": 4300.359375
+        },
+        {
+          "cardTop": 4062.546875,
+          "titleTop": 4180.859375,
+          "detailTop": 4300.359375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6925.75
+        ],
+        [
+          7046.75
+        ],
+        [
+          7167.75
+        ],
+        [
+          7327.140625
+        ],
+        [
+          7448.140625
+        ],
+        [
+          7549.9375
+        ]
+      ],
+      "editorialAxes": [
+        441.56,
+        440
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1280,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3992.953125,
+          "titleTop": 4111.265625,
+          "detailTop": 4196.265625
+        },
+        {
+          "cardTop": 3992.953125,
+          "titleTop": 4111.265625,
+          "detailTop": 4196.265625
+        },
+        {
+          "cardTop": 3992.953125,
+          "titleTop": 4111.265625,
+          "detailTop": 4196.265625
+        },
+        {
+          "cardTop": 3992.953125,
+          "titleTop": 4111.265625,
+          "detailTop": 4196.265625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6689.640625
+        ],
+        [
+          6810.640625
+        ],
+        [
+          6941.234375
+        ],
+        [
+          7071.828125
+        ],
+        [
+          7192.828125
+        ],
+        [
+          7294.625
+        ]
+      ],
+      "editorialAxes": [
+        441.56,
+        440
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1440,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4002.515625,
+          "titleTop": 4130.3125,
+          "detailTop": 4215.3125
+        },
+        {
+          "cardTop": 4002.515625,
+          "titleTop": 4130.3125,
+          "detailTop": 4215.3125
+        },
+        {
+          "cardTop": 4002.515625,
+          "titleTop": 4130.3125,
+          "detailTop": 4215.3125
+        },
+        {
+          "cardTop": 4002.515625,
+          "titleTop": 4130.3125,
+          "detailTop": 4215.3125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6823.484375
+        ],
+        [
+          6944.484375
+        ],
+        [
+          7065.484375
+        ],
+        [
+          7196.078125
+        ],
+        [
+          7317.078125
+        ],
+        [
+          7418.875
+        ]
+      ],
+      "editorialAxes": [
+        494,
+        495
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1440,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3972.515625,
+          "titleTop": 4100.3125,
+          "detailTop": 4185.3125
+        },
+        {
+          "cardTop": 3972.515625,
+          "titleTop": 4100.3125,
+          "detailTop": 4185.3125
+        },
+        {
+          "cardTop": 3972.515625,
+          "titleTop": 4100.3125,
+          "detailTop": 4185.3125
+        },
+        {
+          "cardTop": 3972.515625,
+          "titleTop": 4100.3125,
+          "detailTop": 4185.3125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6656.96875
+        ],
+        [
+          6777.96875
+        ],
+        [
+          6898.96875
+        ],
+        [
+          7029.5625
+        ],
+        [
+          7150.5625
+        ],
+        [
+          7252.359375
+        ]
+      ],
+      "editorialAxes": [
+        494,
+        495
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1920,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4004.46875,
+          "titleTop": 4132.265625,
+          "detailTop": 4217.265625
+        },
+        {
+          "cardTop": 4004.46875,
+          "titleTop": 4132.265625,
+          "detailTop": 4217.265625
+        },
+        {
+          "cardTop": 4004.46875,
+          "titleTop": 4132.265625,
+          "detailTop": 4217.265625
+        },
+        {
+          "cardTop": 4004.46875,
+          "titleTop": 4132.265625,
+          "detailTop": 4217.265625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6827.734375
+        ],
+        [
+          6948.734375
+        ],
+        [
+          7069.734375
+        ],
+        [
+          7200.328125
+        ],
+        [
+          7321.328125
+        ],
+        [
+          7423.125
+        ]
+      ],
+      "editorialAxes": [
+        734,
+        735
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "width": 1920,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3974.46875,
+          "titleTop": 4102.265625,
+          "detailTop": 4187.265625
+        },
+        {
+          "cardTop": 3974.46875,
+          "titleTop": 4102.265625,
+          "detailTop": 4187.265625
+        },
+        {
+          "cardTop": 3974.46875,
+          "titleTop": 4102.265625,
+          "detailTop": 4187.265625
+        },
+        {
+          "cardTop": 3974.46875,
+          "titleTop": 4102.265625,
+          "detailTop": 4187.265625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6661.21875
+        ],
+        [
+          6782.21875
+        ],
+        [
+          6903.21875
+        ],
+        [
+          7033.8125
+        ],
+        [
+          7154.8125
+        ],
+        [
+          7256.609375
+        ]
+      ],
+      "editorialAxes": [
+        734,
+        735
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 320,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 5957.015625,
+          "titleTop": 6062.609375,
+          "detailTop": 6116.609375
+        },
+        {
+          "cardTop": 6248.609375,
+          "titleTop": 6354.203125,
+          "detailTop": 6444.203125
+        },
+        {
+          "cardTop": 6603.203125,
+          "titleTop": 6708.796875,
+          "detailTop": 6762.796875
+        },
+        {
+          "cardTop": 6994.296875,
+          "titleTop": 7099.890625,
+          "detailTop": 7189.890625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          10582.40625
+        ],
+        [
+          10834.1875
+        ],
+        [
+          11112.359375
+        ],
+        [
+          11337.75
+        ],
+        [
+          11590.140625
+        ],
+        [
+          11761.53125
+        ]
+      ],
+      "editorialAxes": [
+        20
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 320,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 5658.046875,
+          "titleTop": 5763.640625,
+          "detailTop": 5817.640625
+        },
+        {
+          "cardTop": 5976.640625,
+          "titleTop": 6082.234375,
+          "detailTop": 6172.234375
+        },
+        {
+          "cardTop": 6304.234375,
+          "titleTop": 6409.828125,
+          "detailTop": 6463.828125
+        },
+        {
+          "cardTop": 6668.328125,
+          "titleTop": 6773.921875,
+          "detailTop": 6863.921875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          10044.0625
+        ],
+        [
+          10295.84375
+        ],
+        [
+          10547.625
+        ],
+        [
+          10746.015625
+        ],
+        [
+          10971.40625
+        ],
+        [
+          11169.796875
+        ]
+      ],
+      "editorialAxes": [
+        20
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 390,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 5508.5,
+          "titleTop": 5614.09375,
+          "detailTop": 5668.09375
+        },
+        {
+          "cardTop": 5800.09375,
+          "titleTop": 5905.6875,
+          "detailTop": 5959.6875
+        },
+        {
+          "cardTop": 6091.6875,
+          "titleTop": 6197.28125,
+          "detailTop": 6251.28125
+        },
+        {
+          "cardTop": 6455.78125,
+          "titleTop": 6561.375,
+          "detailTop": 6651.375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          9706.515625
+        ],
+        [
+          9904.90625
+        ],
+        [
+          10129.6875
+        ],
+        [
+          10328.078125
+        ],
+        [
+          10553.46875
+        ],
+        [
+          10724.859375
+        ]
+      ],
+      "editorialAxes": [
+        20
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 390,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 5190.15625,
+          "titleTop": 5295.75,
+          "detailTop": 5349.75
+        },
+        {
+          "cardTop": 5481.75,
+          "titleTop": 5587.34375,
+          "detailTop": 5641.34375
+        },
+        {
+          "cardTop": 5746.34375,
+          "titleTop": 5851.9375,
+          "detailTop": 5905.9375
+        },
+        {
+          "cardTop": 6083.4375,
+          "titleTop": 6189.03125,
+          "detailTop": 6243.03125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          9146.171875
+        ],
+        [
+          9344.5625
+        ],
+        [
+          9569.34375
+        ],
+        [
+          9767.734375
+        ],
+        [
+          9993.125
+        ],
+        [
+          10164.515625
+        ]
+      ],
+      "editorialAxes": [
+        20
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 650,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4741.40625,
+          "titleTop": 4847,
+          "detailTop": 4901
+        },
+        {
+          "cardTop": 4979,
+          "titleTop": 5084.59375,
+          "detailTop": 5138.59375
+        },
+        {
+          "cardTop": 5216.59375,
+          "titleTop": 5322.1875,
+          "detailTop": 5376.1875
+        },
+        {
+          "cardTop": 5553.6875,
+          "titleTop": 5659.28125,
+          "detailTop": 5713.28125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8183.421875
+        ],
+        [
+          8354.8125
+        ],
+        [
+          8526.203125
+        ],
+        [
+          8697.59375
+        ],
+        [
+          8868.984375
+        ],
+        [
+          9013.375
+        ]
+      ],
+      "editorialAxes": [
+        32.5
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 650,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4633.40625,
+          "titleTop": 4739,
+          "detailTop": 4793
+        },
+        {
+          "cardTop": 4871,
+          "titleTop": 4976.59375,
+          "detailTop": 5030.59375
+        },
+        {
+          "cardTop": 5108.59375,
+          "titleTop": 5214.1875,
+          "detailTop": 5268.1875
+        },
+        {
+          "cardTop": 5418.6875,
+          "titleTop": 5524.28125,
+          "detailTop": 5578.28125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7994.421875
+        ],
+        [
+          8165.8125
+        ],
+        [
+          8337.203125
+        ],
+        [
+          8508.59375
+        ],
+        [
+          8679.984375
+        ],
+        [
+          8824.375
+        ]
+      ],
+      "editorialAxes": [
+        32.5
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 768,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4092.453125,
+          "titleTop": 4196.046875,
+          "detailTop": 4278.046875
+        },
+        {
+          "cardTop": 4092.453125,
+          "titleTop": 4196.046875,
+          "detailTop": 4278.046875
+        },
+        {
+          "cardTop": 4437.046875,
+          "titleTop": 4540.640625,
+          "detailTop": 4622.640625
+        },
+        {
+          "cardTop": 4437.046875,
+          "titleTop": 4540.640625,
+          "detailTop": 4622.640625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7312.109375
+        ],
+        [
+          7454.109375
+        ],
+        [
+          7596.109375
+        ],
+        [
+          7741.109375
+        ],
+        [
+          7883.109375
+        ],
+        [
+          7998.109375
+        ]
+      ],
+      "editorialAxes": [
+        291.88
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 768,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4005.265625,
+          "titleTop": 4108.859375,
+          "detailTop": 4190.859375
+        },
+        {
+          "cardTop": 4005.265625,
+          "titleTop": 4108.859375,
+          "detailTop": 4190.859375
+        },
+        {
+          "cardTop": 4322.859375,
+          "titleTop": 4426.453125,
+          "detailTop": 4475.453125
+        },
+        {
+          "cardTop": 4322.859375,
+          "titleTop": 4426.453125,
+          "detailTop": 4475.453125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7038.921875
+        ],
+        [
+          7180.921875
+        ],
+        [
+          7322.921875
+        ],
+        [
+          7467.921875
+        ],
+        [
+          7609.921875
+        ],
+        [
+          7730.921875
+        ]
+      ],
+      "editorialAxes": [
+        291.88
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1024,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4257.40625,
+          "titleTop": 4361,
+          "detailTop": 4480.5
+        },
+        {
+          "cardTop": 4257.40625,
+          "titleTop": 4361,
+          "detailTop": 4480.5
+        },
+        {
+          "cardTop": 4257.40625,
+          "titleTop": 4361,
+          "detailTop": 4480.5
+        },
+        {
+          "cardTop": 4257.40625,
+          "titleTop": 4361,
+          "detailTop": 4480.5
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7241.890625
+        ],
+        [
+          7362.890625
+        ],
+        [
+          7493.484375
+        ],
+        [
+          7652.875
+        ],
+        [
+          7803.875
+        ],
+        [
+          7905.671875
+        ]
+      ],
+      "editorialAxes": [
+        383.02
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1024,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4140.015625,
+          "titleTop": 4243.609375,
+          "detailTop": 4363.109375
+        },
+        {
+          "cardTop": 4140.015625,
+          "titleTop": 4243.609375,
+          "detailTop": 4363.109375
+        },
+        {
+          "cardTop": 4140.015625,
+          "titleTop": 4243.609375,
+          "detailTop": 4363.109375
+        },
+        {
+          "cardTop": 4140.015625,
+          "titleTop": 4243.609375,
+          "detailTop": 4363.109375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6944.203125
+        ],
+        [
+          7065.203125
+        ],
+        [
+          7195.796875
+        ],
+        [
+          7326.390625
+        ],
+        [
+          7477.390625
+        ],
+        [
+          7579.1875
+        ]
+      ],
+      "editorialAxes": [
+        383.02
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1100,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4185.953125,
+          "titleTop": 4293.515625,
+          "detailTop": 4413.015625
+        },
+        {
+          "cardTop": 4185.953125,
+          "titleTop": 4293.515625,
+          "detailTop": 4413.015625
+        },
+        {
+          "cardTop": 4185.953125,
+          "titleTop": 4293.515625,
+          "detailTop": 4413.015625
+        },
+        {
+          "cardTop": 4185.953125,
+          "titleTop": 4293.515625,
+          "detailTop": 4413.015625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7055.046875
+        ],
+        [
+          7176.046875
+        ],
+        [
+          7306.640625
+        ],
+        [
+          7466.03125
+        ],
+        [
+          7587.03125
+        ],
+        [
+          7688.828125
+        ]
+      ],
+      "editorialAxes": [
+        382.58,
+        378.11
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1100,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3970.0625,
+          "titleTop": 4077.625,
+          "detailTop": 4197.125
+        },
+        {
+          "cardTop": 3970.0625,
+          "titleTop": 4077.625,
+          "detailTop": 4197.125
+        },
+        {
+          "cardTop": 3970.0625,
+          "titleTop": 4077.625,
+          "detailTop": 4197.125
+        },
+        {
+          "cardTop": 3970.0625,
+          "titleTop": 4077.625,
+          "detailTop": 4197.125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6768.640625
+        ],
+        [
+          6889.640625
+        ],
+        [
+          7020.234375
+        ],
+        [
+          7150.828125
+        ],
+        [
+          7271.828125
+        ],
+        [
+          7373.625
+        ]
+      ],
+      "editorialAxes": [
+        382.58,
+        378.11
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1280,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4062.515625,
+          "titleTop": 4180.828125,
+          "detailTop": 4300.328125
+        },
+        {
+          "cardTop": 4062.515625,
+          "titleTop": 4180.828125,
+          "detailTop": 4300.328125
+        },
+        {
+          "cardTop": 4062.515625,
+          "titleTop": 4180.828125,
+          "detailTop": 4300.328125
+        },
+        {
+          "cardTop": 4062.515625,
+          "titleTop": 4180.828125,
+          "detailTop": 4300.328125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6925.6875
+        ],
+        [
+          7046.6875
+        ],
+        [
+          7167.6875
+        ],
+        [
+          7327.078125
+        ],
+        [
+          7448.078125
+        ],
+        [
+          7549.875
+        ]
+      ],
+      "editorialAxes": [
+        441.56,
+        439.98
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1280,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3992.921875,
+          "titleTop": 4111.234375,
+          "detailTop": 4196.234375
+        },
+        {
+          "cardTop": 3992.921875,
+          "titleTop": 4111.234375,
+          "detailTop": 4196.234375
+        },
+        {
+          "cardTop": 3992.921875,
+          "titleTop": 4111.234375,
+          "detailTop": 4196.234375
+        },
+        {
+          "cardTop": 3992.921875,
+          "titleTop": 4111.234375,
+          "detailTop": 4196.234375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6689.578125
+        ],
+        [
+          6810.578125
+        ],
+        [
+          6941.171875
+        ],
+        [
+          7071.765625
+        ],
+        [
+          7192.765625
+        ],
+        [
+          7294.5625
+        ]
+      ],
+      "editorialAxes": [
+        441.56,
+        439.98
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1440,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4002.484375,
+          "titleTop": 4130.28125,
+          "detailTop": 4215.28125
+        },
+        {
+          "cardTop": 4002.484375,
+          "titleTop": 4130.28125,
+          "detailTop": 4215.28125
+        },
+        {
+          "cardTop": 4002.484375,
+          "titleTop": 4130.28125,
+          "detailTop": 4215.28125
+        },
+        {
+          "cardTop": 4002.484375,
+          "titleTop": 4130.28125,
+          "detailTop": 4215.28125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6823.421875
+        ],
+        [
+          6944.421875
+        ],
+        [
+          7065.421875
+        ],
+        [
+          7196.015625
+        ],
+        [
+          7317.015625
+        ],
+        [
+          7418.8125
+        ]
+      ],
+      "editorialAxes": [
+        494,
+        495
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1440,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3972.484375,
+          "titleTop": 4100.28125,
+          "detailTop": 4185.28125
+        },
+        {
+          "cardTop": 3972.484375,
+          "titleTop": 4100.28125,
+          "detailTop": 4185.28125
+        },
+        {
+          "cardTop": 3972.484375,
+          "titleTop": 4100.28125,
+          "detailTop": 4185.28125
+        },
+        {
+          "cardTop": 3972.484375,
+          "titleTop": 4100.28125,
+          "detailTop": 4185.28125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6656.90625
+        ],
+        [
+          6777.90625
+        ],
+        [
+          6898.90625
+        ],
+        [
+          7029.5
+        ],
+        [
+          7150.5
+        ],
+        [
+          7252.296875
+        ]
+      ],
+      "editorialAxes": [
+        494,
+        495
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1920,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4004.46875,
+          "titleTop": 4132.265625,
+          "detailTop": 4217.265625
+        },
+        {
+          "cardTop": 4004.46875,
+          "titleTop": 4132.265625,
+          "detailTop": 4217.265625
+        },
+        {
+          "cardTop": 4004.46875,
+          "titleTop": 4132.265625,
+          "detailTop": 4217.265625
+        },
+        {
+          "cardTop": 4004.46875,
+          "titleTop": 4132.265625,
+          "detailTop": 4217.265625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6827.734375
+        ],
+        [
+          6948.734375
+        ],
+        [
+          7069.734375
+        ],
+        [
+          7200.328125
+        ],
+        [
+          7321.328125
+        ],
+        [
+          7423.125
+        ]
+      ],
+      "editorialAxes": [
+        734,
+        735
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "width": 1920,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3974.46875,
+          "titleTop": 4102.265625,
+          "detailTop": 4187.265625
+        },
+        {
+          "cardTop": 3974.46875,
+          "titleTop": 4102.265625,
+          "detailTop": 4187.265625
+        },
+        {
+          "cardTop": 3974.46875,
+          "titleTop": 4102.265625,
+          "detailTop": 4187.265625
+        },
+        {
+          "cardTop": 3974.46875,
+          "titleTop": 4102.265625,
+          "detailTop": 4187.265625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          6661.21875
+        ],
+        [
+          6782.21875
+        ],
+        [
+          6903.21875
+        ],
+        [
+          7033.8125
+        ],
+        [
+          7154.8125
+        ],
+        [
+          7256.609375
+        ]
+      ],
+      "editorialAxes": [
+        734,
+        735
+      ],
+      "projectInsets": [
+        0
+      ],
+      "projectFonts": [
+        "\"Space Grotesk\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 14
+    }
+  ],
+  "interactions": [
+    {
+      "engine": "Chromium",
+      "n": 4,
+      "readingScenes": 13,
+      "languageRoundTrip": true,
+      "article": true,
+      "moodboard": true,
+      "contact": true,
+      "copySuccessAndRefusal": true,
+      "mobileMenu": true,
+      "navigationWithoutJS": true
+    },
+    {
+      "engine": "WebKit",
+      "n": 4,
+      "readingScenes": 13,
+      "languageRoundTrip": true,
+      "article": true,
+      "moodboard": true,
+      "contact": true,
+      "copySuccessAndRefusal": true,
+      "mobileMenu": true,
+      "navigationWithoutJS": true
+    }
+  ],
+  "errors": [],
+  "finalRefinements": {
+    "date": "2026-11-05T00:45:36.067Z",
+    "checks": [
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 320,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 320,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 390,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 390,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 650,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 650,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 768,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 768,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1024,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1024,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1100,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1100,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1280,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1280,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1440,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1440,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1920,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "index",
+        "width": 1920,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 320,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 320,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 390,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 390,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 650,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 650,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 768,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 768,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1024,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1024,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1100,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1100,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1280,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1280,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1440,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1440,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1920,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "Chromium",
+        "file": "charte",
+        "width": 1920,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 320,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 320,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 390,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 390,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 650,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 650,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 768,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 768,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1024,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1024,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1100,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1100,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1280,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1280,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1440,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1440,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1920,
+        "lang": "fr",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "index",
+        "width": 1920,
+        "lang": "en",
+        "overflow": false
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 320,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 320,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 390,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 390,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 650,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 650,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 768,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 768,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1024,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1024,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1100,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1100,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1280,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1280,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1440,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1440,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1920,
+        "lang": "fr",
+        "overflow": false,
+        "typography": "verified"
+      },
+      {
+        "engine": "WebKit",
+        "file": "charte",
+        "width": 1920,
+        "lang": "en",
+        "overflow": false,
+        "typography": "verified"
+      }
+    ]
+  }
+}

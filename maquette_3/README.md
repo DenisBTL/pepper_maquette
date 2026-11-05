@@ -66,3 +66,17 @@ les traductions anglaises restent des contenus de démonstration à valider.
 
 Pour une prévisualisation, servir la racine du dépôt avec un serveur statique,
 puis ouvrir `/maquette_3/`. Tous les assets et les polices sont locaux.
+
+## Contre-audit du 5 novembre 2026
+
+Le [rapport avec captures avant/après](validation/contre-audit.md) documente
+les défauts confirmés et les corrections de grilles, de typographie et de visuels.
+Les [mesures détaillées](validation/contre-audit-verification.json) complètent
+les premiers contrôles de livraison, conservés dans ce dossier.
+
+Le contrôle reproductible commun se trouve dans
+`../maquette_3/validation/check-layout.cjs`. Il utilise Playwright comme outil
+de vérification externe, sans dépendance ajoutée au site. Servir la racine du
+dépôt puis définir `PEPPER_AUDIT_URL` vers ce serveur ; lancer le script avec
+Node. `PEPPER_PLAYWRIGHT_MODULE`, `PEPPER_CHROMIUM_EXECUTABLE` et
+`PEPPER_WEBKIT_EXECUTABLE` permettent de désigner une installation existante.

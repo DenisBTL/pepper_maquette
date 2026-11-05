@@ -1,0 +1,3186 @@
+{
+  "date": "2026-11-05T00:40:14.595Z",
+  "base": "http://127.0.0.1:8769",
+  "baseline": "2ba3eed2ef9474473f9dd197d9fef10a28c6a237",
+  "layouts": [
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "index",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "article",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "file": "charte",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 320,
+      "language": "fr",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 320,
+      "language": "en",
+      "viewport": 320,
+      "pageWidth": 320,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 390,
+      "language": "fr",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 390,
+      "language": "en",
+      "viewport": 390,
+      "pageWidth": 390,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 650,
+      "language": "fr",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 650,
+      "language": "en",
+      "viewport": 650,
+      "pageWidth": 650,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 768,
+      "language": "fr",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 768,
+      "language": "en",
+      "viewport": 768,
+      "pageWidth": 768,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1024,
+      "language": "fr",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1024,
+      "language": "en",
+      "viewport": 1024,
+      "pageWidth": 1024,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1100,
+      "language": "fr",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1100,
+      "language": "en",
+      "viewport": 1100,
+      "pageWidth": 1100,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1280,
+      "language": "fr",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1280,
+      "language": "en",
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1440,
+      "language": "fr",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1440,
+      "language": "en",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1920,
+      "language": "fr",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1920,
+      "language": "en",
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "index",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "article",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "file": "charte",
+      "width": 1440,
+      "language": "fr",
+      "fontSize": "200%",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "issues": 0
+    }
+  ],
+  "geometry": [
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 320,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 5686.5,
+          "titleTop": 5804.5,
+          "detailTop": 5894.5
+        },
+        {
+          "cardTop": 6081.5,
+          "titleTop": 6199.5,
+          "detailTop": 6289.5
+        },
+        {
+          "cardTop": 6503.5,
+          "titleTop": 6636.546875,
+          "detailTop": 6726.546875
+        },
+        {
+          "cardTop": 6967.546875,
+          "titleTop": 7085.546875,
+          "detailTop": 7211.546875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          11215.671875
+        ],
+        [
+          11731.65625
+        ],
+        [
+          12330.4375
+        ],
+        [
+          12817.625
+        ],
+        [
+          13331.8125
+        ],
+        [
+          13765
+        ]
+      ],
+      "editorialAxes": [
+        20,
+        44
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 320,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 5322.21875,
+          "titleTop": 5440.21875,
+          "detailTop": 5530.21875
+        },
+        {
+          "cardTop": 5717.21875,
+          "titleTop": 5835.21875,
+          "detailTop": 5925.21875
+        },
+        {
+          "cardTop": 6112.21875,
+          "titleTop": 6245.265625,
+          "detailTop": 6335.265625
+        },
+        {
+          "cardTop": 6522.265625,
+          "titleTop": 6640.265625,
+          "detailTop": 6730.265625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          10506.40625
+        ],
+        [
+          11022.390625
+        ],
+        [
+          11567.171875
+        ],
+        [
+          12054.359375
+        ],
+        [
+          12597.34375
+        ],
+        [
+          13057.53125
+        ]
+      ],
+      "editorialAxes": [
+        20,
+        44
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 390,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 5228.09375,
+          "titleTop": 5346.09375,
+          "detailTop": 5400.09375
+        },
+        {
+          "cardTop": 5560.09375,
+          "titleTop": 5678.09375,
+          "detailTop": 5768.09375
+        },
+        {
+          "cardTop": 5955.09375,
+          "titleTop": 6091.609375,
+          "detailTop": 6145.609375
+        },
+        {
+          "cardTop": 6332.609375,
+          "titleTop": 6450.609375,
+          "detailTop": 6540.609375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          10111.359375
+        ],
+        [
+          10598.546875
+        ],
+        [
+          11143.328125
+        ],
+        [
+          11630.515625
+        ],
+        [
+          12144.703125
+        ],
+        [
+          12577.890625
+        ]
+      ],
+      "editorialAxes": [
+        20,
+        44
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 390,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4996.015625,
+          "titleTop": 5114.015625,
+          "detailTop": 5168.015625
+        },
+        {
+          "cardTop": 5328.015625,
+          "titleTop": 5446.015625,
+          "detailTop": 5536.015625
+        },
+        {
+          "cardTop": 5669.015625,
+          "titleTop": 5805.53125,
+          "detailTop": 5859.53125
+        },
+        {
+          "cardTop": 6019.53125,
+          "titleTop": 6137.53125,
+          "detailTop": 6227.53125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          9618.890625
+        ],
+        [
+          10107.875
+        ],
+        [
+          10623.859375
+        ],
+        [
+          11084.046875
+        ],
+        [
+          11571.234375
+        ],
+        [
+          12004.421875
+        ]
+      ],
+      "editorialAxes": [
+        20,
+        44
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 650,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4469.21875,
+          "titleTop": 4587.21875,
+          "detailTop": 4641.21875
+        },
+        {
+          "cardTop": 4747.21875,
+          "titleTop": 4865.21875,
+          "detailTop": 4919.21875
+        },
+        {
+          "cardTop": 5052.21875,
+          "titleTop": 5200.328125,
+          "detailTop": 5254.328125
+        },
+        {
+          "cardTop": 5387.328125,
+          "titleTop": 5505.328125,
+          "detailTop": 5559.328125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8577.296875
+        ],
+        [
+          9010.484375
+        ],
+        [
+          9472.46875
+        ],
+        [
+          9905.65625
+        ],
+        [
+          10338.84375
+        ],
+        [
+          10745.03125
+        ]
+      ],
+      "editorialAxes": [
+        32.5,
+        56.5
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 650,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4329.734375,
+          "titleTop": 4447.734375,
+          "detailTop": 4501.734375
+        },
+        {
+          "cardTop": 4607.734375,
+          "titleTop": 4725.734375,
+          "detailTop": 4779.734375
+        },
+        {
+          "cardTop": 4885.734375,
+          "titleTop": 5033.84375,
+          "detailTop": 5087.84375
+        },
+        {
+          "cardTop": 5193.84375,
+          "titleTop": 5311.84375,
+          "detailTop": 5365.84375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8329.8125
+        ],
+        [
+          8763
+        ],
+        [
+          9196.1875
+        ],
+        [
+          9629.375
+        ],
+        [
+          10062.5625
+        ],
+        [
+          10468.75
+        ]
+      ],
+      "editorialAxes": [
+        32.5,
+        56.5
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 768,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4036.34375,
+          "titleTop": 4152.921875,
+          "detailTop": 4240.921875
+        },
+        {
+          "cardTop": 4036.34375,
+          "titleTop": 4152.921875,
+          "detailTop": 4240.921875
+        },
+        {
+          "cardTop": 4442.921875,
+          "titleTop": 4576.71875,
+          "detailTop": 4664.71875
+        },
+        {
+          "cardTop": 4442.921875,
+          "titleTop": 4576.71875,
+          "detailTop": 4664.71875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7720.140625,
+          7720.140625
+        ],
+        [
+          8233.3125,
+          8233.3125
+        ],
+        [
+          8718.296875,
+          8718.296875
+        ]
+      ],
+      "editorialAxes": [
+        38.41,
+        404,
+        258.41,
+        420.53
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 768,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3994.28125,
+          "titleTop": 4110.859375,
+          "detailTop": 4198.859375
+        },
+        {
+          "cardTop": 3994.28125,
+          "titleTop": 4110.859375,
+          "detailTop": 4198.859375
+        },
+        {
+          "cardTop": 4400.859375,
+          "titleTop": 4534.65625,
+          "detailTop": 4622.65625
+        },
+        {
+          "cardTop": 4400.859375,
+          "titleTop": 4534.65625,
+          "detailTop": 4622.65625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7548.328125,
+          7548.328125
+        ],
+        [
+          8033.90625,
+          8033.90625
+        ],
+        [
+          8491.890625,
+          8491.890625
+        ]
+      ],
+      "editorialAxes": [
+        38.41,
+        404,
+        258.41,
+        420.53
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1024,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4431.875,
+          "titleTop": 4580.640625,
+          "detailTop": 4668.640625
+        },
+        {
+          "cardTop": 4431.875,
+          "titleTop": 4580.640625,
+          "detailTop": 4668.640625
+        },
+        {
+          "cardTop": 4878.640625,
+          "titleTop": 5033.390625,
+          "detailTop": 5121.390625
+        },
+        {
+          "cardTop": 4878.640625,
+          "titleTop": 5033.390625,
+          "detailTop": 5121.390625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8421.40625,
+          8421.40625
+        ],
+        [
+          8906.984375,
+          8906.984375
+        ],
+        [
+          9364.96875,
+          9364.96875
+        ]
+      ],
+      "editorialAxes": [
+        112.33,
+        531.98,
+        422.33,
+        564.8
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1024,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4189.359375,
+          "titleTop": 4338.125,
+          "detailTop": 4426.125
+        },
+        {
+          "cardTop": 4189.359375,
+          "titleTop": 4338.125,
+          "detailTop": 4426.125
+        },
+        {
+          "cardTop": 4606.125,
+          "titleTop": 4760.875,
+          "detailTop": 4812.875
+        },
+        {
+          "cardTop": 4606.125,
+          "titleTop": 4760.875,
+          "detailTop": 4812.875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7923.125,
+          7923.125
+        ],
+        [
+          8381.703125,
+          8381.703125
+        ],
+        [
+          8839.6875,
+          8839.6875
+        ]
+      ],
+      "editorialAxes": [
+        112.33,
+        531.98,
+        422.33,
+        564.8
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1100,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4424.140625,
+          "titleTop": 4580.09375,
+          "detailTop": 4632.09375
+        },
+        {
+          "cardTop": 4424.140625,
+          "titleTop": 4580.09375,
+          "detailTop": 4632.09375
+        },
+        {
+          "cardTop": 4812.09375,
+          "titleTop": 4973.59375,
+          "detailTop": 5061.59375
+        },
+        {
+          "cardTop": 4812.09375,
+          "titleTop": 4973.59375,
+          "detailTop": 5061.59375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8288.78125,
+          8288.78125
+        ],
+        [
+          8747.359375,
+          8747.359375
+        ],
+        [
+          9178.34375,
+          9178.34375
+        ]
+      ],
+      "editorialAxes": [
+        120.67,
+        570,
+        450.67,
+        604.48
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1100,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4163.34375,
+          "titleTop": 4319.296875,
+          "detailTop": 4371.296875
+        },
+        {
+          "cardTop": 4163.34375,
+          "titleTop": 4319.296875,
+          "detailTop": 4371.296875
+        },
+        {
+          "cardTop": 4551.296875,
+          "titleTop": 4712.796875,
+          "detailTop": 4764.796875
+        },
+        {
+          "cardTop": 4551.296875,
+          "titleTop": 4712.796875,
+          "detailTop": 4764.796875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7869.96875,
+          7869.96875
+        ],
+        [
+          8328.546875,
+          8328.546875
+        ],
+        [
+          8786.53125,
+          8786.53125
+        ]
+      ],
+      "editorialAxes": [
+        120.67,
+        570,
+        450.67,
+        604.48
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1280,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4464.234375,
+          "titleTop": 4637.1875,
+          "detailTop": 4689.1875
+        },
+        {
+          "cardTop": 4464.234375,
+          "titleTop": 4637.1875,
+          "detailTop": 4689.1875
+        },
+        {
+          "cardTop": 4869.1875,
+          "titleTop": 5046.65625,
+          "detailTop": 5098.65625
+        },
+        {
+          "cardTop": 4869.1875,
+          "titleTop": 5046.65625,
+          "detailTop": 5098.65625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8381.640625,
+          8381.640625,
+          8381.640625
+        ],
+        [
+          8839.625,
+          8839.625,
+          8839.625
+        ]
+      ],
+      "editorialAxes": [
+        140.42,
+        676,
+        470.42,
+        698.45
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1280,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4421.21875,
+          "titleTop": 4594.171875,
+          "detailTop": 4646.171875
+        },
+        {
+          "cardTop": 4421.21875,
+          "titleTop": 4594.171875,
+          "detailTop": 4646.171875
+        },
+        {
+          "cardTop": 4826.171875,
+          "titleTop": 5003.640625,
+          "detailTop": 5055.640625
+        },
+        {
+          "cardTop": 4826.171875,
+          "titleTop": 5003.640625,
+          "detailTop": 5055.640625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8162.203125,
+          8162.203125,
+          8162.203125
+        ],
+        [
+          8620.1875,
+          8620.1875,
+          8620.1875
+        ]
+      ],
+      "editorialAxes": [
+        140.42,
+        676,
+        470.42,
+        698.45
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1440,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4471.09375,
+          "titleTop": 4659.09375,
+          "detailTop": 4711.09375
+        },
+        {
+          "cardTop": 4471.09375,
+          "titleTop": 4659.09375,
+          "detailTop": 4711.09375
+        },
+        {
+          "cardTop": 4861.09375,
+          "titleTop": 5052.6875,
+          "detailTop": 5104.6875
+        },
+        {
+          "cardTop": 4861.09375,
+          "titleTop": 5052.6875,
+          "detailTop": 5104.6875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8387.390625,
+          8387.390625,
+          8387.390625
+        ],
+        [
+          8845.375,
+          8845.375,
+          8845.375
+        ]
+      ],
+      "editorialAxes": [
+        158,
+        756,
+        488,
+        782
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1440,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4471.09375,
+          "titleTop": 4659.09375,
+          "detailTop": 4711.09375
+        },
+        {
+          "cardTop": 4471.09375,
+          "titleTop": 4659.09375,
+          "detailTop": 4711.09375
+        },
+        {
+          "cardTop": 4861.09375,
+          "titleTop": 5052.6875,
+          "detailTop": 5104.6875
+        },
+        {
+          "cardTop": 4861.09375,
+          "titleTop": 5052.6875,
+          "detailTop": 5104.6875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8237.921875,
+          8237.921875,
+          8237.921875
+        ],
+        [
+          8695.90625,
+          8695.90625,
+          8695.90625
+        ]
+      ],
+      "editorialAxes": [
+        158,
+        756,
+        488,
+        782
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1920,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4474.359375,
+          "titleTop": 4662.359375,
+          "detailTop": 4714.359375
+        },
+        {
+          "cardTop": 4474.359375,
+          "titleTop": 4662.359375,
+          "detailTop": 4714.359375
+        },
+        {
+          "cardTop": 4864.359375,
+          "titleTop": 5055.953125,
+          "detailTop": 5107.953125
+        },
+        {
+          "cardTop": 4864.359375,
+          "titleTop": 5055.953125,
+          "detailTop": 5107.953125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8395.828125,
+          8395.828125,
+          8395.828125
+        ],
+        [
+          8853.8125,
+          8853.8125,
+          8853.8125
+        ]
+      ],
+      "editorialAxes": [
+        398,
+        996,
+        728,
+        1022
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "width": 1920,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4474.359375,
+          "titleTop": 4662.359375,
+          "detailTop": 4714.359375
+        },
+        {
+          "cardTop": 4474.359375,
+          "titleTop": 4662.359375,
+          "detailTop": 4714.359375
+        },
+        {
+          "cardTop": 4864.359375,
+          "titleTop": 5055.953125,
+          "detailTop": 5107.953125
+        },
+        {
+          "cardTop": 4864.359375,
+          "titleTop": 5055.953125,
+          "detailTop": 5107.953125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8243.765625,
+          8243.765625,
+          8243.765625
+        ],
+        [
+          8701.75,
+          8701.75,
+          8701.75
+        ]
+      ],
+      "editorialAxes": [
+        398,
+        996,
+        728,
+        1022
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 320,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 5687.5,
+          "titleTop": 5805.5,
+          "detailTop": 5895.5
+        },
+        {
+          "cardTop": 6082.5,
+          "titleTop": 6200.5,
+          "detailTop": 6290.5
+        },
+        {
+          "cardTop": 6504.5,
+          "titleTop": 6637.546875,
+          "detailTop": 6727.546875
+        },
+        {
+          "cardTop": 6968.546875,
+          "titleTop": 7086.546875,
+          "detailTop": 7212.546875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          11218.671875
+        ],
+        [
+          11734.65625
+        ],
+        [
+          12333.4375
+        ],
+        [
+          12820.625
+        ],
+        [
+          13361.8125
+        ],
+        [
+          13795
+        ]
+      ],
+      "editorialAxes": [
+        20,
+        44
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 320,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 5323.21875,
+          "titleTop": 5441.21875,
+          "detailTop": 5531.21875
+        },
+        {
+          "cardTop": 5745.21875,
+          "titleTop": 5863.21875,
+          "detailTop": 5953.21875
+        },
+        {
+          "cardTop": 6140.21875,
+          "titleTop": 6273.265625,
+          "detailTop": 6363.265625
+        },
+        {
+          "cardTop": 6550.265625,
+          "titleTop": 6668.265625,
+          "detailTop": 6758.265625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          10535.90625
+        ],
+        [
+          11051.890625
+        ],
+        [
+          11596.671875
+        ],
+        [
+          12083.859375
+        ],
+        [
+          12626.84375
+        ],
+        [
+          13087.03125
+        ]
+      ],
+      "editorialAxes": [
+        20,
+        44
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 390,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 5229.09375,
+          "titleTop": 5347.09375,
+          "detailTop": 5401.09375
+        },
+        {
+          "cardTop": 5561.09375,
+          "titleTop": 5679.09375,
+          "detailTop": 5769.09375
+        },
+        {
+          "cardTop": 5956.09375,
+          "titleTop": 6092.609375,
+          "detailTop": 6146.609375
+        },
+        {
+          "cardTop": 6333.609375,
+          "titleTop": 6451.609375,
+          "detailTop": 6541.609375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          10113.859375
+        ],
+        [
+          10601.046875
+        ],
+        [
+          11145.828125
+        ],
+        [
+          11633.015625
+        ],
+        [
+          12147.203125
+        ],
+        [
+          12580.390625
+        ]
+      ],
+      "editorialAxes": [
+        20,
+        44
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 390,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4997.015625,
+          "titleTop": 5115.015625,
+          "detailTop": 5169.015625
+        },
+        {
+          "cardTop": 5329.015625,
+          "titleTop": 5447.015625,
+          "detailTop": 5537.015625
+        },
+        {
+          "cardTop": 5670.015625,
+          "titleTop": 5806.53125,
+          "detailTop": 5860.53125
+        },
+        {
+          "cardTop": 6020.53125,
+          "titleTop": 6138.53125,
+          "detailTop": 6228.53125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          9582.890625
+        ],
+        [
+          10071.875
+        ],
+        [
+          10587.859375
+        ],
+        [
+          11048.046875
+        ],
+        [
+          11535.234375
+        ],
+        [
+          11968.421875
+        ]
+      ],
+      "editorialAxes": [
+        20,
+        44
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 650,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4469.71875,
+          "titleTop": 4587.71875,
+          "detailTop": 4641.71875
+        },
+        {
+          "cardTop": 4747.71875,
+          "titleTop": 4865.71875,
+          "detailTop": 4919.71875
+        },
+        {
+          "cardTop": 5052.71875,
+          "titleTop": 5200.828125,
+          "detailTop": 5254.828125
+        },
+        {
+          "cardTop": 5387.828125,
+          "titleTop": 5505.828125,
+          "detailTop": 5559.828125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8578.796875
+        ],
+        [
+          9011.984375
+        ],
+        [
+          9473.96875
+        ],
+        [
+          9907.15625
+        ],
+        [
+          10340.34375
+        ],
+        [
+          10746.53125
+        ]
+      ],
+      "editorialAxes": [
+        32.5,
+        56.5
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 650,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4330.234375,
+          "titleTop": 4448.234375,
+          "detailTop": 4502.234375
+        },
+        {
+          "cardTop": 4608.234375,
+          "titleTop": 4726.234375,
+          "detailTop": 4780.234375
+        },
+        {
+          "cardTop": 4886.234375,
+          "titleTop": 5034.34375,
+          "detailTop": 5088.34375
+        },
+        {
+          "cardTop": 5194.34375,
+          "titleTop": 5312.34375,
+          "detailTop": 5366.34375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8331.3125
+        ],
+        [
+          8764.5
+        ],
+        [
+          9197.6875
+        ],
+        [
+          9630.875
+        ],
+        [
+          10064.0625
+        ],
+        [
+          10470.25
+        ]
+      ],
+      "editorialAxes": [
+        32.5,
+        56.5
+      ],
+      "projectInsets": [
+        24
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 768,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4036.3125,
+          "titleTop": 4152.875,
+          "detailTop": 4240.875
+        },
+        {
+          "cardTop": 4036.3125,
+          "titleTop": 4152.875,
+          "detailTop": 4240.875
+        },
+        {
+          "cardTop": 4442.875,
+          "titleTop": 4576.671875,
+          "detailTop": 4664.671875
+        },
+        {
+          "cardTop": 4442.875,
+          "titleTop": 4576.671875,
+          "detailTop": 4664.671875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7720.09375,
+          7720.09375
+        ],
+        [
+          8233.265625,
+          8233.265625
+        ],
+        [
+          8718.25,
+          8718.25
+        ]
+      ],
+      "editorialAxes": [
+        38.41,
+        404,
+        258.41,
+        420.53
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 768,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 3994.28125,
+          "titleTop": 4110.84375,
+          "detailTop": 4198.84375
+        },
+        {
+          "cardTop": 3994.28125,
+          "titleTop": 4110.84375,
+          "detailTop": 4198.84375
+        },
+        {
+          "cardTop": 4400.84375,
+          "titleTop": 4534.640625,
+          "detailTop": 4622.640625
+        },
+        {
+          "cardTop": 4400.84375,
+          "titleTop": 4534.640625,
+          "detailTop": 4622.640625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7548.3125,
+          7548.3125
+        ],
+        [
+          8033.890625,
+          8033.890625
+        ],
+        [
+          8491.875,
+          8491.875
+        ]
+      ],
+      "editorialAxes": [
+        38.41,
+        404,
+        258.41,
+        420.53
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1024,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4431.84375,
+          "titleTop": 4580.609375,
+          "detailTop": 4668.609375
+        },
+        {
+          "cardTop": 4431.84375,
+          "titleTop": 4580.609375,
+          "detailTop": 4668.609375
+        },
+        {
+          "cardTop": 4878.609375,
+          "titleTop": 5033.34375,
+          "detailTop": 5121.34375
+        },
+        {
+          "cardTop": 4878.609375,
+          "titleTop": 5033.34375,
+          "detailTop": 5121.34375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8421.28125,
+          8421.28125
+        ],
+        [
+          8906.859375,
+          8906.859375
+        ],
+        [
+          9364.84375,
+          9364.84375
+        ]
+      ],
+      "editorialAxes": [
+        112.33,
+        531.98,
+        422.33,
+        564.8
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1024,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4189.328125,
+          "titleTop": 4338.09375,
+          "detailTop": 4426.09375
+        },
+        {
+          "cardTop": 4189.328125,
+          "titleTop": 4338.09375,
+          "detailTop": 4426.09375
+        },
+        {
+          "cardTop": 4606.09375,
+          "titleTop": 4760.828125,
+          "detailTop": 4812.828125
+        },
+        {
+          "cardTop": 4606.09375,
+          "titleTop": 4760.828125,
+          "detailTop": 4812.828125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7923.015625,
+          7923.015625
+        ],
+        [
+          8381.59375,
+          8381.59375
+        ],
+        [
+          8839.578125,
+          8839.578125
+        ]
+      ],
+      "editorialAxes": [
+        112.33,
+        531.98,
+        422.33,
+        564.8
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1100,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4424.0625,
+          "titleTop": 4580,
+          "detailTop": 4632
+        },
+        {
+          "cardTop": 4424.0625,
+          "titleTop": 4580,
+          "detailTop": 4632
+        },
+        {
+          "cardTop": 4812,
+          "titleTop": 4973.484375,
+          "detailTop": 5061.484375
+        },
+        {
+          "cardTop": 4812,
+          "titleTop": 4973.484375,
+          "detailTop": 5061.484375
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8288.671875,
+          8288.671875
+        ],
+        [
+          8747.25,
+          8747.25
+        ],
+        [
+          9178.234375,
+          9178.234375
+        ]
+      ],
+      "editorialAxes": [
+        120.67,
+        570,
+        450.67,
+        604.48
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1100,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4163.34375,
+          "titleTop": 4319.28125,
+          "detailTop": 4371.28125
+        },
+        {
+          "cardTop": 4163.34375,
+          "titleTop": 4319.28125,
+          "detailTop": 4371.28125
+        },
+        {
+          "cardTop": 4551.28125,
+          "titleTop": 4712.765625,
+          "detailTop": 4764.765625
+        },
+        {
+          "cardTop": 4551.28125,
+          "titleTop": 4712.765625,
+          "detailTop": 4764.765625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          7869.9375,
+          7869.9375
+        ],
+        [
+          8328.515625,
+          8328.515625
+        ],
+        [
+          8786.5,
+          8786.5
+        ]
+      ],
+      "editorialAxes": [
+        120.67,
+        570,
+        450.67,
+        604.48
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1280,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4464.703125,
+          "titleTop": 4637.65625,
+          "detailTop": 4689.65625
+        },
+        {
+          "cardTop": 4464.703125,
+          "titleTop": 4637.65625,
+          "detailTop": 4689.65625
+        },
+        {
+          "cardTop": 4869.65625,
+          "titleTop": 5047.125,
+          "detailTop": 5099.125
+        },
+        {
+          "cardTop": 4869.65625,
+          "titleTop": 5047.125,
+          "detailTop": 5099.125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8383.109375,
+          8383.109375,
+          8383.109375
+        ],
+        [
+          8841.09375,
+          8841.09375,
+          8841.09375
+        ]
+      ],
+      "editorialAxes": [
+        140.42,
+        676,
+        470.42,
+        698.45
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1280,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4421.71875,
+          "titleTop": 4594.671875,
+          "detailTop": 4646.671875
+        },
+        {
+          "cardTop": 4421.71875,
+          "titleTop": 4594.671875,
+          "detailTop": 4646.671875
+        },
+        {
+          "cardTop": 4826.671875,
+          "titleTop": 5004.140625,
+          "detailTop": 5056.140625
+        },
+        {
+          "cardTop": 4826.671875,
+          "titleTop": 5004.140625,
+          "detailTop": 5056.140625
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8163.203125,
+          8163.203125,
+          8163.203125
+        ],
+        [
+          8621.1875,
+          8621.1875,
+          8621.1875
+        ]
+      ],
+      "editorialAxes": [
+        140.42,
+        676,
+        470.42,
+        698.45
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1440,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4471.59375,
+          "titleTop": 4659.59375,
+          "detailTop": 4711.59375
+        },
+        {
+          "cardTop": 4471.59375,
+          "titleTop": 4659.59375,
+          "detailTop": 4711.59375
+        },
+        {
+          "cardTop": 4861.59375,
+          "titleTop": 5053.1875,
+          "detailTop": 5105.1875
+        },
+        {
+          "cardTop": 4861.59375,
+          "titleTop": 5053.1875,
+          "detailTop": 5105.1875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8388.890625,
+          8388.890625,
+          8388.890625
+        ],
+        [
+          8846.875,
+          8846.875,
+          8846.875
+        ]
+      ],
+      "editorialAxes": [
+        158,
+        756,
+        488,
+        782
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1440,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4471.59375,
+          "titleTop": 4659.59375,
+          "detailTop": 4711.59375
+        },
+        {
+          "cardTop": 4471.59375,
+          "titleTop": 4659.59375,
+          "detailTop": 4711.59375
+        },
+        {
+          "cardTop": 4861.59375,
+          "titleTop": 5053.1875,
+          "detailTop": 5105.1875
+        },
+        {
+          "cardTop": 4861.59375,
+          "titleTop": 5053.1875,
+          "detailTop": 5105.1875
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8238.921875,
+          8238.921875,
+          8238.921875
+        ],
+        [
+          8696.90625,
+          8696.90625,
+          8696.90625
+        ]
+      ],
+      "editorialAxes": [
+        158,
+        756,
+        488,
+        782
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1920,
+      "language": "fr",
+      "statistics": [
+        {
+          "cardTop": 4473.859375,
+          "titleTop": 4661.859375,
+          "detailTop": 4713.859375
+        },
+        {
+          "cardTop": 4473.859375,
+          "titleTop": 4661.859375,
+          "detailTop": 4713.859375
+        },
+        {
+          "cardTop": 4863.859375,
+          "titleTop": 5055.453125,
+          "detailTop": 5107.453125
+        },
+        {
+          "cardTop": 4863.859375,
+          "titleTop": 5055.453125,
+          "detailTop": 5107.453125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8394.328125,
+          8394.328125,
+          8394.328125
+        ],
+        [
+          8852.3125,
+          8852.3125,
+          8852.3125
+        ]
+      ],
+      "editorialAxes": [
+        398,
+        996,
+        728,
+        1022
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "width": 1920,
+      "language": "en",
+      "statistics": [
+        {
+          "cardTop": 4473.859375,
+          "titleTop": 4661.859375,
+          "detailTop": 4713.859375
+        },
+        {
+          "cardTop": 4473.859375,
+          "titleTop": 4661.859375,
+          "detailTop": 4713.859375
+        },
+        {
+          "cardTop": 4863.859375,
+          "titleTop": 5055.453125,
+          "detailTop": 5107.453125
+        },
+        {
+          "cardTop": 4863.859375,
+          "titleTop": 5055.453125,
+          "detailTop": 5107.453125
+        }
+      ],
+      "expertiseDescriptionRows": [
+        [
+          8242.765625,
+          8242.765625,
+          8242.765625
+        ],
+        [
+          8700.75,
+          8700.75,
+          8700.75
+        ]
+      ],
+      "editorialAxes": [
+        398,
+        996,
+        728,
+        1022
+      ],
+      "projectInsets": [
+        32
+      ],
+      "projectFonts": [
+        "\"Instrument Sans\", system-ui, sans-serif"
+      ],
+      "proportionMarkers": 0
+    }
+  ],
+  "interactions": [
+    {
+      "engine": "Chromium",
+      "n": 3,
+      "readingScenes": 12,
+      "languageRoundTrip": true,
+      "article": true,
+      "moodboard": true,
+      "contact": true,
+      "copySuccessAndRefusal": true,
+      "mobileMenu": true,
+      "navigationWithoutJS": true
+    },
+    {
+      "engine": "WebKit",
+      "n": 3,
+      "readingScenes": 12,
+      "languageRoundTrip": true,
+      "article": true,
+      "moodboard": true,
+      "contact": true,
+      "copySuccessAndRefusal": true,
+      "mobileMenu": true,
+      "navigationWithoutJS": true
+    }
+  ],
+  "errors": []
+}

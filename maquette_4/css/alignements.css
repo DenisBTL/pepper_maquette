@@ -1,0 +1,222 @@
+/* Contre-audit Figma : axes partagés et rangées de lecture, sans hauteur de texte figée. */
+.cyan .hero-accent { display: block; color: #2b94b6; }
+.cyan .hero h1 { overflow-wrap: anywhere; }
+.cyan .hero-photo-stage { background: var(--olive); }
+.cyan .copy-feedback, .cyan .dialog-projects strong { color: var(--petrol); }
+.blue .stats-grid,
+.cyan .stats-grid {
+  align-items: stretch;
+  row-gap: 24px;
+}
+.blue .stats-grid > .stat,
+.cyan .stats-grid > .stat {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  row-gap: 16px;
+  align-content: start;
+  min-height: 0;
+}
+.stat-metric { grid-row: 1; min-width: 0; }
+.stat-metric .stat-value { margin: 0; padding: 0; }
+.blue .stat-metric { display: flex; flex-direction: column; gap: 16px; }
+.blue .stats-grid .stat-value { font-size: clamp(4.5rem, 9.45vw, 8.5rem); line-height: 1; }
+.blue .stats-grid .stat:nth-child(3) .stat-value {
+  font-size: clamp(3.75rem, 6.95vw, 6.25rem);
+  color: var(--olive);
+  padding: 0;
+}
+.blue .stats-grid .stat:first-child .stat-value { color: var(--sand); }
+.blue .stats-grid .stat:nth-child(4) { background: var(--beige); }
+.blue .stats-grid .stat:nth-child(4) .stat-value { color: var(--green); }
+.blue .stat-metric .stat-proportion {
+  position: static;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.blue .stats-grid .stat h3,
+.cyan .stats-grid .stat h3 { grid-row: 2; margin: 0; line-height: 1.5; font-size: 1.5rem; }
+.stat-detail { grid-row: 3; min-width: 0; }
+.stat-detail, .cyan .news-link { overflow-wrap: anywhere; }
+.blue .stat-detail > p { font-size: 1.25rem; line-height: 1.5; margin: 0; color: inherit; }
+.cyan .stats-grid .stat { padding: 24px 24px 0 0; }
+.cyan .stats-grid .stat:not(:first-child) { border-left: 1px solid #89b6c6a3; padding-left: 24px; }
+.cyan .stats-grid .stat-value { font-size: clamp(3.5rem, 5.42vw, 4.875rem); line-height: 1.1; }
+.cyan .stats-grid .stat h3 { font-family: var(--body); font-weight: 400; font-size: 1.4375rem; }
+.cyan .stat-detail > p { font-size: 1.1875rem; line-height: 1.5; margin: 0; }
+.stat-proportion-bars { display: flex; gap: 5px; margin: 4px 0 14px; max-width: 233px; }
+.stat-proportion-bars span { flex: 1; height: 7px; background: #50829a; }
+.stat-proportion-bars span:nth-child(-n+4) { background: var(--olive); }
+.cyan .stat-detail .stat-proportion-label { font-size: 1.0625rem; font-weight: 600; margin: 0 0 22px; }
+
+/* Les sigles utilisent la sans-serif du Figma ; le retrait est commun aux cartes. */
+.blue .projects-grid .project-card { padding: 30px 32px; column-gap: 48px; }
+.blue .projects-grid .project-card h3 { font: 500 3rem/1.1 var(--heading); }
+.blue .projects-grid .project-card:nth-child(-n+2) h3 { color: var(--olive); }
+.blue .projects-grid .project-card:nth-child(n+3) h3 { color: var(--green); }
+
+/* Une grille de rangées partagées aligne les descriptions même avec des titres longs. */
+.blue .expertise-grid > article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  row-gap: 0;
+  align-content: start;
+}
+.blue .expertise-grid .expertise-copy { display: contents; }
+.blue .expertise-grid > article > img { grid-row: 1; align-self: start; }
+.blue .expertise-grid .actor-number { grid-row: 2; margin: 24px 24px 14px; }
+.blue .expertise-grid h3 { grid-row: 3; margin: 0 24px 14px; align-self: start; }
+.blue .expertise-grid p { grid-row: 4; margin: 0 24px 28px; }
+
+/* Les textes de toutes les listes cyan partagent le même axe éditorial. */
+.cyan :is(.mission-card, .projects-grid .project-card, .expertise-grid > article, .membership-grid > li) {
+  display: grid;
+  grid-template-columns: minmax(0, 390fr) minmax(0, 874fr);
+  column-gap: 32px;
+  align-items: start;
+}
+.cyan .mission-card p { font-weight: 700; }
+.cyan .projects-grid .project-description > p:not(.project-status) { font-weight: 700; }
+.cyan .projects-grid .project-description .project-status {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 20px 0 0;
+  color: var(--petrol);
+}
+.cyan .expertise-grid h3 { padding-inline: 14px; }
+.cyan .expertise-grid p { padding-top: 12px; font-weight: 700; }
+.cyan .membership-grid h3 { grid-column: 1; grid-row: 1 / 3; }
+.cyan .membership-grid .membership-step { font: inherit; color: inherit; letter-spacing: inherit; }
+.cyan .membership-grid p { grid-column: 2; grid-row: 1; }
+.cyan .membership-grid .button { grid-column: 2; grid-row: 2; }
+.cyan .membership .membership-subtitle { font-size: 1.9375rem; margin-top: 20px; }
+.cyan .membership .membership-intro { font-size: 1.375rem; font-weight: 700; margin-top: 28px; max-width: 1120px; }
+.cyan .membership .membership-context { font-size: 1.375rem; font-weight: 700; margin-top: 24px; max-width: 1120px; }
+
+/* Actualités : photographie, titre, puis texte et date sur un troisième axe. */
+.cyan .news-grid > article {
+  grid-template-columns: minmax(0, 164fr) minmax(0, 259fr) minmax(0, 873fr);
+  column-gap: 0;
+  row-gap: 16px;
+  align-items: start;
+}
+.cyan .news-grid > article > img { grid-column: 1; grid-row: 1 / 3; width: 128px; height: 132px; max-width: calc(100% - 24px); }
+.cyan .news-row-copy { display: contents; }
+.cyan .news-grid .news-link { grid-column: 2; grid-row: 1 / 3; max-width: 215px; padding-right: 12px; }
+.cyan .news-grid :is(.news-link h3, .news-card-title) { font-size: 1.9375rem; line-height: 1.2; }
+.cyan .news-grid .news-row-copy > p { grid-column: 3; grid-row: 1; margin: 0; font-size: 1.375rem; }
+.cyan .news-grid .news-meta { grid-column: 3; grid-row: 2; margin: 0; gap: 0; display: block; font-size: 1.0625rem; align-self: end; }
+.cyan .news-grid .news-meta :is(time, span) { display: inline; }
+.cyan .news-grid > article { grid-template-rows: auto; }
+.cyan .news-grid > article > img, .cyan .news-grid .news-link { grid-row: 1; }
+.cyan .news-summary { grid-column: 3; grid-row: 1; min-width: 0; }
+.cyan .news-summary > p:not(.news-meta) { margin: 0; font-size: 1.375rem; }
+.cyan .news-summary .news-meta { margin-top: 20px; }
+
+/* Premier bloc d'adhésion : un texte à gauche et la vidéo à droite. */
+.cyan .join-layout { grid-template-columns: minmax(0, 490fr) minmax(0, 762fr); column-gap: 44px; margin-top: 0; align-items: start; }
+.cyan .join-overview h2 { font-size: clamp(2.5rem, 4.38vw, 3.9375rem); }
+.cyan .join-overview .join-intro { font-size: 1.4375rem; margin-top: 32px; max-width: 450px; }
+.cyan .join-membership-link { margin-top: 32px; background: var(--olive); color: var(--petrol); }
+.cyan .join-membership-link:hover { background: #f3c886; color: var(--petrol); }
+.cyan .video-placeholder { aspect-ratio: 762 / 460; }
+.cyan .video-title { position: absolute; bottom: 0; inset-inline: 0; padding: 22px; background: var(--olive); color: var(--petrol); font: 700 1.25rem/1.4 var(--heading); text-align: left; }
+
+/* Grilles des articles, d'après les axes des deux cadres. */
+@media (min-width: 1100px) {
+  .blue .article-body { grid-template-columns: minmax(0, 444fr) minmax(0, 779fr); column-gap: 73px; }
+  .blue .article-body .article-content { max-width: 732px; }
+  .cyan .article-hero { grid-template-columns: minmax(0, 704fr) minmax(0, 736fr); }
+  .cyan .article-hero > div { padding-right: 48px; }
+}
+.article-hero h1, .article-content, .charte-main { overflow-wrap: anywhere; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 32px; }
+
+/* Planches : mêmes colonnes de couleurs, échantillons et cadrages que le Figma. */
+.blue .charte-main .swatch-fill { height: 94px; border-radius: 9px; }
+.blue .charte-main .warm-palette { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; max-width: 924px; }
+.blue .charte-main .warm-swatch { padding: 0; background: none !important; }
+.warm-chip { width: 100%; height: 70px; border-radius: 9px; border: .5px solid #0b244055; margin-bottom: 8px; }
+.blue .charte-main .charte-moodboard-grid img { aspect-ratio: 298 / 210; border-radius: 9px; }
+.blue .charte-main .charte-symbol-olive { background: var(--green); color: var(--paper); }
+.charte-main .charte-photo-examples figure:first-child img,
+.charte-main .charte-photo-examples img { height: 170px; }
+.cyan .charte-main .charte-type-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.cyan .charte-main .type-semibold { font-family: var(--body); font-weight: 600; }
+.cyan .charte-main .charte-type-grid > div:nth-child(2) .type-family { font-family: var(--body); font-weight: 400; }
+.cyan .charte-main .type-semibold .type-family { font-family: var(--body); font-weight: 600; }
+.cyan .charte-main .charte-moodboard-grid img { aspect-ratio: 296 / 173; }
+.cyan .charte-main .charte-intent-grid { margin-top: 40px; padding-bottom: 32px; border-bottom: 35px solid var(--olive); align-items: start; }
+.cyan .charte-main .charte-iconography-intent { padding: 0; background: none; color: var(--petrol); }
+.cyan .charte-main .charte-iconography-intent h3 { color: var(--petrol); }
+.cyan .charte-main .charte-button-application h3 { margin-bottom: 12px; }
+.cyan .charte-main .charte-button-application p { font-size: 1.1875rem; }
+.cyan .charte-main .charte-symbol { background: var(--petrol); color: var(--paper); }
+.cyan .charte-main .charte-symbol-olive { background: var(--olive); color: var(--petrol); }
+.cyan .charte-main .charte-photo-examples figure:first-child { padding: 0; background: none; }
+.charte-example-stage { display: grid; place-items: center; height: 170px; background: var(--cream); }
+.cyan .charte-main .charte-example-stage img { width: 146px; height: 146px; border-radius: 50%; }
+
+@media (max-width: 1099px) {
+  .blue .projects-grid .project-card { column-gap: 28px; }
+  .cyan :is(.mission-card, .projects-grid .project-card, .expertise-grid > article, .membership-grid > li) { grid-template-columns: minmax(0, 34fr) minmax(0, 66fr); column-gap: 28px; }
+  .cyan .news-grid > article { grid-template-columns: minmax(0, 34fr) minmax(0, 66fr); gap: 20px 28px; }
+  .cyan .news-grid > article > img { grid-column: 1; grid-row: 1; width: 128px; height: 100px; }
+  .cyan .news-grid .news-link { grid-column: 1; grid-row: 2; max-width: none; padding: 0; }
+  .cyan .news-grid .news-row-copy > p { grid-column: 2; grid-row: 1 / 3; font-size: 1.1875rem; }
+  .cyan .news-grid .news-meta { grid-column: 2; grid-row: 3; font-size: 1rem; align-self: start; }
+  .cyan .news-grid > article > img { grid-row: 1; }
+  .cyan .news-grid .news-link { grid-row: 2; }
+  .cyan .news-summary { grid-column: 2; grid-row: 1 / 3; }
+  .cyan .news-summary > p:not(.news-meta) { font-size: 1.1875rem; }
+  .cyan .news-grid :is(.news-link h3, .news-card-title) { font-size: 1.625rem; }
+  .cyan .join-layout { column-gap: 28px; }
+  .cyan .join-overview .join-intro { font-size: 1.1875rem; }
+}
+@media (min-width: 1280px) {
+  .cyan .hero-inner { grid-template-columns: minmax(0, 744fr) minmax(0, 521fr); gap: 28px; align-items: start; }
+  .cyan .hero-copy { max-width: 744px; }
+  .cyan .hero h1 { font-size: clamp(4.125rem, 5.625vw, 5.0625rem); line-height: 1; }
+  .cyan .hero-subtitle { max-width: 710px; font-size: 2.375rem; }
+  .cyan .hero-lead { max-width: 690px; font-size: 1.375rem; }
+  .cyan .hero-photo-stage { position: relative; isolation: isolate; margin-top: 10px; padding: 0; background: transparent; }
+  .cyan .hero-photo-stage::before { content: ''; position: absolute; z-index: -1; inset: 36px -75px -74px 23%; background: var(--olive); }
+  .cyan .hero-photo-stage img { height: 584px; object-position: 87% center; }
+}
+@media (max-width: 900px) {
+  .cyan .stats-grid .stat:nth-child(3) { border-left: 0; padding-left: 0; }
+  .cyan .stats-grid .stat h3 { font-size: 1.375rem; }
+  .cyan .stat-detail > p { font-size: 1.125rem; }
+  .cyan .charte-main .charte-type-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 650px) {
+  .cyan .hero h1 { font-size: clamp(2.125rem, 10.25vw, 2.75rem); }
+  .blue .stats-grid > .stat, .cyan .stats-grid > .stat { grid-template-rows: auto auto auto; grid-row: auto; row-gap: 18px; }
+  .blue .stats-grid .stat h3, .cyan .stats-grid .stat h3 { font-size: 1.5rem; }
+  .blue .stat-detail > p, .cyan .stat-detail > p { font-size: 1.125rem; }
+  .cyan .stats-grid .stat { padding: 24px 0 0; border-left: 0; }
+  .blue .projects-grid .project-card { padding: 28px 24px; column-gap: 0; }
+  .blue .projects-grid .project-card h3 { font-size: 2.5rem; }
+  .cyan :is(.mission-card, .projects-grid .project-card, .expertise-grid > article, .membership-grid > li) { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .cyan .expertise-grid p { grid-column: 1; padding: 0; font-weight: 400; }
+  .cyan .membership-grid :is(h3, p, .button) { grid-column: 1; grid-row: auto; }
+  .cyan .membership :is(.membership-intro, .membership-context) { font-size: 1.125rem; font-weight: 400; }
+  .cyan .membership .membership-subtitle { font-size: 1.625rem; }
+  .cyan .news-grid > article { grid-template-columns: 90px minmax(0, 1fr); gap: 16px 18px; }
+  .cyan .news-grid > article > img { grid-column: 1; grid-row: 1; width: 90px; height: 90px; max-width: 100%; }
+  .cyan .news-grid .news-link { grid-column: 2; grid-row: 1; }
+  .cyan .news-grid :is(.news-link h3, .news-card-title) { font-size: 1.375rem; }
+  .cyan .news-grid .news-row-copy > p { grid-column: 1 / -1; grid-row: 2; font-size: 1.125rem; }
+  .cyan .news-grid .news-meta { grid-column: 1 / -1; grid-row: 3; font-size: .9375rem; }
+  .cyan .news-grid .news-link { grid-row: 1; }
+  .cyan .news-summary { grid-column: 1 / -1; grid-row: 2; }
+  .cyan .news-summary > p:not(.news-meta) { font-size: 1.125rem; }
+  .cyan .join-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .cyan .video-title { font-size: 1rem; padding: 14px 18px; }
+  .blue .charte-main .warm-palette { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; }
+  .blue .charte-main .charte-moodboard-grid img, .cyan .charte-main .charte-moodboard-grid img { aspect-ratio: 1.6; }
+}

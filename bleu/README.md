@@ -82,3 +82,8 @@ de vérification externe, sans dépendance ajoutée au site. Servir la racine du
 dépôt puis définir `PEPPER_AUDIT_URL` vers ce serveur ; lancer le script avec
 Node. `PEPPER_PLAYWRIGHT_MODULE`, `PEPPER_CHROMIUM_EXECUTABLE` et
 `PEPPER_WEBKIT_EXECUTABLE` permettent de désigner une installation existante.
+
+Le raccourci **A**, placé immédiatement après **M** dans l’en-tête, ouvre
+`article.html`. Il conserve la langue sélectionnée et indique la page courante
+lorsque l’article est affiché. Il est présent sur l’accueil, la charte et
+l’article. Le lien dispose d’un libellé accessible et d’une infobulle explicite.

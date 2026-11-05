@@ -143,3 +143,8 @@ Les composants supplémentaires réutilisent les styles réels de la maquette.
   presse-papiers, vérifier mobile, grand écran et zoom à 200 %.
 
 Les résultats et captures de cette évolution sont dans `validation/charte.json`.
+
+Le raccourci **A**, placé immédiatement après **M** dans l’en-tête, ouvre
+`article.html`. Il conserve la langue sélectionnée et indique la page courante
+lorsque l’article est affiché. Il est présent sur l’accueil, la charte et
+l’article. Le lien dispose d’un libellé accessible et d’une infobulle explicite.

@@ -51,8 +51,8 @@ button:focus-visible,a:focus-visible{border-radius:5px}
 .language-switch button{padding:8px 1px;background:none;border:0;color:var(--paper);font-size:inherit;min-height:44px;min-width:24px}
 .language-switch button[aria-pressed=true]{font-weight:700;text-decoration:underline;text-underline-offset:5px}
 .header-tools{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.moodboard-link{display:grid;place-items:center;flex-shrink:0;width:40px;height:44px;border:1px solid #fff8f280;border-radius:8px;color:var(--paper);font:600 1rem/1 var(--body);text-decoration:none;transition:background .18s ease,color .18s ease}
-.moodboard-link:hover,.moodboard-link[aria-current=page]{background:var(--sage);color:var(--petrol)}
+:is(.moodboard-link,.article-link){display:grid;place-items:center;flex-shrink:0;width:40px;height:44px;border:1px solid #fff8f280;border-radius:8px;color:var(--paper);font:600 1rem/1 var(--body);text-decoration:none;transition:background .18s ease,color .18s ease}
+:is(.moodboard-link,.article-link):hover,:is(.moodboard-link,.article-link)[aria-current=page]{background:var(--sage);color:var(--petrol)}
 .footer-links{display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:flex-end}
 .menu-toggle{display:none}
 .hero{max-width:1440px;margin:auto;position:relative;min-height:660px}
@@ -259,3 +259,6 @@ body.dialog-open{overflow:hidden}
 .version-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;padding:28px 24px;font:600 1rem/1.4 var(--body,system-ui,sans-serif)}
 .version-links a{display:inline-flex;align-items:center;min-height:44px;color:inherit}
 .version-links a[aria-current=page]{text-decoration-thickness:3px}
+
+/* Raccourcis de presentation M (moodboard) et A (article). */
+@media(max-width:380px){.header-tools{gap:5px}.header-tools :is(.moodboard-link,.article-link){width:32px;min-width:32px}.header-inner{padding-inline:16px;gap:8px}.brand img{width:88px;height:44px}.brand:has(img){flex-basis:88px}}

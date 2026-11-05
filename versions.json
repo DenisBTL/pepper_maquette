@@ -1,0 +1,33 @@
+{
+  "default": "bleu-miel",
+  "versions": [
+    {
+      "slug": "vert",
+      "label": "Vert",
+      "englishLabel": "Green",
+      "previousNumber": 2,
+      "previousPath": "/maquette_2/"
+    },
+    {
+      "slug": "cyan",
+      "label": "Cyan",
+      "englishLabel": "Cyan",
+      "previousNumber": 4,
+      "previousPath": "/maquette_4/"
+    },
+    {
+      "slug": "bleu",
+      "label": "Bleu",
+      "englishLabel": "Blue",
+      "previousNumber": 3,
+      "previousPath": "/maquette_3/"
+    },
+    {
+      "slug": "bleu-miel",
+      "label": "Bleu miel",
+      "englishLabel": "Blue and honey",
+      "previousNumber": 1,
+      "previousPath": "/"
+    }
+  ]
+}

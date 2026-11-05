@@ -1,6 +1,8 @@
-# Pepper · Maquette 3 · Bleu éditorial
+# Pepper · Bleu
 
 Troisième proposition dans le dépôt existant `DenisBTL/pepper_maquette`.
+Adresse principale : `/bleu/`. Ancien nom : `maquette_3`.
+
 HTML, CSS et JavaScript natifs, sans build ni dépendance à installer.
 
 Références Figma du fichier `xUIcohxRF4x1gGH0oX9Kg7` :
@@ -19,7 +21,7 @@ dépôt statique : les composants sont adaptés en liens et boutons HTML natifs.
 
 ## Utilisation et UX/UI
 
-- Points d’entrée : `/maquette_3/`, première actualité vers l’article, bouton
+- Points d’entrée : `/bleu/`, première actualité vers l’article, bouton
   **M** à côté de FR/EN vers la direction artistique. Le pied de page relie les
   quatre propositions.
 - Hiérarchie : introduction, mission et vision, enjeu de protection, méthode,
@@ -65,7 +67,7 @@ les traductions anglaises restent des contenus de démonstration à valider.
    les vérifications Chromium et WebKit de la livraison.
 
 Pour une prévisualisation, servir la racine du dépôt avec un serveur statique,
-puis ouvrir `/maquette_3/`. Tous les assets et les polices sont locaux.
+puis ouvrir `/bleu/`. Tous les assets et les polices sont locaux.
 
 ## Contre-audit du 5 novembre 2026
 
@@ -75,7 +77,7 @@ Les [mesures détaillées](validation/contre-audit-verification.json) complèten
 les premiers contrôles de livraison, conservés dans ce dossier.
 
 Le contrôle reproductible commun se trouve dans
-`../maquette_3/validation/check-layout.cjs`. Il utilise Playwright comme outil
+`../bleu/validation/check-layout.cjs`. Il utilise Playwright comme outil
 de vérification externe, sans dépendance ajoutée au site. Servir la racine du
 dépôt puis définir `PEPPER_AUDIT_URL` vers ce serveur ; lancer le script avec
 Node. `PEPPER_PLAYWRIGHT_MODULE`, `PEPPER_CHROMIUM_EXECUTABLE` et

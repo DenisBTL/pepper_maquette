@@ -1,7 +1,9 @@
-# Pepper · Maquette 4 · Cyan et miel
+# Pepper · Cyan
 
 Quatrième proposition dans le dépôt existant `DenisBTL/pepper_maquette`.
-« Cyan et miel » est une seule direction du Figma. HTML, CSS et JavaScript
+« Cyan et miel » est une seule direction du Figma. Adresse principale : `/cyan/`. Ancien nom : `maquette_4`.
+
+HTML, CSS et JavaScript
 natifs, sans build ni dépendance à installer.
 
 Références Figma du fichier `xUIcohxRF4x1gGH0oX9Kg7` :
@@ -19,7 +21,7 @@ WebP proportionnelles et les empreintes des originaux sont documentées dans
 
 ## Utilisation et UX/UI
 
-- Points d’entrée : `/maquette_4/`, première actualité vers `article.html`,
+- Points d’entrée : `/cyan/`, première actualité vers `article.html`,
   bouton **M** à côté de FR/EN vers `charte.html`, bouton de menu vers les
   trois entrées illustrées. Le pied de page relie les quatre propositions.
 - Hiérarchie : introduction, mots clés, enjeu de protection, mission et vision,
@@ -65,7 +67,7 @@ et traductions de démonstration sont à valider avec Pepper.
 6. `validation/verification.json` et les captures desktop/mobile consignent
    les contrôles Chromium et WebKit effectués pour cette livraison.
 
-Servir la racine du dépôt avec un serveur statique, puis ouvrir `/maquette_4/`.
+Servir la racine du dépôt avec un serveur statique, puis ouvrir `/cyan/`.
 Tous les assets et les polices sont locaux.
 
 ## Contre-audit du 5 novembre 2026
@@ -76,7 +78,7 @@ Les [mesures détaillées](validation/contre-audit-verification.json) complèten
 les premiers contrôles de livraison, conservés dans ce dossier.
 
 Le contrôle reproductible commun se trouve dans
-`../maquette_3/validation/check-layout.cjs`. Il utilise Playwright comme outil
+`../bleu/validation/check-layout.cjs`. Il utilise Playwright comme outil
 de vérification externe, sans dépendance ajoutée au site. Servir la racine du
 dépôt puis définir `PEPPER_AUDIT_URL` vers ce serveur ; lancer le script avec
 Node. `PEPPER_PLAYWRIGHT_MODULE`, `PEPPER_CHROMIUM_EXECUTABLE` et

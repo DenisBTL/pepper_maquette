@@ -26,6 +26,14 @@
     d.querySelectorAll('.lang button').forEach(function(b){
       b.setAttribute('aria-pressed', String(b.dataset.lang === l));
     });
+    var pageUrl = new URL(location.href);
+    if (en) pageUrl.searchParams.set('lang', 'en'); else pageUrl.searchParams.delete('lang');
+    if (location.protocol !== 'file:') history.replaceState(null, '', pageUrl);
+    d.querySelectorAll('a[data-local-link]').forEach(function(a){
+      var dest = new URL(a.href);
+      if (en) dest.searchParams.set('lang', 'en'); else dest.searchParams.delete('lang');
+      a.href = dest.href;
+    });
     count();
   }
   d.querySelectorAll('.lang button').forEach(function(b){
@@ -375,4 +383,5 @@
       settleTimer = window.setTimeout(settle, 160);
     }, { passive:true });
   }
+  if (new URL(location.href).searchParams.get('lang') === 'en') setLang('en');
 })();

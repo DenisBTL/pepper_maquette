@@ -199,4 +199,7 @@
       window.requestAnimationFrame(function(){ cascade.classList.add('in'); });
     });
   }
+  if (new URL(location.href).searchParams.get('lang') === 'en') {
+    d.querySelectorAll('a[data-local-link]').forEach(function(a){ var dest = new URL(a.href); dest.searchParams.set('lang', 'en'); a.href = dest.href; });
+  }
 })();

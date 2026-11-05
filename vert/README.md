@@ -1,7 +1,8 @@
-# Pepper, maquette 2 : Vert botanique
+# Pepper · Vert
 
-Deuxième proposition, ajoutée dans `maquette_2/` du dépôt existant
-`DenisBTL/pepper_maquette`. La première proposition reste à la racine.
+Deuxième proposition, ajoutée dans `vert/` du dépôt existant
+`DenisBTL/pepper_maquette`. Adresse principale : `/vert/`, ancien nom
+`maquette_2`. La première proposition se trouve désormais dans `/bleu-miel/`.
 
 Source : [Homepage verte, cadre 60:663](https://www.figma.com/design/xUIcohxRF4x1gGH0oX9Kg7/?node-id=60-663),
 associée à la planche « Direction 01 · Vert botanique » et à
@@ -12,11 +13,11 @@ les références de cette intégration.
 ## Consulter
 
 Ouvrir `index.html` ou servir la racine du dépôt avec un serveur statique,
-puis visiter `/maquette_2/`. Aucun build ni installation nécessaire.
+puis visiter `/vert/`. Aucun build ni installation nécessaire.
 L’article est accessible depuis la première carte d’actualité.
 
 L’adresse de consultation sur GitHub Pages est
-`https://denisbtl.github.io/pepper_maquette/maquette_2/`.
+`https://denisbtl.github.io/pepper_maquette/vert/`.
 
 ## Organisation
 

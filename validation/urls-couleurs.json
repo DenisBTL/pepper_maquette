@@ -1,0 +1,783 @@
+{
+  "date": "2026-11-05T00:56:31.904Z",
+  "base": "http://127.0.0.1:8770/pepper_maquette",
+  "canonicalPages": [
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "index",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "index",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "index",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "article",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "article",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "article",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "charte",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "charte",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "file": "charte",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "index",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "index",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "index",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "article",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "article",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "article",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "charte",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "charte",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "file": "charte",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "index",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "index",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "index",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "article",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "article",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "article",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "charte",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "charte",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "file": "charte",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu-miel",
+      "file": "index",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu-miel",
+      "file": "index",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu-miel",
+      "file": "index",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu-miel",
+      "file": "charte",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu-miel",
+      "file": "charte",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu-miel",
+      "file": "charte",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "index",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "index",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "index",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "article",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "article",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "article",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "charte",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "charte",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "file": "charte",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/vert/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "index",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "index",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "index",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "article",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "article",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "article",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "charte",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "charte",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "file": "charte",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/cyan/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "index",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "index",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "index",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "article",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "article",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "article",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/article.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "charte",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "charte",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "file": "charte",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu-miel",
+      "file": "index",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu-miel",
+      "file": "index",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu-miel",
+      "file": "index",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu-miel",
+      "file": "charte",
+      "width": 320,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu-miel",
+      "file": "charte",
+      "width": 390,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/charte.html",
+      "overflow": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu-miel",
+      "file": "charte",
+      "width": 1440,
+      "canonical": "https://denisbtl.github.io/pepper_maquette/bleu-miel/charte.html",
+      "overflow": false
+    }
+  ],
+  "legacyRedirects": [
+    {
+      "engine": "Chromium",
+      "from": "maquette_2/",
+      "to": "vert/",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_2/article.html",
+      "to": "vert/article.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_2/charte.html",
+      "to": "vert/charte.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_3/",
+      "to": "bleu/",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_3/article.html",
+      "to": "bleu/article.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_3/charte.html",
+      "to": "bleu/charte.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_4/",
+      "to": "cyan/",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_4/article.html",
+      "to": "cyan/article.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_4/charte.html",
+      "to": "cyan/charte.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "",
+      "to": "bleu-miel/",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "charte.html",
+      "to": "bleu-miel/charte.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_2/",
+      "to": "vert/",
+      "javaScript": false
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_3/",
+      "to": "bleu/",
+      "javaScript": false
+    },
+    {
+      "engine": "Chromium",
+      "from": "maquette_4/",
+      "to": "cyan/",
+      "javaScript": false
+    },
+    {
+      "engine": "Chromium",
+      "from": "/",
+      "to": "bleu-miel/",
+      "javaScript": false
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_2/",
+      "to": "vert/",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_2/article.html",
+      "to": "vert/article.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_2/charte.html",
+      "to": "vert/charte.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_3/",
+      "to": "bleu/",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_3/article.html",
+      "to": "bleu/article.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_3/charte.html",
+      "to": "bleu/charte.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_4/",
+      "to": "cyan/",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_4/article.html",
+      "to": "cyan/article.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_4/charte.html",
+      "to": "cyan/charte.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "",
+      "to": "bleu-miel/",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "charte.html",
+      "to": "bleu-miel/charte.html",
+      "queryAndHash": true
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_2/",
+      "to": "vert/",
+      "javaScript": false
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_3/",
+      "to": "bleu/",
+      "javaScript": false
+    },
+    {
+      "engine": "WebKit",
+      "from": "maquette_4/",
+      "to": "cyan/",
+      "javaScript": false
+    },
+    {
+      "engine": "WebKit",
+      "from": "/",
+      "to": "bleu-miel/",
+      "javaScript": false
+    }
+  ],
+  "interactions": [
+    {
+      "engine": "Chromium",
+      "slug": "vert",
+      "allColourLinks": true,
+      "languagePreserved": true,
+      "charteReturn": true,
+      "article": true
+    },
+    {
+      "engine": "Chromium",
+      "slug": "cyan",
+      "allColourLinks": true,
+      "languagePreserved": true,
+      "charteReturn": true,
+      "article": true
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu",
+      "allColourLinks": true,
+      "languagePreserved": true,
+      "charteReturn": true,
+      "article": true
+    },
+    {
+      "engine": "Chromium",
+      "slug": "bleu-miel",
+      "allColourLinks": true,
+      "languagePreserved": true,
+      "charteReturn": true,
+      "article": false
+    },
+    {
+      "engine": "WebKit",
+      "slug": "vert",
+      "allColourLinks": true,
+      "languagePreserved": true,
+      "charteReturn": true,
+      "article": true
+    },
+    {
+      "engine": "WebKit",
+      "slug": "cyan",
+      "allColourLinks": true,
+      "languagePreserved": true,
+      "charteReturn": true,
+      "article": true
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu",
+      "allColourLinks": true,
+      "languagePreserved": true,
+      "charteReturn": true,
+      "article": true
+    },
+    {
+      "engine": "WebKit",
+      "slug": "bleu-miel",
+      "allColourLinks": true,
+      "languagePreserved": true,
+      "charteReturn": true,
+      "article": false
+    }
+  ],
+  "errors": []
+}

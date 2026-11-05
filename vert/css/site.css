@@ -255,3 +255,7 @@ body.dialog-open{overflow:hidden}
 @media(max-width:380px){.header-inner{gap:8px}.header-tools{gap:6px}.brand{flex-basis:100px}.brand img{width:100px}.language-switch button{min-width:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 @media print{.site-header,.site-footer,.button,.hero-links,dialog{display:none!important}.section{break-inside:avoid;padding-block:30px}.hero-composition{position:relative;width:60%}.hero-copy{max-width:100%}.hero h1,.hero-lead{max-width:100%}.hero,.hero-inner{min-height:0}.training-image{position:relative;width:50%}.training-copy{width:100%}body{font-size:12pt}.projects::before{display:none}}
+
+.version-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;padding:28px 24px;font:600 1rem/1.4 var(--body,system-ui,sans-serif)}
+.version-links a{display:inline-flex;align-items:center;min-height:44px;color:inherit}
+.version-links a[aria-current=page]{text-decoration-thickness:3px}

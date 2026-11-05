@@ -1,11 +1,13 @@
-@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/spacegrotesk-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/spacegrotesk-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/spacegrotesk-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:'Space Grotesk';src:url('../assets/fonts/spacegrotesk-700.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:'Manrope';src:url('../assets/fonts/manrope-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Manrope';src:url('../assets/fonts/manrope-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:'Manrope';src:url('../assets/fonts/manrope-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:'Manrope';src:url('../assets/fonts/manrope-700.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url('../assets/fonts/instrumentsans-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url('../assets/fonts/instrumentsans-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url('../assets/fonts/instrumentsans-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Sans';src:url('../assets/fonts/instrumentsans-700.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url('../assets/fonts/instrumentserif-400-italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Instrument Serif';src:url('../assets/fonts/instrumentserif-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Sans';src:url('../assets/fonts/notosans-400.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Sans';src:url('../assets/fonts/notosans-500.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Sans';src:url('../assets/fonts/notosans-600.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Sans';src:url('../assets/fonts/notosans-700.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:2rem;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 var(--text)/1.45 var(--body)}
@@ -146,3 +148,7 @@ h1,h2,h3{color:var(--ink);font-weight:500}h2{font-size:var(--title);line-height:
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 html:not(.js) .site-header{position:static;max-height:none}html:not(.js) .cyan .navigation{position:static;max-height:none;order:5;flex-basis:100%}html:not(.js) .menu-toggle{display:none}
 @media print{.site-header,.scene-nav,.scene-next,.readbar,.button,dialog,.charte-toc{display:none!important}body{font-size:12pt}.section{padding-block:25px}.hero-inner{min-height:0!important}.hero-copy{max-width:none}.article-body{grid-template-columns:1fr}.article-body>img{height:220px}.hero::before{background:#fffe!important}}
+
+.version-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;padding:28px 24px;font:600 1rem/1.4 var(--body,system-ui,sans-serif)}
+.version-links a{display:inline-flex;align-items:center;min-height:44px;color:inherit}
+.version-links a[aria-current=page]{text-decoration-thickness:3px}

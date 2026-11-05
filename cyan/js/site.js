@@ -31,8 +31,8 @@
     doc.querySelectorAll('[data-lang]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
     const page = doc.body.classList.contains('charte-page') ? 'charte' : doc.body.classList.contains('article-page') ? 'article' : 'home';
     const titles = {
-      home: { fr: 'Pepper · Mieux détecter les perturbateurs endocriniens · Maquette 4', en: 'Pepper · Better detection of endocrine disruptors · Mockup 4' },
-      article: { fr: 'Pepper · Appel à laboratoires partenaires · Maquette 4', en: 'Pepper · Call for partner laboratories · Mockup 4' },
+      home: { fr: 'Pepper · Mieux détecter les perturbateurs endocriniens · Cyan', en: 'Pepper · Better detection of endocrine disruptors · Cyan' },
+      article: { fr: 'Pepper · Appel à laboratoires partenaires · Cyan', en: 'Pepper · Call for partner laboratories · Cyan' },
       charte: { fr: 'Pepper · Direction artistique · Cyan et miel', en: 'Pepper · Art direction · Cyan and honey' }
     };
     doc.title = titles[page][language];

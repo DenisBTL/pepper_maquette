@@ -31,9 +31,9 @@
     doc.querySelectorAll('[data-lang]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
     const page = doc.body.classList.contains('charte-page') ? 'charte' : doc.body.classList.contains('article-page') ? 'article' : 'home';
     const titles = {
-      home: { fr: 'Pepper · Mieux détecter les perturbateurs endocriniens · Maquette 2', en: 'Pepper · Better detection of endocrine disruptors · Mockup 2' },
-      article: { fr: 'Pepper · Appel à laboratoires partenaires · Maquette 2', en: 'Pepper · Call for partner laboratories · Mockup 2' },
-      charte: { fr: 'Pepper · Direction artistique · Vert botanique', en: 'Pepper · Art direction · Botanical green' }
+      home: { fr: 'Pepper · Mieux détecter les perturbateurs endocriniens · Bleu', en: 'Pepper · Better detection of endocrine disruptors · Blue' },
+      article: { fr: 'Pepper · Appel à laboratoires partenaires · Bleu', en: 'Pepper · Call for partner laboratories · Blue' },
+      charte: { fr: 'Pepper · Direction artistique · Bleu éditorial', en: 'Pepper · Art direction · Editorial blue' }
     };
     doc.title = titles[page][language];
     const url = new URL(location.href);
@@ -140,6 +140,7 @@
     const midpoint = window.innerHeight / 2;
     let current = scenes[0];
     scenes.forEach(scene => { if (scene.getBoundingClientRect().top <= midpoint) current = scene; });
+    if (window.scrollY >= doc.documentElement.scrollHeight - window.innerHeight - 2) current = scenes.at(-1);
     const darkBounds = darkScenes.map(scene => scene.getBoundingClientRect());
     sceneLinks.forEach(link => {
       if (link.hash === '#' + current?.id) link.setAttribute('aria-current', 'location');
